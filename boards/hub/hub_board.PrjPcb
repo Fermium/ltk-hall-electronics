@@ -39,7 +39,7 @@ PrefsVaultGUID=
 PrefsRevisionGUID=
 
 [Document1]
-DocumentPath=hub_board.OutJob
+DocumentPath=..\..\libraries\imported\silicon_valley_garage\vh_altium_library\TH Transistors.SchLib
 AnnotationEnabled=1
 AnnotateStartValue=1
 AnnotationIndexControlEnabled=0
@@ -56,7 +56,7 @@ GenerateClassCluster=0
 DocumentUniqueId=
 
 [Document2]
-DocumentPath=hub_board.PcbDoc
+DocumentPath=..\..\libraries\imported\silicon_valley_garage\vh_altium_library\TH Transistors.PcbLib
 AnnotationEnabled=1
 AnnotateStartValue=1
 AnnotationIndexControlEnabled=0
@@ -70,27 +70,10 @@ ClassGenCCAutoRoomEnabled=1
 ClassGenNCAutoScope=None
 DItemRevisionGUID=
 GenerateClassCluster=0
-DocumentUniqueId=OFXCNNDN
+DocumentUniqueId=AKHNNTMB
 
 [Document3]
-DocumentPath=hub_board.SchDoc
-AnnotationEnabled=1
-AnnotateStartValue=1
-AnnotationIndexControlEnabled=0
-AnnotateSuffix=
-AnnotateScope=All
-AnnotateOrder=0
-DoLibraryUpdate=1
-DoDatabaseUpdate=1
-ClassGenCCAutoEnabled=1
-ClassGenCCAutoRoomEnabled=1
-ClassGenNCAutoScope=None
-DItemRevisionGUID=
-GenerateClassCluster=0
-DocumentUniqueId=BAULWRRO
-
-[Document4]
-DocumentPath=..\Main Board\libraries\germanium\germanium.PcbLib
+DocumentPath=..\..\libraries\imported\silicon_valley_garage\vh_altium_library\TH Switches.PcbLib
 AnnotationEnabled=1
 AnnotateStartValue=1
 AnnotationIndexControlEnabled=0
@@ -104,10 +87,10 @@ ClassGenCCAutoRoomEnabled=1
 ClassGenNCAutoScope=None
 DItemRevisionGUID=
 GenerateClassCluster=0
-DocumentUniqueId=HOMFJRRY
+DocumentUniqueId=GPCQSCRI
 
-[Document5]
-DocumentPath=..\Main Board\libraries\germanium\germanium.SchLib
+[Document4]
+DocumentPath=..\..\libraries\imported\silicon_valley_garage\vh_altium_library\TH Resistors.SchLib
 AnnotationEnabled=1
 AnnotateStartValue=1
 AnnotationIndexControlEnabled=0
@@ -123,8 +106,25 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=
 
+[Document5]
+DocumentPath=..\..\libraries\imported\silicon_valley_garage\vh_altium_library\TH Resistors.PcbLib
+AnnotationEnabled=1
+AnnotateStartValue=1
+AnnotationIndexControlEnabled=0
+AnnotateSuffix=
+AnnotateScope=All
+AnnotateOrder=-1
+DoLibraryUpdate=1
+DoDatabaseUpdate=1
+ClassGenCCAutoEnabled=1
+ClassGenCCAutoRoomEnabled=1
+ClassGenNCAutoScope=None
+DItemRevisionGUID=
+GenerateClassCluster=0
+DocumentUniqueId=VSIFJXEQ
+
 [Document6]
-DocumentPath=..\Main Board\libraries\CPL-Altium-Designer-Library-master\Octopart-CPL.PcbLib
+DocumentPath=..\..\libraries\imported\silicon_valley_garage\vh_altium_library\TH Relays.SchLib
 AnnotationEnabled=1
 AnnotateStartValue=1
 AnnotationIndexControlEnabled=0
@@ -141,7 +141,7 @@ GenerateClassCluster=0
 DocumentUniqueId=
 
 [Document7]
-DocumentPath=..\Main Board\libraries\SiliconValleyGarage Libraries\vh_altium_library\Connectors.SchLib
+DocumentPath=..\..\libraries\imported\silicon_valley_garage\vh_altium_library\TH Relays.PcbLib
 AnnotationEnabled=1
 AnnotateStartValue=1
 AnnotationIndexControlEnabled=0
@@ -155,10 +155,10 @@ ClassGenCCAutoRoomEnabled=1
 ClassGenNCAutoScope=None
 DItemRevisionGUID=
 GenerateClassCluster=0
-DocumentUniqueId=
+DocumentUniqueId=OCQAUMBR
 
 [Document8]
-DocumentPath=..\Main Board\libraries\SiliconValleyGarage Libraries\vh_altium_library\Crystals.SchLib
+DocumentPath=..\..\libraries\imported\silicon_valley_garage\vh_altium_library\TH Passive.PcbLib
 AnnotationEnabled=1
 AnnotateStartValue=1
 AnnotationIndexControlEnabled=0
@@ -172,10 +172,10 @@ ClassGenCCAutoRoomEnabled=1
 ClassGenNCAutoScope=None
 DItemRevisionGUID=
 GenerateClassCluster=0
-DocumentUniqueId=
+DocumentUniqueId=LQCEAUME
 
 [Document9]
-DocumentPath=..\Main Board\libraries\SiliconValleyGarage Libraries\vh_altium_library\generic.PcbLib
+DocumentPath=..\..\libraries\imported\silicon_valley_garage\vh_altium_library\TH Optoelectronics.SchLib
 AnnotationEnabled=1
 AnnotateStartValue=1
 AnnotationIndexControlEnabled=0
@@ -192,7 +192,7 @@ GenerateClassCluster=0
 DocumentUniqueId=
 
 [Document10]
-DocumentPath=..\Main Board\libraries\SiliconValleyGarage Libraries\vh_altium_library\generic.SchLib
+DocumentPath=..\..\libraries\imported\silicon_valley_garage\vh_altium_library\TH Optoelectronics.PcbLib
 AnnotationEnabled=1
 AnnotateStartValue=1
 AnnotationIndexControlEnabled=0
@@ -206,10 +206,10 @@ ClassGenCCAutoRoomEnabled=1
 ClassGenNCAutoScope=None
 DItemRevisionGUID=
 GenerateClassCluster=0
-DocumentUniqueId=
+DocumentUniqueId=WWVJTABE
 
 [Document11]
-DocumentPath=..\Main Board\libraries\SiliconValleyGarage Libraries\vh_altium_library\Heatsinks.PcbLib
+DocumentPath=..\..\libraries\imported\silicon_valley_garage\vh_altium_library\TH Mechanical.SchLib
 AnnotationEnabled=1
 AnnotateStartValue=1
 AnnotationIndexControlEnabled=0
@@ -226,7 +226,7 @@ GenerateClassCluster=0
 DocumentUniqueId=
 
 [Document12]
-DocumentPath=..\Main Board\libraries\SiliconValleyGarage Libraries\vh_altium_library\Heatsinks.SchLib
+DocumentPath=..\..\libraries\imported\silicon_valley_garage\vh_altium_library\TH Magnetics.SchLib
 AnnotationEnabled=1
 AnnotateStartValue=1
 AnnotationIndexControlEnabled=0
@@ -243,7 +243,7 @@ GenerateClassCluster=0
 DocumentUniqueId=
 
 [Document13]
-DocumentPath=..\Main Board\libraries\SiliconValleyGarage Libraries\vh_altium_library\IC Analog.SchLib
+DocumentPath=..\..\libraries\imported\silicon_valley_garage\vh_altium_library\TH Magnetics.PcbLib
 AnnotationEnabled=1
 AnnotateStartValue=1
 AnnotationIndexControlEnabled=0
@@ -257,10 +257,10 @@ ClassGenCCAutoRoomEnabled=1
 ClassGenNCAutoScope=None
 DItemRevisionGUID=
 GenerateClassCluster=0
-DocumentUniqueId=
+DocumentUniqueId=XLCAFSMO
 
 [Document14]
-DocumentPath=..\Main Board\libraries\SiliconValleyGarage Libraries\vh_altium_library\IC CMOS 4xxx.SchLib
+DocumentPath=..\..\libraries\imported\silicon_valley_garage\vh_altium_library\TH Diodes.SchLib
 AnnotationEnabled=1
 AnnotateStartValue=1
 AnnotationIndexControlEnabled=0
@@ -277,7 +277,7 @@ GenerateClassCluster=0
 DocumentUniqueId=
 
 [Document15]
-DocumentPath=..\Main Board\libraries\SiliconValleyGarage Libraries\vh_altium_library\IC CPU.SchLib
+DocumentPath=..\..\libraries\imported\silicon_valley_garage\vh_altium_library\TH Diodes.PcbLib
 AnnotationEnabled=1
 AnnotateStartValue=1
 AnnotationIndexControlEnabled=0
@@ -291,10 +291,10 @@ ClassGenCCAutoRoomEnabled=1
 ClassGenNCAutoScope=None
 DItemRevisionGUID=
 GenerateClassCluster=0
-DocumentUniqueId=
+DocumentUniqueId=OAVAMFWA
 
 [Document16]
-DocumentPath=..\Main Board\libraries\SiliconValleyGarage Libraries\vh_altium_library\IC Digital.SchLib
+DocumentPath=..\..\libraries\imported\silicon_valley_garage\vh_altium_library\TH Connectors.SchLib
 AnnotationEnabled=1
 AnnotateStartValue=1
 AnnotationIndexControlEnabled=0
@@ -311,7 +311,7 @@ GenerateClassCluster=0
 DocumentUniqueId=
 
 [Document17]
-DocumentPath=..\Main Board\libraries\SiliconValleyGarage Libraries\vh_altium_library\IC Interface.SchLib
+DocumentPath=..\..\libraries\imported\silicon_valley_garage\vh_altium_library\TH Connectors.PcbLib
 AnnotationEnabled=1
 AnnotateStartValue=1
 AnnotationIndexControlEnabled=0
@@ -325,10 +325,10 @@ ClassGenCCAutoRoomEnabled=1
 ClassGenNCAutoScope=None
 DItemRevisionGUID=
 GenerateClassCluster=0
-DocumentUniqueId=
+DocumentUniqueId=UOFFVEOP
 
 [Document18]
-DocumentPath=..\Main Board\libraries\SiliconValleyGarage Libraries\vh_altium_library\IC Memories.SchLib
+DocumentPath=..\..\libraries\imported\silicon_valley_garage\vh_altium_library\TH Capacitors.SchLib
 AnnotationEnabled=1
 AnnotateStartValue=1
 AnnotationIndexControlEnabled=0
@@ -345,7 +345,7 @@ GenerateClassCluster=0
 DocumentUniqueId=
 
 [Document19]
-DocumentPath=..\Main Board\libraries\SiliconValleyGarage Libraries\vh_altium_library\IC Power.SchLib
+DocumentPath=..\..\libraries\imported\silicon_valley_garage\vh_altium_library\TH Capacitors.PcbLib
 AnnotationEnabled=1
 AnnotateStartValue=1
 AnnotationIndexControlEnabled=0
@@ -359,10 +359,10 @@ ClassGenCCAutoRoomEnabled=1
 ClassGenNCAutoScope=None
 DItemRevisionGUID=
 GenerateClassCluster=0
-DocumentUniqueId=
+DocumentUniqueId=TTEEIRRO
 
 [Document20]
-DocumentPath=..\Main Board\libraries\SiliconValleyGarage Libraries\vh_altium_library\IC Regulators.SchLib
+DocumentPath=..\..\libraries\imported\silicon_valley_garage\vh_altium_library\TH Active.PcbLib
 AnnotationEnabled=1
 AnnotateStartValue=1
 AnnotationIndexControlEnabled=0
@@ -376,10 +376,10 @@ ClassGenCCAutoRoomEnabled=1
 ClassGenNCAutoScope=None
 DItemRevisionGUID=
 GenerateClassCluster=0
-DocumentUniqueId=
+DocumentUniqueId=DYQCAPWE
 
 [Document21]
-DocumentPath=..\Main Board\libraries\SiliconValleyGarage Libraries\vh_altium_library\IC Singlegate Logic.SchLib
+DocumentPath=..\..\libraries\imported\silicon_valley_garage\vh_altium_library\Switches.SchLib
 AnnotationEnabled=1
 AnnotateStartValue=1
 AnnotationIndexControlEnabled=0
@@ -396,7 +396,7 @@ GenerateClassCluster=0
 DocumentUniqueId=
 
 [Document22]
-DocumentPath=..\Main Board\libraries\SiliconValleyGarage Libraries\vh_altium_library\IC SPI.SchLib
+DocumentPath=..\..\libraries\imported\silicon_valley_garage\vh_altium_library\SPINEW.SchLib
 AnnotationEnabled=1
 AnnotateStartValue=1
 AnnotationIndexControlEnabled=0
@@ -413,7 +413,7 @@ GenerateClassCluster=0
 DocumentUniqueId=
 
 [Document23]
-DocumentPath=..\Main Board\libraries\SiliconValleyGarage Libraries\vh_altium_library\IC TTL 74xx.SchLib
+DocumentPath=..\..\libraries\imported\silicon_valley_garage\vh_altium_library\SPI.SchLib
 AnnotationEnabled=1
 AnnotateStartValue=1
 AnnotationIndexControlEnabled=0
@@ -430,7 +430,7 @@ GenerateClassCluster=0
 DocumentUniqueId=
 
 [Document24]
-DocumentPath=..\Main Board\libraries\SiliconValleyGarage Libraries\vh_altium_library\Incoming UNVERIFIED.SchLib
+DocumentPath=..\..\libraries\imported\silicon_valley_garage\vh_altium_library\SOCKETS.SchLib
 AnnotationEnabled=1
 AnnotateStartValue=1
 AnnotationIndexControlEnabled=0
@@ -447,7 +447,7 @@ GenerateClassCluster=0
 DocumentUniqueId=
 
 [Document25]
-DocumentPath=..\Main Board\libraries\SiliconValleyGarage Libraries\vh_altium_library\SMD Active.PcbLib
+DocumentPath=..\..\libraries\imported\silicon_valley_garage\vh_altium_library\SMD Transistors.SchLib
 AnnotationEnabled=1
 AnnotateStartValue=1
 AnnotationIndexControlEnabled=0
@@ -464,7 +464,7 @@ GenerateClassCluster=0
 DocumentUniqueId=
 
 [Document26]
-DocumentPath=..\Main Board\libraries\SiliconValleyGarage Libraries\vh_altium_library\SMD Capacitors 0603.PcbLib
+DocumentPath=..\..\libraries\imported\silicon_valley_garage\vh_altium_library\SMD Transistors.PcbLib
 AnnotationEnabled=1
 AnnotateStartValue=1
 AnnotationIndexControlEnabled=0
@@ -478,10 +478,10 @@ ClassGenCCAutoRoomEnabled=1
 ClassGenNCAutoScope=None
 DItemRevisionGUID=
 GenerateClassCluster=0
-DocumentUniqueId=
+DocumentUniqueId=YLTNOKHF
 
 [Document27]
-DocumentPath=..\Main Board\libraries\SiliconValleyGarage Libraries\vh_altium_library\SMD Capacitors 0603.SchLib
+DocumentPath=..\..\libraries\imported\silicon_valley_garage\vh_altium_library\SMD Switches.PcbLib
 AnnotationEnabled=1
 AnnotateStartValue=1
 AnnotationIndexControlEnabled=0
@@ -495,10 +495,10 @@ ClassGenCCAutoRoomEnabled=1
 ClassGenNCAutoScope=None
 DItemRevisionGUID=
 GenerateClassCluster=0
-DocumentUniqueId=
+DocumentUniqueId=KGDSDAYH
 
 [Document28]
-DocumentPath=..\Main Board\libraries\SiliconValleyGarage Libraries\vh_altium_library\SMD Capacitors 0805.PcbLib
+DocumentPath=..\..\libraries\imported\silicon_valley_garage\vh_altium_library\SMD Resistors.SchLib
 AnnotationEnabled=1
 AnnotateStartValue=1
 AnnotationIndexControlEnabled=0
@@ -515,7 +515,7 @@ GenerateClassCluster=0
 DocumentUniqueId=
 
 [Document29]
-DocumentPath=..\Main Board\libraries\SiliconValleyGarage Libraries\vh_altium_library\SMD Capacitors 0805.SchLib
+DocumentPath=..\..\libraries\imported\silicon_valley_garage\vh_altium_library\SMD Resistors.PcbLib
 AnnotationEnabled=1
 AnnotateStartValue=1
 AnnotationIndexControlEnabled=0
@@ -529,10 +529,10 @@ ClassGenCCAutoRoomEnabled=1
 ClassGenNCAutoScope=None
 DItemRevisionGUID=
 GenerateClassCluster=0
-DocumentUniqueId=
+DocumentUniqueId=JCFBVVAP
 
 [Document30]
-DocumentPath=..\Main Board\libraries\SiliconValleyGarage Libraries\vh_altium_library\SMD Capacitors 1206.SchLib
+DocumentPath=..\..\libraries\imported\silicon_valley_garage\vh_altium_library\SMD Resistors 0805.SchLib
 AnnotationEnabled=1
 AnnotateStartValue=1
 AnnotationIndexControlEnabled=0
@@ -549,7 +549,7 @@ GenerateClassCluster=0
 DocumentUniqueId=
 
 [Document31]
-DocumentPath=..\Main Board\libraries\SiliconValleyGarage Libraries\vh_altium_library\SMD Capacitors 1210.SchLib
+DocumentPath=..\..\libraries\imported\silicon_valley_garage\vh_altium_library\SMD Resistors 0805.PcbLib
 AnnotationEnabled=1
 AnnotateStartValue=1
 AnnotationIndexControlEnabled=0
@@ -563,10 +563,10 @@ ClassGenCCAutoRoomEnabled=1
 ClassGenNCAutoScope=None
 DItemRevisionGUID=
 GenerateClassCluster=0
-DocumentUniqueId=
+DocumentUniqueId=FHRBWEGS
 
 [Document32]
-DocumentPath=..\Main Board\libraries\SiliconValleyGarage Libraries\vh_altium_library\SMD Capacitors Electrolytic.PcbLib
+DocumentPath=..\..\libraries\imported\silicon_valley_garage\vh_altium_library\SMD Resistors 0603.SchLib
 AnnotationEnabled=1
 AnnotateStartValue=1
 AnnotationIndexControlEnabled=0
@@ -583,7 +583,7 @@ GenerateClassCluster=0
 DocumentUniqueId=
 
 [Document33]
-DocumentPath=..\Main Board\libraries\SiliconValleyGarage Libraries\vh_altium_library\SMD Capacitors Electrolytic.SchLib
+DocumentPath=..\..\libraries\imported\silicon_valley_garage\vh_altium_library\SMD Resistors 0603.PcbLib
 AnnotationEnabled=1
 AnnotateStartValue=1
 AnnotationIndexControlEnabled=0
@@ -597,10 +597,10 @@ ClassGenCCAutoRoomEnabled=1
 ClassGenNCAutoScope=None
 DItemRevisionGUID=
 GenerateClassCluster=0
-DocumentUniqueId=
+DocumentUniqueId=FWDVTHPS
 
 [Document34]
-DocumentPath=..\Main Board\libraries\SiliconValleyGarage Libraries\vh_altium_library\SMD Capacitors Other.PcbLib
+DocumentPath=..\..\libraries\imported\silicon_valley_garage\vh_altium_library\SMD Passive.PcbLib
 AnnotationEnabled=1
 AnnotateStartValue=1
 AnnotationIndexControlEnabled=0
@@ -614,10 +614,10 @@ ClassGenCCAutoRoomEnabled=1
 ClassGenNCAutoScope=None
 DItemRevisionGUID=
 GenerateClassCluster=0
-DocumentUniqueId=
+DocumentUniqueId=GWKUJGDQ
 
 [Document35]
-DocumentPath=..\Main Board\libraries\SiliconValleyGarage Libraries\vh_altium_library\SMD Capacitors Other.SchLib
+DocumentPath=..\..\libraries\imported\silicon_valley_garage\vh_altium_library\SMD Optoelectronics.SchLib
 AnnotationEnabled=1
 AnnotateStartValue=1
 AnnotationIndexControlEnabled=0
@@ -634,7 +634,7 @@ GenerateClassCluster=0
 DocumentUniqueId=
 
 [Document36]
-DocumentPath=..\Main Board\libraries\SiliconValleyGarage Libraries\vh_altium_library\SMD Connectors.PcbLib
+DocumentPath=..\..\libraries\imported\silicon_valley_garage\vh_altium_library\SMD Optoelectronics.PcbLib
 AnnotationEnabled=1
 AnnotateStartValue=1
 AnnotationIndexControlEnabled=0
@@ -648,10 +648,10 @@ ClassGenCCAutoRoomEnabled=1
 ClassGenNCAutoScope=None
 DItemRevisionGUID=
 GenerateClassCluster=0
-DocumentUniqueId=
+DocumentUniqueId=TCYMVOEQ
 
 [Document37]
-DocumentPath=..\Main Board\libraries\SiliconValleyGarage Libraries\vh_altium_library\SMD Connectors.SchLib
+DocumentPath=..\..\libraries\imported\silicon_valley_garage\vh_altium_library\SMD Mechanical.SchLib
 AnnotationEnabled=1
 AnnotateStartValue=1
 AnnotationIndexControlEnabled=0
@@ -668,7 +668,7 @@ GenerateClassCluster=0
 DocumentUniqueId=
 
 [Document38]
-DocumentPath=..\Main Board\libraries\SiliconValleyGarage Libraries\vh_altium_library\SMD Diodes.PcbLib
+DocumentPath=..\..\libraries\imported\silicon_valley_garage\vh_altium_library\SMD Mechanical.PcbLib
 AnnotationEnabled=1
 AnnotateStartValue=1
 AnnotationIndexControlEnabled=0
@@ -682,10 +682,10 @@ ClassGenCCAutoRoomEnabled=1
 ClassGenNCAutoScope=None
 DItemRevisionGUID=
 GenerateClassCluster=0
-DocumentUniqueId=
+DocumentUniqueId=UHQTUQFT
 
 [Document39]
-DocumentPath=..\Main Board\libraries\SiliconValleyGarage Libraries\vh_altium_library\SMD Diodes.SchLib
+DocumentPath=..\..\libraries\imported\silicon_valley_garage\vh_altium_library\SMD Magnetics.SchLib
 AnnotationEnabled=1
 AnnotateStartValue=1
 AnnotationIndexControlEnabled=0
@@ -702,7 +702,7 @@ GenerateClassCluster=0
 DocumentUniqueId=
 
 [Document40]
-DocumentPath=..\Main Board\libraries\SiliconValleyGarage Libraries\vh_altium_library\SMD Magnetics.PcbLib
+DocumentPath=..\..\libraries\imported\silicon_valley_garage\vh_altium_library\SMD Magnetics.PcbLib
 AnnotationEnabled=1
 AnnotateStartValue=1
 AnnotationIndexControlEnabled=0
@@ -716,10 +716,10 @@ ClassGenCCAutoRoomEnabled=1
 ClassGenNCAutoScope=None
 DItemRevisionGUID=
 GenerateClassCluster=0
-DocumentUniqueId=
+DocumentUniqueId=YDSVBIWE
 
 [Document41]
-DocumentPath=..\Main Board\libraries\SiliconValleyGarage Libraries\vh_altium_library\SMD Magnetics.SchLib
+DocumentPath=..\..\libraries\imported\silicon_valley_garage\vh_altium_library\SMD Diodes.SchLib
 AnnotationEnabled=1
 AnnotateStartValue=1
 AnnotationIndexControlEnabled=0
@@ -736,7 +736,7 @@ GenerateClassCluster=0
 DocumentUniqueId=
 
 [Document42]
-DocumentPath=..\Main Board\libraries\SiliconValleyGarage Libraries\vh_altium_library\SMD Mechanical.PcbLib
+DocumentPath=..\..\libraries\imported\silicon_valley_garage\vh_altium_library\SMD Diodes.PcbLib
 AnnotationEnabled=1
 AnnotateStartValue=1
 AnnotationIndexControlEnabled=0
@@ -750,10 +750,10 @@ ClassGenCCAutoRoomEnabled=1
 ClassGenNCAutoScope=None
 DItemRevisionGUID=
 GenerateClassCluster=0
-DocumentUniqueId=
+DocumentUniqueId=EJKVRRBF
 
 [Document43]
-DocumentPath=..\Main Board\libraries\SiliconValleyGarage Libraries\vh_altium_library\SMD Mechanical.SchLib
+DocumentPath=..\..\libraries\imported\silicon_valley_garage\vh_altium_library\SMD Connectors.SchLib
 AnnotationEnabled=1
 AnnotateStartValue=1
 AnnotationIndexControlEnabled=0
@@ -770,7 +770,7 @@ GenerateClassCluster=0
 DocumentUniqueId=
 
 [Document44]
-DocumentPath=..\Main Board\libraries\SiliconValleyGarage Libraries\vh_altium_library\SMD Optoelectronics.PcbLib
+DocumentPath=..\..\libraries\imported\silicon_valley_garage\vh_altium_library\SMD Connectors.PcbLib
 AnnotationEnabled=1
 AnnotateStartValue=1
 AnnotationIndexControlEnabled=0
@@ -784,10 +784,10 @@ ClassGenCCAutoRoomEnabled=1
 ClassGenNCAutoScope=None
 DItemRevisionGUID=
 GenerateClassCluster=0
-DocumentUniqueId=
+DocumentUniqueId=WFNUEMQE
 
 [Document45]
-DocumentPath=..\Main Board\libraries\SiliconValleyGarage Libraries\vh_altium_library\SMD Optoelectronics.SchLib
+DocumentPath=..\..\libraries\imported\silicon_valley_garage\vh_altium_library\SMD Capacitors Other.SchLib
 AnnotationEnabled=1
 AnnotateStartValue=1
 AnnotationIndexControlEnabled=0
@@ -804,7 +804,7 @@ GenerateClassCluster=0
 DocumentUniqueId=
 
 [Document46]
-DocumentPath=..\Main Board\libraries\SiliconValleyGarage Libraries\vh_altium_library\SMD Passive.PcbLib
+DocumentPath=..\..\libraries\imported\silicon_valley_garage\vh_altium_library\SMD Capacitors Other.PcbLib
 AnnotationEnabled=1
 AnnotateStartValue=1
 AnnotationIndexControlEnabled=0
@@ -818,10 +818,10 @@ ClassGenCCAutoRoomEnabled=1
 ClassGenNCAutoScope=None
 DItemRevisionGUID=
 GenerateClassCluster=0
-DocumentUniqueId=
+DocumentUniqueId=CGGYQHKM
 
 [Document47]
-DocumentPath=..\Main Board\libraries\SiliconValleyGarage Libraries\vh_altium_library\SMD Resistors 0603.PcbLib
+DocumentPath=..\..\libraries\imported\silicon_valley_garage\vh_altium_library\SMD Capacitors Electrolytic.SchLib
 AnnotationEnabled=1
 AnnotateStartValue=1
 AnnotationIndexControlEnabled=0
@@ -838,7 +838,7 @@ GenerateClassCluster=0
 DocumentUniqueId=
 
 [Document48]
-DocumentPath=..\Main Board\libraries\SiliconValleyGarage Libraries\vh_altium_library\SMD Resistors 0603.SchLib
+DocumentPath=..\..\libraries\imported\silicon_valley_garage\vh_altium_library\SMD Capacitors Electrolytic.PcbLib
 AnnotationEnabled=1
 AnnotateStartValue=1
 AnnotationIndexControlEnabled=0
@@ -852,10 +852,10 @@ ClassGenCCAutoRoomEnabled=1
 ClassGenNCAutoScope=None
 DItemRevisionGUID=
 GenerateClassCluster=0
-DocumentUniqueId=
+DocumentUniqueId=KIMQAPUH
 
 [Document49]
-DocumentPath=..\Main Board\libraries\SiliconValleyGarage Libraries\vh_altium_library\SMD Resistors 0805.PcbLib
+DocumentPath=..\..\libraries\imported\silicon_valley_garage\vh_altium_library\SMD Capacitors 1210.SchLib
 AnnotationEnabled=1
 AnnotateStartValue=1
 AnnotationIndexControlEnabled=0
@@ -872,7 +872,7 @@ GenerateClassCluster=0
 DocumentUniqueId=
 
 [Document50]
-DocumentPath=..\Main Board\libraries\SiliconValleyGarage Libraries\vh_altium_library\SMD Resistors 0805.SchLib
+DocumentPath=..\..\libraries\imported\silicon_valley_garage\vh_altium_library\SMD Capacitors 1206.SchLib
 AnnotationEnabled=1
 AnnotateStartValue=1
 AnnotationIndexControlEnabled=0
@@ -889,7 +889,7 @@ GenerateClassCluster=0
 DocumentUniqueId=
 
 [Document51]
-DocumentPath=..\Main Board\libraries\SiliconValleyGarage Libraries\vh_altium_library\SMD Resistors.PcbLib
+DocumentPath=..\..\libraries\imported\silicon_valley_garage\vh_altium_library\SMD Capacitors 0805.SchLib
 AnnotationEnabled=1
 AnnotateStartValue=1
 AnnotationIndexControlEnabled=0
@@ -906,7 +906,7 @@ GenerateClassCluster=0
 DocumentUniqueId=
 
 [Document52]
-DocumentPath=..\Main Board\libraries\SiliconValleyGarage Libraries\vh_altium_library\SMD Resistors.SchLib
+DocumentPath=..\..\libraries\imported\silicon_valley_garage\vh_altium_library\SMD Capacitors 0805.PcbLib
 AnnotationEnabled=1
 AnnotateStartValue=1
 AnnotationIndexControlEnabled=0
@@ -920,10 +920,10 @@ ClassGenCCAutoRoomEnabled=1
 ClassGenNCAutoScope=None
 DItemRevisionGUID=
 GenerateClassCluster=0
-DocumentUniqueId=
+DocumentUniqueId=LBRMNNMV
 
 [Document53]
-DocumentPath=..\Main Board\libraries\SiliconValleyGarage Libraries\vh_altium_library\SMD Switches.PcbLib
+DocumentPath=..\..\libraries\imported\silicon_valley_garage\vh_altium_library\SMD Capacitors 0603.SchLib
 AnnotationEnabled=1
 AnnotateStartValue=1
 AnnotationIndexControlEnabled=0
@@ -940,7 +940,7 @@ GenerateClassCluster=0
 DocumentUniqueId=
 
 [Document54]
-DocumentPath=..\Main Board\libraries\SiliconValleyGarage Libraries\vh_altium_library\SMD Transistors.PcbLib
+DocumentPath=..\..\libraries\imported\silicon_valley_garage\vh_altium_library\SMD Capacitors 0603.PcbLib
 AnnotationEnabled=1
 AnnotateStartValue=1
 AnnotationIndexControlEnabled=0
@@ -954,10 +954,10 @@ ClassGenCCAutoRoomEnabled=1
 ClassGenNCAutoScope=None
 DItemRevisionGUID=
 GenerateClassCluster=0
-DocumentUniqueId=
+DocumentUniqueId=XOEWKJYA
 
 [Document55]
-DocumentPath=..\Main Board\libraries\SiliconValleyGarage Libraries\vh_altium_library\SMD Transistors.SchLib
+DocumentPath=..\..\libraries\imported\silicon_valley_garage\vh_altium_library\SMD Active.PcbLib
 AnnotationEnabled=1
 AnnotateStartValue=1
 AnnotationIndexControlEnabled=0
@@ -971,10 +971,10 @@ ClassGenCCAutoRoomEnabled=1
 ClassGenNCAutoScope=None
 DItemRevisionGUID=
 GenerateClassCluster=0
-DocumentUniqueId=
+DocumentUniqueId=OJSTJJVQ
 
 [Document56]
-DocumentPath=..\Main Board\libraries\SiliconValleyGarage Libraries\vh_altium_library\SOCKETS.SchLib
+DocumentPath=..\..\libraries\imported\silicon_valley_garage\vh_altium_library\Incoming UNVERIFIED.SchLib
 AnnotationEnabled=1
 AnnotateStartValue=1
 AnnotationIndexControlEnabled=0
@@ -991,7 +991,7 @@ GenerateClassCluster=0
 DocumentUniqueId=
 
 [Document57]
-DocumentPath=..\Main Board\libraries\SiliconValleyGarage Libraries\vh_altium_library\SPI.SchLib
+DocumentPath=..\..\libraries\imported\silicon_valley_garage\vh_altium_library\IC TTL 74xx.SchLib
 AnnotationEnabled=1
 AnnotateStartValue=1
 AnnotationIndexControlEnabled=0
@@ -1008,7 +1008,7 @@ GenerateClassCluster=0
 DocumentUniqueId=
 
 [Document58]
-DocumentPath=..\Main Board\libraries\SiliconValleyGarage Libraries\vh_altium_library\SPINEW.SchLib
+DocumentPath=..\..\libraries\imported\silicon_valley_garage\vh_altium_library\IC SPI.SchLib
 AnnotationEnabled=1
 AnnotateStartValue=1
 AnnotationIndexControlEnabled=0
@@ -1025,7 +1025,7 @@ GenerateClassCluster=0
 DocumentUniqueId=
 
 [Document59]
-DocumentPath=..\Main Board\libraries\SiliconValleyGarage Libraries\vh_altium_library\Switches.SchLib
+DocumentPath=..\..\libraries\imported\silicon_valley_garage\vh_altium_library\IC Singlegate Logic.SchLib
 AnnotationEnabled=1
 AnnotateStartValue=1
 AnnotationIndexControlEnabled=0
@@ -1042,7 +1042,7 @@ GenerateClassCluster=0
 DocumentUniqueId=
 
 [Document60]
-DocumentPath=..\Main Board\libraries\SiliconValleyGarage Libraries\vh_altium_library\TH Active.PcbLib
+DocumentPath=..\..\libraries\imported\silicon_valley_garage\vh_altium_library\IC Regulators.SchLib
 AnnotationEnabled=1
 AnnotateStartValue=1
 AnnotationIndexControlEnabled=0
@@ -1059,7 +1059,7 @@ GenerateClassCluster=0
 DocumentUniqueId=
 
 [Document61]
-DocumentPath=..\Main Board\libraries\SiliconValleyGarage Libraries\vh_altium_library\TH Capacitors.PcbLib
+DocumentPath=..\..\libraries\imported\silicon_valley_garage\vh_altium_library\IC Power.SchLib
 AnnotationEnabled=1
 AnnotateStartValue=1
 AnnotationIndexControlEnabled=0
@@ -1076,7 +1076,7 @@ GenerateClassCluster=0
 DocumentUniqueId=
 
 [Document62]
-DocumentPath=..\Main Board\libraries\SiliconValleyGarage Libraries\vh_altium_library\TH Capacitors.SchLib
+DocumentPath=..\..\libraries\imported\silicon_valley_garage\vh_altium_library\IC Memories.SchLib
 AnnotationEnabled=1
 AnnotateStartValue=1
 AnnotationIndexControlEnabled=0
@@ -1093,7 +1093,7 @@ GenerateClassCluster=0
 DocumentUniqueId=
 
 [Document63]
-DocumentPath=..\Main Board\libraries\SiliconValleyGarage Libraries\vh_altium_library\TH Connectors.PcbLib
+DocumentPath=..\..\libraries\imported\silicon_valley_garage\vh_altium_library\IC Interface.SchLib
 AnnotationEnabled=1
 AnnotateStartValue=1
 AnnotationIndexControlEnabled=0
@@ -1110,7 +1110,7 @@ GenerateClassCluster=0
 DocumentUniqueId=
 
 [Document64]
-DocumentPath=..\Main Board\libraries\SiliconValleyGarage Libraries\vh_altium_library\TH Connectors.SchLib
+DocumentPath=..\..\libraries\imported\silicon_valley_garage\vh_altium_library\IC Digital.SchLib
 AnnotationEnabled=1
 AnnotateStartValue=1
 AnnotationIndexControlEnabled=0
@@ -1127,7 +1127,7 @@ GenerateClassCluster=0
 DocumentUniqueId=
 
 [Document65]
-DocumentPath=..\Main Board\libraries\SiliconValleyGarage Libraries\vh_altium_library\TH Diodes.PcbLib
+DocumentPath=..\..\libraries\imported\silicon_valley_garage\vh_altium_library\IC CPU.SchLib
 AnnotationEnabled=1
 AnnotateStartValue=1
 AnnotationIndexControlEnabled=0
@@ -1144,7 +1144,7 @@ GenerateClassCluster=0
 DocumentUniqueId=
 
 [Document66]
-DocumentPath=..\Main Board\libraries\SiliconValleyGarage Libraries\vh_altium_library\TH Diodes.SchLib
+DocumentPath=..\..\libraries\imported\silicon_valley_garage\vh_altium_library\IC CMOS 4xxx.SchLib
 AnnotationEnabled=1
 AnnotateStartValue=1
 AnnotationIndexControlEnabled=0
@@ -1161,7 +1161,7 @@ GenerateClassCluster=0
 DocumentUniqueId=
 
 [Document67]
-DocumentPath=..\Main Board\libraries\SiliconValleyGarage Libraries\vh_altium_library\TH Magnetics.PcbLib
+DocumentPath=..\..\libraries\imported\silicon_valley_garage\vh_altium_library\IC Analog.SchLib
 AnnotationEnabled=1
 AnnotateStartValue=1
 AnnotationIndexControlEnabled=0
@@ -1178,7 +1178,7 @@ GenerateClassCluster=0
 DocumentUniqueId=
 
 [Document68]
-DocumentPath=..\Main Board\libraries\SiliconValleyGarage Libraries\vh_altium_library\TH Magnetics.SchLib
+DocumentPath=..\..\libraries\imported\silicon_valley_garage\vh_altium_library\Heatsinks.SchLib
 AnnotationEnabled=1
 AnnotateStartValue=1
 AnnotationIndexControlEnabled=0
@@ -1195,7 +1195,7 @@ GenerateClassCluster=0
 DocumentUniqueId=
 
 [Document69]
-DocumentPath=..\Main Board\libraries\SiliconValleyGarage Libraries\vh_altium_library\TH Mechanical.SchLib
+DocumentPath=..\..\libraries\imported\silicon_valley_garage\vh_altium_library\Heatsinks.PcbLib
 AnnotationEnabled=1
 AnnotateStartValue=1
 AnnotationIndexControlEnabled=0
@@ -1209,10 +1209,10 @@ ClassGenCCAutoRoomEnabled=1
 ClassGenNCAutoScope=None
 DItemRevisionGUID=
 GenerateClassCluster=0
-DocumentUniqueId=
+DocumentUniqueId=KSJFSPVL
 
 [Document70]
-DocumentPath=..\Main Board\libraries\SiliconValleyGarage Libraries\vh_altium_library\TH Optoelectronics.PcbLib
+DocumentPath=..\..\libraries\imported\silicon_valley_garage\vh_altium_library\generic.SchLib
 AnnotationEnabled=1
 AnnotateStartValue=1
 AnnotationIndexControlEnabled=0
@@ -1229,7 +1229,7 @@ GenerateClassCluster=0
 DocumentUniqueId=
 
 [Document71]
-DocumentPath=..\Main Board\libraries\SiliconValleyGarage Libraries\vh_altium_library\TH Optoelectronics.SchLib
+DocumentPath=..\..\libraries\imported\silicon_valley_garage\vh_altium_library\generic.PcbLib
 AnnotationEnabled=1
 AnnotateStartValue=1
 AnnotationIndexControlEnabled=0
@@ -1243,10 +1243,10 @@ ClassGenCCAutoRoomEnabled=1
 ClassGenNCAutoScope=None
 DItemRevisionGUID=
 GenerateClassCluster=0
-DocumentUniqueId=
+DocumentUniqueId=KUJOVNSX
 
 [Document72]
-DocumentPath=..\Main Board\libraries\SiliconValleyGarage Libraries\vh_altium_library\TH Passive.PcbLib
+DocumentPath=..\..\libraries\imported\silicon_valley_garage\vh_altium_library\Crystals.SchLib
 AnnotationEnabled=1
 AnnotateStartValue=1
 AnnotationIndexControlEnabled=0
@@ -1263,7 +1263,7 @@ GenerateClassCluster=0
 DocumentUniqueId=
 
 [Document73]
-DocumentPath=..\Main Board\libraries\SiliconValleyGarage Libraries\vh_altium_library\TH Relays.PcbLib
+DocumentPath=..\..\libraries\imported\silicon_valley_garage\vh_altium_library\Connectors.SchLib
 AnnotationEnabled=1
 AnnotateStartValue=1
 AnnotationIndexControlEnabled=0
@@ -1280,7 +1280,7 @@ GenerateClassCluster=0
 DocumentUniqueId=
 
 [Document74]
-DocumentPath=..\Main Board\libraries\SiliconValleyGarage Libraries\vh_altium_library\TH Relays.SchLib
+DocumentPath=hub_board.OutJob
 AnnotationEnabled=1
 AnnotateStartValue=1
 AnnotationIndexControlEnabled=0
@@ -1297,7 +1297,7 @@ GenerateClassCluster=0
 DocumentUniqueId=
 
 [Document75]
-DocumentPath=..\Main Board\libraries\SiliconValleyGarage Libraries\vh_altium_library\TH Resistors.PcbLib
+DocumentPath=hub_board.PcbDoc
 AnnotationEnabled=1
 AnnotateStartValue=1
 AnnotationIndexControlEnabled=0
@@ -1311,16 +1311,16 @@ ClassGenCCAutoRoomEnabled=1
 ClassGenNCAutoScope=None
 DItemRevisionGUID=
 GenerateClassCluster=0
-DocumentUniqueId=
+DocumentUniqueId=OFXCNNDN
 
 [Document76]
-DocumentPath=..\Main Board\libraries\SiliconValleyGarage Libraries\vh_altium_library\TH Resistors.SchLib
+DocumentPath=hub_board.SchDoc
 AnnotationEnabled=1
 AnnotateStartValue=1
 AnnotationIndexControlEnabled=0
 AnnotateSuffix=
 AnnotateScope=All
-AnnotateOrder=-1
+AnnotateOrder=0
 DoLibraryUpdate=1
 DoDatabaseUpdate=1
 ClassGenCCAutoEnabled=1
@@ -1328,10 +1328,10 @@ ClassGenCCAutoRoomEnabled=1
 ClassGenNCAutoScope=None
 DItemRevisionGUID=
 GenerateClassCluster=0
-DocumentUniqueId=
+DocumentUniqueId=BAULWRRO
 
 [Document77]
-DocumentPath=..\Main Board\libraries\SiliconValleyGarage Libraries\vh_altium_library\TH Switches.PcbLib
+DocumentPath=..\..\libraries\custom\custom_components.PcbLib
 AnnotationEnabled=1
 AnnotateStartValue=1
 AnnotationIndexControlEnabled=0
@@ -1348,7 +1348,7 @@ GenerateClassCluster=0
 DocumentUniqueId=
 
 [Document78]
-DocumentPath=..\Main Board\libraries\SiliconValleyGarage Libraries\vh_altium_library\TH Transistors.PcbLib
+DocumentPath=..\..\libraries\custom\custom_components.SchLib
 AnnotationEnabled=1
 AnnotateStartValue=1
 AnnotationIndexControlEnabled=0
@@ -1365,7 +1365,7 @@ GenerateClassCluster=0
 DocumentUniqueId=
 
 [Document79]
-DocumentPath=..\Main Board\libraries\SiliconValleyGarage Libraries\vh_altium_library\TH Transistors.SchLib
+DocumentPath=..\..\libraries\imported\cpl\Octopart-CPL.PcbLib
 AnnotationEnabled=1
 AnnotateStartValue=1
 AnnotationIndexControlEnabled=0
@@ -1382,7 +1382,7 @@ GenerateClassCluster=0
 DocumentUniqueId=
 
 [Document80]
-DocumentPath=..\Main Board\libraries\altium vault\Analog Devices Temperature Sensors.IntLib
+DocumentPath=..\..\libraries\imported\silicon_valley_garage\vh_altium_library\Connectors.SchLib
 AnnotationEnabled=1
 AnnotateStartValue=1
 AnnotationIndexControlEnabled=0
@@ -1399,7 +1399,7 @@ GenerateClassCluster=0
 DocumentUniqueId=
 
 [Document81]
-DocumentPath=..\Main Board\libraries\altium vault\Microchip Linear.IntLib
+DocumentPath=..\..\libraries\imported\silicon_valley_garage\vh_altium_library\Crystals.SchLib
 AnnotationEnabled=1
 AnnotateStartValue=1
 AnnotationIndexControlEnabled=0
@@ -1416,7 +1416,7 @@ GenerateClassCluster=0
 DocumentUniqueId=
 
 [Document82]
-DocumentPath=..\Main Board\libraries\altium vault\TI Power Management Series Voltage Reference.IntLib
+DocumentPath=..\..\libraries\imported\silicon_valley_garage\vh_altium_library\generic.PcbLib
 AnnotationEnabled=1
 AnnotateStartValue=1
 AnnotationIndexControlEnabled=0
@@ -1433,7 +1433,7 @@ GenerateClassCluster=0
 DocumentUniqueId=
 
 [Document83]
-DocumentPath=..\Main Board\libraries\altium vault\TI Power Management Shunt Voltage Reference.IntLib
+DocumentPath=..\..\libraries\imported\silicon_valley_garage\vh_altium_library\generic.SchLib
 AnnotationEnabled=1
 AnnotateStartValue=1
 AnnotationIndexControlEnabled=0
@@ -1450,7 +1450,7 @@ GenerateClassCluster=0
 DocumentUniqueId=
 
 [Document84]
-DocumentPath=..\Main Board\libraries\custom_components.PcbLib
+DocumentPath=..\..\libraries\imported\silicon_valley_garage\vh_altium_library\Heatsinks.PcbLib
 AnnotationEnabled=1
 AnnotateStartValue=1
 AnnotationIndexControlEnabled=0
@@ -1467,7 +1467,7 @@ GenerateClassCluster=0
 DocumentUniqueId=
 
 [Document85]
-DocumentPath=..\Main Board\libraries\custom_components.SchLib
+DocumentPath=..\..\libraries\imported\silicon_valley_garage\vh_altium_library\Heatsinks.SchLib
 AnnotationEnabled=1
 AnnotateStartValue=1
 AnnotationIndexControlEnabled=0
@@ -1481,10 +1481,10 @@ ClassGenCCAutoRoomEnabled=1
 ClassGenNCAutoScope=None
 DItemRevisionGUID=
 GenerateClassCluster=0
-DocumentUniqueId=ODIHXBOR
+DocumentUniqueId=
 
 [Document86]
-DocumentPath=..\Main Board\libraries\altium-designer-addons project\Libs_RRutledge 2013-12-23-2\PBL - Batteries.SCHLIB
+DocumentPath=..\..\libraries\imported\silicon_valley_garage\vh_altium_library\IC Analog.SchLib
 AnnotationEnabled=1
 AnnotateStartValue=1
 AnnotationIndexControlEnabled=0
@@ -1501,7 +1501,7 @@ GenerateClassCluster=0
 DocumentUniqueId=
 
 [Document87]
-DocumentPath=..\Main Board\libraries\altium-designer-addons project\Libs_RRutledge 2013-12-23-2\PBL - Capacitors.SCHLIB
+DocumentPath=..\..\libraries\imported\silicon_valley_garage\vh_altium_library\IC CMOS 4xxx.SchLib
 AnnotationEnabled=1
 AnnotateStartValue=1
 AnnotationIndexControlEnabled=0
@@ -1518,7 +1518,7 @@ GenerateClassCluster=0
 DocumentUniqueId=
 
 [Document88]
-DocumentPath=..\Main Board\libraries\altium-designer-addons project\Libs_RRutledge 2013-12-23-2\PBL - Connectors.SCHLIB
+DocumentPath=..\..\libraries\imported\silicon_valley_garage\vh_altium_library\IC CPU.SchLib
 AnnotationEnabled=1
 AnnotateStartValue=1
 AnnotationIndexControlEnabled=0
@@ -1535,7 +1535,7 @@ GenerateClassCluster=0
 DocumentUniqueId=
 
 [Document89]
-DocumentPath=..\Main Board\libraries\altium-designer-addons project\Libs_RRutledge 2013-12-23-2\PBL - Diodes.SCHLIB
+DocumentPath=..\..\libraries\imported\silicon_valley_garage\vh_altium_library\IC Digital.SchLib
 AnnotationEnabled=1
 AnnotateStartValue=1
 AnnotationIndexControlEnabled=0
@@ -1552,7 +1552,7 @@ GenerateClassCluster=0
 DocumentUniqueId=
 
 [Document90]
-DocumentPath=..\Main Board\libraries\altium-designer-addons project\Libs_RRutledge 2013-12-23-2\PBL - Electromechanical.SCHLIB
+DocumentPath=..\..\libraries\imported\silicon_valley_garage\vh_altium_library\IC Interface.SchLib
 AnnotationEnabled=1
 AnnotateStartValue=1
 AnnotationIndexControlEnabled=0
@@ -1569,7 +1569,7 @@ GenerateClassCluster=0
 DocumentUniqueId=
 
 [Document91]
-DocumentPath=..\Main Board\libraries\altium-designer-addons project\Libs_RRutledge 2013-12-23-2\PBL - Fuses and Protection.SCHLIB
+DocumentPath=..\..\libraries\imported\silicon_valley_garage\vh_altium_library\IC Memories.SchLib
 AnnotationEnabled=1
 AnnotateStartValue=1
 AnnotationIndexControlEnabled=0
@@ -1586,7 +1586,7 @@ GenerateClassCluster=0
 DocumentUniqueId=
 
 [Document92]
-DocumentPath=..\Main Board\libraries\altium-designer-addons project\Libs_RRutledge 2013-12-23-2\PBL - Inductors.SCHLIB
+DocumentPath=..\..\libraries\imported\silicon_valley_garage\vh_altium_library\IC Power.SchLib
 AnnotationEnabled=1
 AnnotateStartValue=1
 AnnotationIndexControlEnabled=0
@@ -1603,7 +1603,7 @@ GenerateClassCluster=0
 DocumentUniqueId=
 
 [Document93]
-DocumentPath=..\Main Board\libraries\altium-designer-addons project\Libs_RRutledge 2013-12-23-2\PBL - Integrated Circuits.SCHLIB
+DocumentPath=..\..\libraries\imported\silicon_valley_garage\vh_altium_library\IC Regulators.SchLib
 AnnotationEnabled=1
 AnnotateStartValue=1
 AnnotationIndexControlEnabled=0
@@ -1620,7 +1620,7 @@ GenerateClassCluster=0
 DocumentUniqueId=
 
 [Document94]
-DocumentPath=..\Main Board\libraries\altium-designer-addons project\Libs_RRutledge 2013-12-23-2\PBL - Light Sources.SCHLIB
+DocumentPath=..\..\libraries\imported\silicon_valley_garage\vh_altium_library\IC Singlegate Logic.SchLib
 AnnotationEnabled=1
 AnnotateStartValue=1
 AnnotationIndexControlEnabled=0
@@ -1637,7 +1637,7 @@ GenerateClassCluster=0
 DocumentUniqueId=
 
 [Document95]
-DocumentPath=..\Main Board\libraries\altium-designer-addons project\Libs_RRutledge 2013-12-23-2\PBL - Mechanical.SCHLIB
+DocumentPath=..\..\libraries\imported\silicon_valley_garage\vh_altium_library\IC SPI.SchLib
 AnnotationEnabled=1
 AnnotateStartValue=1
 AnnotationIndexControlEnabled=0
@@ -1654,7 +1654,7 @@ GenerateClassCluster=0
 DocumentUniqueId=
 
 [Document96]
-DocumentPath=..\Main Board\libraries\altium-designer-addons project\Libs_RRutledge 2013-12-23-2\PBL - Optical Components.SCHLIB
+DocumentPath=..\..\libraries\imported\silicon_valley_garage\vh_altium_library\IC TTL 74xx.SchLib
 AnnotationEnabled=1
 AnnotateStartValue=1
 AnnotationIndexControlEnabled=0
@@ -1671,7 +1671,7 @@ GenerateClassCluster=0
 DocumentUniqueId=
 
 [Document97]
-DocumentPath=..\Main Board\libraries\altium-designer-addons project\Libs_RRutledge 2013-12-23-2\PBL - Pads and Jumpers.SCHLIB
+DocumentPath=..\..\libraries\imported\silicon_valley_garage\vh_altium_library\Incoming UNVERIFIED.SchLib
 AnnotationEnabled=1
 AnnotateStartValue=1
 AnnotationIndexControlEnabled=0
@@ -1688,7 +1688,7 @@ GenerateClassCluster=0
 DocumentUniqueId=
 
 [Document98]
-DocumentPath=..\Main Board\libraries\altium-designer-addons project\Libs_RRutledge 2013-12-23-2\PBL - Power Supplies.SCHLIB
+DocumentPath=..\..\libraries\imported\silicon_valley_garage\vh_altium_library\SMD Active.PcbLib
 AnnotationEnabled=1
 AnnotateStartValue=1
 AnnotationIndexControlEnabled=0
@@ -1705,7 +1705,7 @@ GenerateClassCluster=0
 DocumentUniqueId=
 
 [Document99]
-DocumentPath=..\Main Board\libraries\altium-designer-addons project\Libs_RRutledge 2013-12-23-2\PBL - Regulators.SCHLIB
+DocumentPath=..\..\libraries\imported\silicon_valley_garage\vh_altium_library\SMD Capacitors 0603.PcbLib
 AnnotationEnabled=1
 AnnotateStartValue=1
 AnnotationIndexControlEnabled=0
@@ -1722,7 +1722,7 @@ GenerateClassCluster=0
 DocumentUniqueId=
 
 [Document100]
-DocumentPath=..\Main Board\libraries\altium-designer-addons project\Libs_RRutledge 2013-12-23-2\PBL - Resistors.SCHLIB
+DocumentPath=..\..\libraries\imported\silicon_valley_garage\vh_altium_library\SMD Capacitors 0603.SchLib
 AnnotationEnabled=1
 AnnotateStartValue=1
 AnnotationIndexControlEnabled=0
@@ -1739,7 +1739,7 @@ GenerateClassCluster=0
 DocumentUniqueId=
 
 [Document101]
-DocumentPath=..\Main Board\libraries\altium-designer-addons project\Libs_RRutledge 2013-12-23-2\PBL - Resonators.SCHLIB
+DocumentPath=..\..\libraries\imported\silicon_valley_garage\vh_altium_library\SMD Capacitors 0805.PcbLib
 AnnotationEnabled=1
 AnnotateStartValue=1
 AnnotationIndexControlEnabled=0
@@ -1756,7 +1756,7 @@ GenerateClassCluster=0
 DocumentUniqueId=
 
 [Document102]
-DocumentPath=..\Main Board\libraries\altium-designer-addons project\Libs_RRutledge 2013-12-23-2\PBL - SMD Packages.PcbLib
+DocumentPath=..\..\libraries\imported\silicon_valley_garage\vh_altium_library\SMD Capacitors 0805.SchLib
 AnnotationEnabled=1
 AnnotateStartValue=1
 AnnotationIndexControlEnabled=0
@@ -1773,7 +1773,7 @@ GenerateClassCluster=0
 DocumentUniqueId=
 
 [Document103]
-DocumentPath=..\Main Board\libraries\altium-designer-addons project\Libs_RRutledge 2013-12-23-2\PBL - Special.PcbLib
+DocumentPath=..\..\libraries\imported\silicon_valley_garage\vh_altium_library\SMD Capacitors 1206.SchLib
 AnnotationEnabled=1
 AnnotateStartValue=1
 AnnotationIndexControlEnabled=0
@@ -1790,7 +1790,7 @@ GenerateClassCluster=0
 DocumentUniqueId=
 
 [Document104]
-DocumentPath=..\Main Board\libraries\altium-designer-addons project\Libs_RRutledge 2013-12-23-2\PBL - Switches.SCHLIB
+DocumentPath=..\..\libraries\imported\silicon_valley_garage\vh_altium_library\SMD Capacitors 1210.SchLib
 AnnotationEnabled=1
 AnnotateStartValue=1
 AnnotationIndexControlEnabled=0
@@ -1807,7 +1807,7 @@ GenerateClassCluster=0
 DocumentUniqueId=
 
 [Document105]
-DocumentPath=..\Main Board\libraries\altium-designer-addons project\Libs_RRutledge 2013-12-23-2\PBL - Test Points.SCHLIB
+DocumentPath=..\..\libraries\imported\silicon_valley_garage\vh_altium_library\SMD Capacitors Electrolytic.PcbLib
 AnnotationEnabled=1
 AnnotateStartValue=1
 AnnotationIndexControlEnabled=0
@@ -1824,7 +1824,7 @@ GenerateClassCluster=0
 DocumentUniqueId=
 
 [Document106]
-DocumentPath=..\Main Board\libraries\altium-designer-addons project\Libs_RRutledge 2013-12-23-2\PBL - THD Packages.PcbLib
+DocumentPath=..\..\libraries\imported\silicon_valley_garage\vh_altium_library\SMD Capacitors Electrolytic.SchLib
 AnnotationEnabled=1
 AnnotateStartValue=1
 AnnotationIndexControlEnabled=0
@@ -1841,7 +1841,7 @@ GenerateClassCluster=0
 DocumentUniqueId=
 
 [Document107]
-DocumentPath=..\Main Board\libraries\altium-designer-addons project\Libs_RRutledge 2013-12-23-2\PBL - Transistors.SCHLIB
+DocumentPath=..\..\libraries\imported\silicon_valley_garage\vh_altium_library\SMD Capacitors Other.PcbLib
 AnnotationEnabled=1
 AnnotateStartValue=1
 AnnotationIndexControlEnabled=0
@@ -1858,7 +1858,7 @@ GenerateClassCluster=0
 DocumentUniqueId=
 
 [Document108]
-DocumentPath=..\Main Board\libraries\SiliconValleyGarage Libraries\vh_altium_library.intLib
+DocumentPath=..\..\libraries\imported\silicon_valley_garage\vh_altium_library\SMD Capacitors Other.SchLib
 AnnotationEnabled=1
 AnnotateStartValue=1
 AnnotationIndexControlEnabled=0
@@ -1874,9 +1874,1756 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=
 
-[GeneratedDocument1]
-DocumentPath=Project Outputs for hub_board\Design Rule Check - hub_board.html
+[Document109]
+DocumentPath=..\..\libraries\imported\silicon_valley_garage\vh_altium_library\SMD Connectors.PcbLib
+AnnotationEnabled=1
+AnnotateStartValue=1
+AnnotationIndexControlEnabled=0
+AnnotateSuffix=
+AnnotateScope=All
+AnnotateOrder=-1
+DoLibraryUpdate=1
+DoDatabaseUpdate=1
+ClassGenCCAutoEnabled=1
+ClassGenCCAutoRoomEnabled=1
+ClassGenNCAutoScope=None
 DItemRevisionGUID=
+GenerateClassCluster=0
+DocumentUniqueId=
+
+[Document110]
+DocumentPath=..\..\libraries\imported\silicon_valley_garage\vh_altium_library\SMD Connectors.SchLib
+AnnotationEnabled=1
+AnnotateStartValue=1
+AnnotationIndexControlEnabled=0
+AnnotateSuffix=
+AnnotateScope=All
+AnnotateOrder=-1
+DoLibraryUpdate=1
+DoDatabaseUpdate=1
+ClassGenCCAutoEnabled=1
+ClassGenCCAutoRoomEnabled=1
+ClassGenNCAutoScope=None
+DItemRevisionGUID=
+GenerateClassCluster=0
+DocumentUniqueId=
+
+[Document111]
+DocumentPath=..\..\libraries\imported\silicon_valley_garage\vh_altium_library\SMD Diodes.PcbLib
+AnnotationEnabled=1
+AnnotateStartValue=1
+AnnotationIndexControlEnabled=0
+AnnotateSuffix=
+AnnotateScope=All
+AnnotateOrder=-1
+DoLibraryUpdate=1
+DoDatabaseUpdate=1
+ClassGenCCAutoEnabled=1
+ClassGenCCAutoRoomEnabled=1
+ClassGenNCAutoScope=None
+DItemRevisionGUID=
+GenerateClassCluster=0
+DocumentUniqueId=
+
+[Document112]
+DocumentPath=..\..\libraries\imported\silicon_valley_garage\vh_altium_library\SMD Diodes.SchLib
+AnnotationEnabled=1
+AnnotateStartValue=1
+AnnotationIndexControlEnabled=0
+AnnotateSuffix=
+AnnotateScope=All
+AnnotateOrder=-1
+DoLibraryUpdate=1
+DoDatabaseUpdate=1
+ClassGenCCAutoEnabled=1
+ClassGenCCAutoRoomEnabled=1
+ClassGenNCAutoScope=None
+DItemRevisionGUID=
+GenerateClassCluster=0
+DocumentUniqueId=
+
+[Document113]
+DocumentPath=..\..\libraries\imported\silicon_valley_garage\vh_altium_library\SMD Magnetics.PcbLib
+AnnotationEnabled=1
+AnnotateStartValue=1
+AnnotationIndexControlEnabled=0
+AnnotateSuffix=
+AnnotateScope=All
+AnnotateOrder=-1
+DoLibraryUpdate=1
+DoDatabaseUpdate=1
+ClassGenCCAutoEnabled=1
+ClassGenCCAutoRoomEnabled=1
+ClassGenNCAutoScope=None
+DItemRevisionGUID=
+GenerateClassCluster=0
+DocumentUniqueId=
+
+[Document114]
+DocumentPath=..\..\libraries\imported\silicon_valley_garage\vh_altium_library\SMD Magnetics.SchLib
+AnnotationEnabled=1
+AnnotateStartValue=1
+AnnotationIndexControlEnabled=0
+AnnotateSuffix=
+AnnotateScope=All
+AnnotateOrder=-1
+DoLibraryUpdate=1
+DoDatabaseUpdate=1
+ClassGenCCAutoEnabled=1
+ClassGenCCAutoRoomEnabled=1
+ClassGenNCAutoScope=None
+DItemRevisionGUID=
+GenerateClassCluster=0
+DocumentUniqueId=
+
+[Document115]
+DocumentPath=..\..\libraries\imported\silicon_valley_garage\vh_altium_library\SMD Mechanical.PcbLib
+AnnotationEnabled=1
+AnnotateStartValue=1
+AnnotationIndexControlEnabled=0
+AnnotateSuffix=
+AnnotateScope=All
+AnnotateOrder=-1
+DoLibraryUpdate=1
+DoDatabaseUpdate=1
+ClassGenCCAutoEnabled=1
+ClassGenCCAutoRoomEnabled=1
+ClassGenNCAutoScope=None
+DItemRevisionGUID=
+GenerateClassCluster=0
+DocumentUniqueId=
+
+[Document116]
+DocumentPath=..\..\libraries\imported\silicon_valley_garage\vh_altium_library\SMD Mechanical.SchLib
+AnnotationEnabled=1
+AnnotateStartValue=1
+AnnotationIndexControlEnabled=0
+AnnotateSuffix=
+AnnotateScope=All
+AnnotateOrder=-1
+DoLibraryUpdate=1
+DoDatabaseUpdate=1
+ClassGenCCAutoEnabled=1
+ClassGenCCAutoRoomEnabled=1
+ClassGenNCAutoScope=None
+DItemRevisionGUID=
+GenerateClassCluster=0
+DocumentUniqueId=
+
+[Document117]
+DocumentPath=..\..\libraries\imported\silicon_valley_garage\vh_altium_library\SMD Optoelectronics.PcbLib
+AnnotationEnabled=1
+AnnotateStartValue=1
+AnnotationIndexControlEnabled=0
+AnnotateSuffix=
+AnnotateScope=All
+AnnotateOrder=-1
+DoLibraryUpdate=1
+DoDatabaseUpdate=1
+ClassGenCCAutoEnabled=1
+ClassGenCCAutoRoomEnabled=1
+ClassGenNCAutoScope=None
+DItemRevisionGUID=
+GenerateClassCluster=0
+DocumentUniqueId=
+
+[Document118]
+DocumentPath=..\..\libraries\imported\silicon_valley_garage\vh_altium_library\SMD Optoelectronics.SchLib
+AnnotationEnabled=1
+AnnotateStartValue=1
+AnnotationIndexControlEnabled=0
+AnnotateSuffix=
+AnnotateScope=All
+AnnotateOrder=-1
+DoLibraryUpdate=1
+DoDatabaseUpdate=1
+ClassGenCCAutoEnabled=1
+ClassGenCCAutoRoomEnabled=1
+ClassGenNCAutoScope=None
+DItemRevisionGUID=
+GenerateClassCluster=0
+DocumentUniqueId=
+
+[Document119]
+DocumentPath=..\..\libraries\imported\silicon_valley_garage\vh_altium_library\SMD Passive.PcbLib
+AnnotationEnabled=1
+AnnotateStartValue=1
+AnnotationIndexControlEnabled=0
+AnnotateSuffix=
+AnnotateScope=All
+AnnotateOrder=-1
+DoLibraryUpdate=1
+DoDatabaseUpdate=1
+ClassGenCCAutoEnabled=1
+ClassGenCCAutoRoomEnabled=1
+ClassGenNCAutoScope=None
+DItemRevisionGUID=
+GenerateClassCluster=0
+DocumentUniqueId=
+
+[Document120]
+DocumentPath=..\..\libraries\imported\silicon_valley_garage\vh_altium_library\SMD Resistors 0603.PcbLib
+AnnotationEnabled=1
+AnnotateStartValue=1
+AnnotationIndexControlEnabled=0
+AnnotateSuffix=
+AnnotateScope=All
+AnnotateOrder=-1
+DoLibraryUpdate=1
+DoDatabaseUpdate=1
+ClassGenCCAutoEnabled=1
+ClassGenCCAutoRoomEnabled=1
+ClassGenNCAutoScope=None
+DItemRevisionGUID=
+GenerateClassCluster=0
+DocumentUniqueId=
+
+[Document121]
+DocumentPath=..\..\libraries\imported\silicon_valley_garage\vh_altium_library\SMD Resistors 0603.SchLib
+AnnotationEnabled=1
+AnnotateStartValue=1
+AnnotationIndexControlEnabled=0
+AnnotateSuffix=
+AnnotateScope=All
+AnnotateOrder=-1
+DoLibraryUpdate=1
+DoDatabaseUpdate=1
+ClassGenCCAutoEnabled=1
+ClassGenCCAutoRoomEnabled=1
+ClassGenNCAutoScope=None
+DItemRevisionGUID=
+GenerateClassCluster=0
+DocumentUniqueId=
+
+[Document122]
+DocumentPath=..\..\libraries\imported\silicon_valley_garage\vh_altium_library\SMD Resistors 0805.PcbLib
+AnnotationEnabled=1
+AnnotateStartValue=1
+AnnotationIndexControlEnabled=0
+AnnotateSuffix=
+AnnotateScope=All
+AnnotateOrder=-1
+DoLibraryUpdate=1
+DoDatabaseUpdate=1
+ClassGenCCAutoEnabled=1
+ClassGenCCAutoRoomEnabled=1
+ClassGenNCAutoScope=None
+DItemRevisionGUID=
+GenerateClassCluster=0
+DocumentUniqueId=
+
+[Document123]
+DocumentPath=..\..\libraries\imported\silicon_valley_garage\vh_altium_library\SMD Resistors 0805.SchLib
+AnnotationEnabled=1
+AnnotateStartValue=1
+AnnotationIndexControlEnabled=0
+AnnotateSuffix=
+AnnotateScope=All
+AnnotateOrder=-1
+DoLibraryUpdate=1
+DoDatabaseUpdate=1
+ClassGenCCAutoEnabled=1
+ClassGenCCAutoRoomEnabled=1
+ClassGenNCAutoScope=None
+DItemRevisionGUID=
+GenerateClassCluster=0
+DocumentUniqueId=
+
+[Document124]
+DocumentPath=..\..\libraries\imported\silicon_valley_garage\vh_altium_library\SMD Resistors.PcbLib
+AnnotationEnabled=1
+AnnotateStartValue=1
+AnnotationIndexControlEnabled=0
+AnnotateSuffix=
+AnnotateScope=All
+AnnotateOrder=-1
+DoLibraryUpdate=1
+DoDatabaseUpdate=1
+ClassGenCCAutoEnabled=1
+ClassGenCCAutoRoomEnabled=1
+ClassGenNCAutoScope=None
+DItemRevisionGUID=
+GenerateClassCluster=0
+DocumentUniqueId=
+
+[Document125]
+DocumentPath=..\..\libraries\imported\silicon_valley_garage\vh_altium_library\SMD Resistors.SchLib
+AnnotationEnabled=1
+AnnotateStartValue=1
+AnnotationIndexControlEnabled=0
+AnnotateSuffix=
+AnnotateScope=All
+AnnotateOrder=-1
+DoLibraryUpdate=1
+DoDatabaseUpdate=1
+ClassGenCCAutoEnabled=1
+ClassGenCCAutoRoomEnabled=1
+ClassGenNCAutoScope=None
+DItemRevisionGUID=
+GenerateClassCluster=0
+DocumentUniqueId=
+
+[Document126]
+DocumentPath=..\..\libraries\imported\silicon_valley_garage\vh_altium_library\SMD Switches.PcbLib
+AnnotationEnabled=1
+AnnotateStartValue=1
+AnnotationIndexControlEnabled=0
+AnnotateSuffix=
+AnnotateScope=All
+AnnotateOrder=-1
+DoLibraryUpdate=1
+DoDatabaseUpdate=1
+ClassGenCCAutoEnabled=1
+ClassGenCCAutoRoomEnabled=1
+ClassGenNCAutoScope=None
+DItemRevisionGUID=
+GenerateClassCluster=0
+DocumentUniqueId=
+
+[Document127]
+DocumentPath=..\..\libraries\imported\silicon_valley_garage\vh_altium_library\SMD Transistors.PcbLib
+AnnotationEnabled=1
+AnnotateStartValue=1
+AnnotationIndexControlEnabled=0
+AnnotateSuffix=
+AnnotateScope=All
+AnnotateOrder=-1
+DoLibraryUpdate=1
+DoDatabaseUpdate=1
+ClassGenCCAutoEnabled=1
+ClassGenCCAutoRoomEnabled=1
+ClassGenNCAutoScope=None
+DItemRevisionGUID=
+GenerateClassCluster=0
+DocumentUniqueId=
+
+[Document128]
+DocumentPath=..\..\libraries\imported\silicon_valley_garage\vh_altium_library\SMD Transistors.SchLib
+AnnotationEnabled=1
+AnnotateStartValue=1
+AnnotationIndexControlEnabled=0
+AnnotateSuffix=
+AnnotateScope=All
+AnnotateOrder=-1
+DoLibraryUpdate=1
+DoDatabaseUpdate=1
+ClassGenCCAutoEnabled=1
+ClassGenCCAutoRoomEnabled=1
+ClassGenNCAutoScope=None
+DItemRevisionGUID=
+GenerateClassCluster=0
+DocumentUniqueId=
+
+[Document129]
+DocumentPath=..\..\libraries\imported\silicon_valley_garage\vh_altium_library\SOCKETS.SchLib
+AnnotationEnabled=1
+AnnotateStartValue=1
+AnnotationIndexControlEnabled=0
+AnnotateSuffix=
+AnnotateScope=All
+AnnotateOrder=-1
+DoLibraryUpdate=1
+DoDatabaseUpdate=1
+ClassGenCCAutoEnabled=1
+ClassGenCCAutoRoomEnabled=1
+ClassGenNCAutoScope=None
+DItemRevisionGUID=
+GenerateClassCluster=0
+DocumentUniqueId=
+
+[Document130]
+DocumentPath=..\..\libraries\imported\silicon_valley_garage\vh_altium_library\SPI.SchLib
+AnnotationEnabled=1
+AnnotateStartValue=1
+AnnotationIndexControlEnabled=0
+AnnotateSuffix=
+AnnotateScope=All
+AnnotateOrder=-1
+DoLibraryUpdate=1
+DoDatabaseUpdate=1
+ClassGenCCAutoEnabled=1
+ClassGenCCAutoRoomEnabled=1
+ClassGenNCAutoScope=None
+DItemRevisionGUID=
+GenerateClassCluster=0
+DocumentUniqueId=
+
+[Document131]
+DocumentPath=..\..\libraries\imported\silicon_valley_garage\vh_altium_library\SPINEW.SchLib
+AnnotationEnabled=1
+AnnotateStartValue=1
+AnnotationIndexControlEnabled=0
+AnnotateSuffix=
+AnnotateScope=All
+AnnotateOrder=-1
+DoLibraryUpdate=1
+DoDatabaseUpdate=1
+ClassGenCCAutoEnabled=1
+ClassGenCCAutoRoomEnabled=1
+ClassGenNCAutoScope=None
+DItemRevisionGUID=
+GenerateClassCluster=0
+DocumentUniqueId=
+
+[Document132]
+DocumentPath=..\..\libraries\imported\silicon_valley_garage\vh_altium_library\Switches.SchLib
+AnnotationEnabled=1
+AnnotateStartValue=1
+AnnotationIndexControlEnabled=0
+AnnotateSuffix=
+AnnotateScope=All
+AnnotateOrder=-1
+DoLibraryUpdate=1
+DoDatabaseUpdate=1
+ClassGenCCAutoEnabled=1
+ClassGenCCAutoRoomEnabled=1
+ClassGenNCAutoScope=None
+DItemRevisionGUID=
+GenerateClassCluster=0
+DocumentUniqueId=
+
+[Document133]
+DocumentPath=..\..\libraries\imported\silicon_valley_garage\vh_altium_library\TH Active.PcbLib
+AnnotationEnabled=1
+AnnotateStartValue=1
+AnnotationIndexControlEnabled=0
+AnnotateSuffix=
+AnnotateScope=All
+AnnotateOrder=-1
+DoLibraryUpdate=1
+DoDatabaseUpdate=1
+ClassGenCCAutoEnabled=1
+ClassGenCCAutoRoomEnabled=1
+ClassGenNCAutoScope=None
+DItemRevisionGUID=
+GenerateClassCluster=0
+DocumentUniqueId=
+
+[Document134]
+DocumentPath=..\..\libraries\imported\silicon_valley_garage\vh_altium_library\TH Capacitors.PcbLib
+AnnotationEnabled=1
+AnnotateStartValue=1
+AnnotationIndexControlEnabled=0
+AnnotateSuffix=
+AnnotateScope=All
+AnnotateOrder=-1
+DoLibraryUpdate=1
+DoDatabaseUpdate=1
+ClassGenCCAutoEnabled=1
+ClassGenCCAutoRoomEnabled=1
+ClassGenNCAutoScope=None
+DItemRevisionGUID=
+GenerateClassCluster=0
+DocumentUniqueId=
+
+[Document135]
+DocumentPath=..\..\libraries\imported\silicon_valley_garage\vh_altium_library\TH Capacitors.SchLib
+AnnotationEnabled=1
+AnnotateStartValue=1
+AnnotationIndexControlEnabled=0
+AnnotateSuffix=
+AnnotateScope=All
+AnnotateOrder=-1
+DoLibraryUpdate=1
+DoDatabaseUpdate=1
+ClassGenCCAutoEnabled=1
+ClassGenCCAutoRoomEnabled=1
+ClassGenNCAutoScope=None
+DItemRevisionGUID=
+GenerateClassCluster=0
+DocumentUniqueId=
+
+[Document136]
+DocumentPath=..\..\libraries\imported\silicon_valley_garage\vh_altium_library\TH Connectors.PcbLib
+AnnotationEnabled=1
+AnnotateStartValue=1
+AnnotationIndexControlEnabled=0
+AnnotateSuffix=
+AnnotateScope=All
+AnnotateOrder=-1
+DoLibraryUpdate=1
+DoDatabaseUpdate=1
+ClassGenCCAutoEnabled=1
+ClassGenCCAutoRoomEnabled=1
+ClassGenNCAutoScope=None
+DItemRevisionGUID=
+GenerateClassCluster=0
+DocumentUniqueId=
+
+[Document137]
+DocumentPath=..\..\libraries\imported\silicon_valley_garage\vh_altium_library\TH Connectors.SchLib
+AnnotationEnabled=1
+AnnotateStartValue=1
+AnnotationIndexControlEnabled=0
+AnnotateSuffix=
+AnnotateScope=All
+AnnotateOrder=-1
+DoLibraryUpdate=1
+DoDatabaseUpdate=1
+ClassGenCCAutoEnabled=1
+ClassGenCCAutoRoomEnabled=1
+ClassGenNCAutoScope=None
+DItemRevisionGUID=
+GenerateClassCluster=0
+DocumentUniqueId=
+
+[Document138]
+DocumentPath=..\..\libraries\imported\silicon_valley_garage\vh_altium_library\TH Diodes.PcbLib
+AnnotationEnabled=1
+AnnotateStartValue=1
+AnnotationIndexControlEnabled=0
+AnnotateSuffix=
+AnnotateScope=All
+AnnotateOrder=-1
+DoLibraryUpdate=1
+DoDatabaseUpdate=1
+ClassGenCCAutoEnabled=1
+ClassGenCCAutoRoomEnabled=1
+ClassGenNCAutoScope=None
+DItemRevisionGUID=
+GenerateClassCluster=0
+DocumentUniqueId=
+
+[Document139]
+DocumentPath=..\..\libraries\imported\silicon_valley_garage\vh_altium_library\TH Diodes.SchLib
+AnnotationEnabled=1
+AnnotateStartValue=1
+AnnotationIndexControlEnabled=0
+AnnotateSuffix=
+AnnotateScope=All
+AnnotateOrder=-1
+DoLibraryUpdate=1
+DoDatabaseUpdate=1
+ClassGenCCAutoEnabled=1
+ClassGenCCAutoRoomEnabled=1
+ClassGenNCAutoScope=None
+DItemRevisionGUID=
+GenerateClassCluster=0
+DocumentUniqueId=
+
+[Document140]
+DocumentPath=..\..\libraries\imported\silicon_valley_garage\vh_altium_library\TH Magnetics.PcbLib
+AnnotationEnabled=1
+AnnotateStartValue=1
+AnnotationIndexControlEnabled=0
+AnnotateSuffix=
+AnnotateScope=All
+AnnotateOrder=-1
+DoLibraryUpdate=1
+DoDatabaseUpdate=1
+ClassGenCCAutoEnabled=1
+ClassGenCCAutoRoomEnabled=1
+ClassGenNCAutoScope=None
+DItemRevisionGUID=
+GenerateClassCluster=0
+DocumentUniqueId=
+
+[Document141]
+DocumentPath=..\..\libraries\imported\silicon_valley_garage\vh_altium_library\TH Magnetics.SchLib
+AnnotationEnabled=1
+AnnotateStartValue=1
+AnnotationIndexControlEnabled=0
+AnnotateSuffix=
+AnnotateScope=All
+AnnotateOrder=-1
+DoLibraryUpdate=1
+DoDatabaseUpdate=1
+ClassGenCCAutoEnabled=1
+ClassGenCCAutoRoomEnabled=1
+ClassGenNCAutoScope=None
+DItemRevisionGUID=
+GenerateClassCluster=0
+DocumentUniqueId=
+
+[Document142]
+DocumentPath=..\..\libraries\imported\silicon_valley_garage\vh_altium_library\TH Mechanical.SchLib
+AnnotationEnabled=1
+AnnotateStartValue=1
+AnnotationIndexControlEnabled=0
+AnnotateSuffix=
+AnnotateScope=All
+AnnotateOrder=-1
+DoLibraryUpdate=1
+DoDatabaseUpdate=1
+ClassGenCCAutoEnabled=1
+ClassGenCCAutoRoomEnabled=1
+ClassGenNCAutoScope=None
+DItemRevisionGUID=
+GenerateClassCluster=0
+DocumentUniqueId=
+
+[Document143]
+DocumentPath=..\..\libraries\imported\silicon_valley_garage\vh_altium_library\TH Optoelectronics.PcbLib
+AnnotationEnabled=1
+AnnotateStartValue=1
+AnnotationIndexControlEnabled=0
+AnnotateSuffix=
+AnnotateScope=All
+AnnotateOrder=-1
+DoLibraryUpdate=1
+DoDatabaseUpdate=1
+ClassGenCCAutoEnabled=1
+ClassGenCCAutoRoomEnabled=1
+ClassGenNCAutoScope=None
+DItemRevisionGUID=
+GenerateClassCluster=0
+DocumentUniqueId=
+
+[Document144]
+DocumentPath=..\..\libraries\imported\silicon_valley_garage\vh_altium_library\TH Optoelectronics.SchLib
+AnnotationEnabled=1
+AnnotateStartValue=1
+AnnotationIndexControlEnabled=0
+AnnotateSuffix=
+AnnotateScope=All
+AnnotateOrder=-1
+DoLibraryUpdate=1
+DoDatabaseUpdate=1
+ClassGenCCAutoEnabled=1
+ClassGenCCAutoRoomEnabled=1
+ClassGenNCAutoScope=None
+DItemRevisionGUID=
+GenerateClassCluster=0
+DocumentUniqueId=
+
+[Document145]
+DocumentPath=..\..\libraries\imported\silicon_valley_garage\vh_altium_library\TH Passive.PcbLib
+AnnotationEnabled=1
+AnnotateStartValue=1
+AnnotationIndexControlEnabled=0
+AnnotateSuffix=
+AnnotateScope=All
+AnnotateOrder=-1
+DoLibraryUpdate=1
+DoDatabaseUpdate=1
+ClassGenCCAutoEnabled=1
+ClassGenCCAutoRoomEnabled=1
+ClassGenNCAutoScope=None
+DItemRevisionGUID=
+GenerateClassCluster=0
+DocumentUniqueId=
+
+[Document146]
+DocumentPath=..\..\libraries\imported\silicon_valley_garage\vh_altium_library\TH Relays.PcbLib
+AnnotationEnabled=1
+AnnotateStartValue=1
+AnnotationIndexControlEnabled=0
+AnnotateSuffix=
+AnnotateScope=All
+AnnotateOrder=-1
+DoLibraryUpdate=1
+DoDatabaseUpdate=1
+ClassGenCCAutoEnabled=1
+ClassGenCCAutoRoomEnabled=1
+ClassGenNCAutoScope=None
+DItemRevisionGUID=
+GenerateClassCluster=0
+DocumentUniqueId=
+
+[Document147]
+DocumentPath=..\..\libraries\imported\silicon_valley_garage\vh_altium_library\TH Relays.SchLib
+AnnotationEnabled=1
+AnnotateStartValue=1
+AnnotationIndexControlEnabled=0
+AnnotateSuffix=
+AnnotateScope=All
+AnnotateOrder=-1
+DoLibraryUpdate=1
+DoDatabaseUpdate=1
+ClassGenCCAutoEnabled=1
+ClassGenCCAutoRoomEnabled=1
+ClassGenNCAutoScope=None
+DItemRevisionGUID=
+GenerateClassCluster=0
+DocumentUniqueId=
+
+[Document148]
+DocumentPath=..\..\libraries\imported\silicon_valley_garage\vh_altium_library\TH Resistors.PcbLib
+AnnotationEnabled=1
+AnnotateStartValue=1
+AnnotationIndexControlEnabled=0
+AnnotateSuffix=
+AnnotateScope=All
+AnnotateOrder=-1
+DoLibraryUpdate=1
+DoDatabaseUpdate=1
+ClassGenCCAutoEnabled=1
+ClassGenCCAutoRoomEnabled=1
+ClassGenNCAutoScope=None
+DItemRevisionGUID=
+GenerateClassCluster=0
+DocumentUniqueId=
+
+[Document149]
+DocumentPath=..\..\libraries\imported\silicon_valley_garage\vh_altium_library\TH Resistors.SchLib
+AnnotationEnabled=1
+AnnotateStartValue=1
+AnnotationIndexControlEnabled=0
+AnnotateSuffix=
+AnnotateScope=All
+AnnotateOrder=-1
+DoLibraryUpdate=1
+DoDatabaseUpdate=1
+ClassGenCCAutoEnabled=1
+ClassGenCCAutoRoomEnabled=1
+ClassGenNCAutoScope=None
+DItemRevisionGUID=
+GenerateClassCluster=0
+DocumentUniqueId=
+
+[Document150]
+DocumentPath=..\..\libraries\imported\silicon_valley_garage\vh_altium_library\TH Switches.PcbLib
+AnnotationEnabled=1
+AnnotateStartValue=1
+AnnotationIndexControlEnabled=0
+AnnotateSuffix=
+AnnotateScope=All
+AnnotateOrder=-1
+DoLibraryUpdate=1
+DoDatabaseUpdate=1
+ClassGenCCAutoEnabled=1
+ClassGenCCAutoRoomEnabled=1
+ClassGenNCAutoScope=None
+DItemRevisionGUID=
+GenerateClassCluster=0
+DocumentUniqueId=
+
+[Document151]
+DocumentPath=..\..\libraries\imported\silicon_valley_garage\vh_altium_library\TH Transistors.PcbLib
+AnnotationEnabled=1
+AnnotateStartValue=1
+AnnotationIndexControlEnabled=0
+AnnotateSuffix=
+AnnotateScope=All
+AnnotateOrder=-1
+DoLibraryUpdate=1
+DoDatabaseUpdate=1
+ClassGenCCAutoEnabled=1
+ClassGenCCAutoRoomEnabled=1
+ClassGenNCAutoScope=None
+DItemRevisionGUID=
+GenerateClassCluster=0
+DocumentUniqueId=
+
+[Document152]
+DocumentPath=..\..\libraries\imported\silicon_valley_garage\vh_altium_library\TH Transistors.SchLib
+AnnotationEnabled=1
+AnnotateStartValue=1
+AnnotationIndexControlEnabled=0
+AnnotateSuffix=
+AnnotateScope=All
+AnnotateOrder=-1
+DoLibraryUpdate=1
+DoDatabaseUpdate=1
+ClassGenCCAutoEnabled=1
+ClassGenCCAutoRoomEnabled=1
+ClassGenNCAutoScope=None
+DItemRevisionGUID=
+GenerateClassCluster=0
+DocumentUniqueId=
+
+[Document153]
+DocumentPath=..\..\libraries\imported\vault\National Semiconductor Temperature Sensor.IntLib
+AnnotationEnabled=1
+AnnotateStartValue=1
+AnnotationIndexControlEnabled=0
+AnnotateSuffix=
+AnnotateScope=All
+AnnotateOrder=-1
+DoLibraryUpdate=1
+DoDatabaseUpdate=1
+ClassGenCCAutoEnabled=1
+ClassGenCCAutoRoomEnabled=1
+ClassGenNCAutoScope=None
+DItemRevisionGUID=
+GenerateClassCluster=0
+DocumentUniqueId=
+
+[Document154]
+DocumentPath=..\..\libraries\imported\vault\Motorola\Motorola Sensor Temperature Sensor.IntLib
+AnnotationEnabled=1
+AnnotateStartValue=1
+AnnotationIndexControlEnabled=0
+AnnotateSuffix=
+AnnotateScope=All
+AnnotateOrder=-1
+DoLibraryUpdate=1
+DoDatabaseUpdate=1
+ClassGenCCAutoEnabled=1
+ClassGenCCAutoRoomEnabled=1
+ClassGenNCAutoScope=None
+DItemRevisionGUID=
+GenerateClassCluster=0
+DocumentUniqueId=
+
+[Document155]
+DocumentPath=..\..\libraries\imported\vault\Motorola\Motorola Converter Temperature to Voltage.IntLib
+AnnotationEnabled=1
+AnnotateStartValue=1
+AnnotationIndexControlEnabled=0
+AnnotateSuffix=
+AnnotateScope=All
+AnnotateOrder=-1
+DoLibraryUpdate=1
+DoDatabaseUpdate=1
+ClassGenCCAutoEnabled=1
+ClassGenCCAutoRoomEnabled=1
+ClassGenNCAutoScope=None
+DItemRevisionGUID=
+GenerateClassCluster=0
+DocumentUniqueId=
+
+[Document156]
+DocumentPath=..\..\libraries\imported\vault\Dallas Semiconductor\Dallas Sensor Temperature Sensor.IntLib
+AnnotationEnabled=1
+AnnotateStartValue=1
+AnnotationIndexControlEnabled=0
+AnnotateSuffix=
+AnnotateScope=All
+AnnotateOrder=-1
+DoLibraryUpdate=1
+DoDatabaseUpdate=1
+ClassGenCCAutoEnabled=1
+ClassGenCCAutoRoomEnabled=1
+ClassGenNCAutoScope=None
+DItemRevisionGUID=
+GenerateClassCluster=0
+DocumentUniqueId=
+
+[Document157]
+DocumentPath=..\..\libraries\imported\vault\Analog Devices Temperature Sensors.IntLib
+AnnotationEnabled=1
+AnnotateStartValue=1
+AnnotationIndexControlEnabled=0
+AnnotateSuffix=
+AnnotateScope=All
+AnnotateOrder=-1
+DoLibraryUpdate=1
+DoDatabaseUpdate=1
+ClassGenCCAutoEnabled=1
+ClassGenCCAutoRoomEnabled=1
+ClassGenNCAutoScope=None
+DItemRevisionGUID=
+GenerateClassCluster=0
+DocumentUniqueId=
+
+[Document158]
+DocumentPath=..\..\libraries\imported\vault\Microchip Linear.IntLib
+AnnotationEnabled=1
+AnnotateStartValue=1
+AnnotationIndexControlEnabled=0
+AnnotateSuffix=
+AnnotateScope=All
+AnnotateOrder=-1
+DoLibraryUpdate=1
+DoDatabaseUpdate=1
+ClassGenCCAutoEnabled=1
+ClassGenCCAutoRoomEnabled=1
+ClassGenNCAutoScope=None
+DItemRevisionGUID=
+GenerateClassCluster=0
+DocumentUniqueId=
+
+[Document159]
+DocumentPath=..\..\libraries\imported\vault\TI Power Management Switching Regulator Charge Pump (Inductorless).IntLib
+AnnotationEnabled=1
+AnnotateStartValue=1
+AnnotationIndexControlEnabled=0
+AnnotateSuffix=
+AnnotateScope=All
+AnnotateOrder=-1
+DoLibraryUpdate=1
+DoDatabaseUpdate=1
+ClassGenCCAutoEnabled=1
+ClassGenCCAutoRoomEnabled=1
+ClassGenNCAutoScope=None
+DItemRevisionGUID=
+GenerateClassCluster=0
+DocumentUniqueId=
+
+[Document160]
+DocumentPath=..\..\libraries\imported\vault\TI Power Management Supervisor and Reset IC.IntLib
+AnnotationEnabled=1
+AnnotateStartValue=1
+AnnotationIndexControlEnabled=0
+AnnotateSuffix=
+AnnotateScope=All
+AnnotateOrder=-1
+DoLibraryUpdate=1
+DoDatabaseUpdate=1
+ClassGenCCAutoEnabled=1
+ClassGenCCAutoRoomEnabled=1
+ClassGenNCAutoScope=None
+DItemRevisionGUID=
+GenerateClassCluster=0
+DocumentUniqueId=
+
+[Document161]
+DocumentPath=..\..\libraries\imported\vault\TI Power Management Step-Up Regulator.IntLib
+AnnotationEnabled=1
+AnnotateStartValue=1
+AnnotationIndexControlEnabled=0
+AnnotateSuffix=
+AnnotateScope=All
+AnnotateOrder=-1
+DoLibraryUpdate=1
+DoDatabaseUpdate=1
+ClassGenCCAutoEnabled=1
+ClassGenCCAutoRoomEnabled=1
+ClassGenNCAutoScope=None
+DItemRevisionGUID=
+GenerateClassCluster=0
+DocumentUniqueId=
+
+[Document162]
+DocumentPath=..\..\libraries\imported\vault\TI Power Management Step-Down Regulator.IntLib
+AnnotationEnabled=1
+AnnotateStartValue=1
+AnnotationIndexControlEnabled=0
+AnnotateSuffix=
+AnnotateScope=All
+AnnotateOrder=-1
+DoLibraryUpdate=1
+DoDatabaseUpdate=1
+ClassGenCCAutoEnabled=1
+ClassGenCCAutoRoomEnabled=1
+ClassGenNCAutoScope=None
+DItemRevisionGUID=
+GenerateClassCluster=0
+DocumentUniqueId=
+
+[Document163]
+DocumentPath=..\..\libraries\imported\vault\TI Power Management Standard Voltage Regulator.IntLib
+AnnotationEnabled=1
+AnnotateStartValue=1
+AnnotationIndexControlEnabled=0
+AnnotateSuffix=
+AnnotateScope=All
+AnnotateOrder=-1
+DoLibraryUpdate=1
+DoDatabaseUpdate=1
+ClassGenCCAutoEnabled=1
+ClassGenCCAutoRoomEnabled=1
+ClassGenNCAutoScope=None
+DItemRevisionGUID=
+GenerateClassCluster=0
+DocumentUniqueId=
+
+[Document164]
+DocumentPath=..\..\libraries\imported\vault\TI Power Management Special Function.IntLib
+AnnotationEnabled=1
+AnnotateStartValue=1
+AnnotationIndexControlEnabled=0
+AnnotateSuffix=
+AnnotateScope=All
+AnnotateOrder=-1
+DoLibraryUpdate=1
+DoDatabaseUpdate=1
+ClassGenCCAutoEnabled=1
+ClassGenCCAutoRoomEnabled=1
+ClassGenNCAutoScope=None
+DItemRevisionGUID=
+GenerateClassCluster=0
+DocumentUniqueId=
+
+[Document165]
+DocumentPath=..\..\libraries\imported\vault\TI Power Management Shunt Voltage Reference.IntLib
+AnnotationEnabled=1
+AnnotateStartValue=1
+AnnotationIndexControlEnabled=0
+AnnotateSuffix=
+AnnotateScope=All
+AnnotateOrder=-1
+DoLibraryUpdate=1
+DoDatabaseUpdate=1
+ClassGenCCAutoEnabled=1
+ClassGenCCAutoRoomEnabled=1
+ClassGenNCAutoScope=None
+DItemRevisionGUID=
+GenerateClassCluster=0
+DocumentUniqueId=
+
+[Document166]
+DocumentPath=..\..\libraries\imported\vault\TI Power Management Series Voltage Reference.IntLib
+AnnotationEnabled=1
+AnnotateStartValue=1
+AnnotationIndexControlEnabled=0
+AnnotateSuffix=
+AnnotateScope=All
+AnnotateOrder=-1
+DoLibraryUpdate=1
+DoDatabaseUpdate=1
+ClassGenCCAutoEnabled=1
+ClassGenCCAutoRoomEnabled=1
+ClassGenNCAutoScope=None
+DItemRevisionGUID=
+GenerateClassCluster=0
+DocumentUniqueId=
+
+[Document167]
+DocumentPath=..\..\libraries\imported\vault\TI Power Management Power Supply Support.IntLib
+AnnotationEnabled=1
+AnnotateStartValue=1
+AnnotationIndexControlEnabled=0
+AnnotateSuffix=
+AnnotateScope=All
+AnnotateOrder=-1
+DoLibraryUpdate=1
+DoDatabaseUpdate=1
+ClassGenCCAutoEnabled=1
+ClassGenCCAutoRoomEnabled=1
+ClassGenNCAutoScope=None
+DItemRevisionGUID=
+GenerateClassCluster=0
+DocumentUniqueId=
+
+[Document168]
+DocumentPath=..\..\libraries\imported\vault\TI Power Management Power Over Ethernet.IntLib
+AnnotationEnabled=1
+AnnotateStartValue=1
+AnnotationIndexControlEnabled=0
+AnnotateSuffix=
+AnnotateScope=All
+AnnotateOrder=-1
+DoLibraryUpdate=1
+DoDatabaseUpdate=1
+ClassGenCCAutoEnabled=1
+ClassGenCCAutoRoomEnabled=1
+ClassGenNCAutoScope=None
+DItemRevisionGUID=
+GenerateClassCluster=0
+DocumentUniqueId=
+
+[Document169]
+DocumentPath=..\..\libraries\imported\vault\TI Power Management Power Multiplexer (MUX).IntLib
+AnnotationEnabled=1
+AnnotateStartValue=1
+AnnotationIndexControlEnabled=0
+AnnotateSuffix=
+AnnotateScope=All
+AnnotateOrder=-1
+DoLibraryUpdate=1
+DoDatabaseUpdate=1
+ClassGenCCAutoEnabled=1
+ClassGenCCAutoRoomEnabled=1
+ClassGenNCAutoScope=None
+DItemRevisionGUID=
+GenerateClassCluster=0
+DocumentUniqueId=
+
+[Document170]
+DocumentPath=..\..\libraries\imported\vault\TI Power Management Power Modules.IntLib
+AnnotationEnabled=1
+AnnotateStartValue=1
+AnnotationIndexControlEnabled=0
+AnnotateSuffix=
+AnnotateScope=All
+AnnotateOrder=-1
+DoLibraryUpdate=1
+DoDatabaseUpdate=1
+ClassGenCCAutoEnabled=1
+ClassGenCCAutoRoomEnabled=1
+ClassGenNCAutoScope=None
+DItemRevisionGUID=
+GenerateClassCluster=0
+DocumentUniqueId=
+
+[Document171]
+DocumentPath=..\..\libraries\imported\vault\TI Power Management Power Factor Correction.IntLib
+AnnotationEnabled=1
+AnnotateStartValue=1
+AnnotationIndexControlEnabled=0
+AnnotateSuffix=
+AnnotateScope=All
+AnnotateOrder=-1
+DoLibraryUpdate=1
+DoDatabaseUpdate=1
+ClassGenCCAutoEnabled=1
+ClassGenCCAutoRoomEnabled=1
+ClassGenNCAutoScope=None
+DItemRevisionGUID=
+GenerateClassCluster=0
+DocumentUniqueId=
+
+[Document172]
+DocumentPath=..\..\libraries\imported\vault\TI Power Management PCMCIA and USB.IntLib
+AnnotationEnabled=1
+AnnotateStartValue=1
+AnnotationIndexControlEnabled=0
+AnnotateSuffix=
+AnnotateScope=All
+AnnotateOrder=-1
+DoLibraryUpdate=1
+DoDatabaseUpdate=1
+ClassGenCCAutoEnabled=1
+ClassGenCCAutoRoomEnabled=1
+ClassGenNCAutoScope=None
+DItemRevisionGUID=
+GenerateClassCluster=0
+DocumentUniqueId=
+
+[Document173]
+DocumentPath=..\..\libraries\imported\vault\TI Power Management Non Current Limited Load Switch.IntLib
+AnnotationEnabled=1
+AnnotateStartValue=1
+AnnotationIndexControlEnabled=0
+AnnotateSuffix=
+AnnotateScope=All
+AnnotateOrder=-1
+DoLibraryUpdate=1
+DoDatabaseUpdate=1
+ClassGenCCAutoEnabled=1
+ClassGenCCAutoRoomEnabled=1
+ClassGenNCAutoScope=None
+DItemRevisionGUID=
+GenerateClassCluster=0
+DocumentUniqueId=
+
+[Document174]
+DocumentPath=..\..\libraries\imported\vault\TI Power Management Linear Regulator Single Channel LDO (400-7500mA).IntLib
+AnnotationEnabled=1
+AnnotateStartValue=1
+AnnotationIndexControlEnabled=0
+AnnotateSuffix=
+AnnotateScope=All
+AnnotateOrder=-1
+DoLibraryUpdate=1
+DoDatabaseUpdate=1
+ClassGenCCAutoEnabled=1
+ClassGenCCAutoRoomEnabled=1
+ClassGenNCAutoScope=None
+DItemRevisionGUID=
+GenerateClassCluster=0
+DocumentUniqueId=
+
+[Document175]
+DocumentPath=..\..\libraries\imported\vault\TI Power Management Linear Regulator Single Channel LDO (0-350mA).IntLib
+AnnotationEnabled=1
+AnnotateStartValue=1
+AnnotationIndexControlEnabled=0
+AnnotateSuffix=
+AnnotateScope=All
+AnnotateOrder=-1
+DoLibraryUpdate=1
+DoDatabaseUpdate=1
+ClassGenCCAutoEnabled=1
+ClassGenCCAutoRoomEnabled=1
+ClassGenNCAutoScope=None
+DItemRevisionGUID=
+GenerateClassCluster=0
+DocumentUniqueId=
+
+[Document176]
+DocumentPath=..\..\libraries\imported\vault\TI Power Management Linear Regulator Dual Channel LDO.IntLib
+AnnotationEnabled=1
+AnnotateStartValue=1
+AnnotationIndexControlEnabled=0
+AnnotateSuffix=
+AnnotateScope=All
+AnnotateOrder=-1
+DoLibraryUpdate=1
+DoDatabaseUpdate=1
+ClassGenCCAutoEnabled=1
+ClassGenCCAutoRoomEnabled=1
+ClassGenNCAutoScope=None
+DItemRevisionGUID=
+GenerateClassCluster=0
+DocumentUniqueId=
+
+[Document177]
+DocumentPath=..\..\libraries\imported\vault\TI Power Management Lighting and Display.IntLib
+AnnotationEnabled=1
+AnnotateStartValue=1
+AnnotationIndexControlEnabled=0
+AnnotateSuffix=
+AnnotateScope=All
+AnnotateOrder=-1
+DoLibraryUpdate=1
+DoDatabaseUpdate=1
+ClassGenCCAutoEnabled=1
+ClassGenCCAutoRoomEnabled=1
+ClassGenNCAutoScope=None
+DItemRevisionGUID=
+GenerateClassCluster=0
+DocumentUniqueId=
+
+[Document178]
+DocumentPath=..\..\libraries\imported\vault\TI Power Management LDO Controller.IntLib
+AnnotationEnabled=1
+AnnotateStartValue=1
+AnnotationIndexControlEnabled=0
+AnnotateSuffix=
+AnnotateScope=All
+AnnotateOrder=-1
+DoLibraryUpdate=1
+DoDatabaseUpdate=1
+ClassGenCCAutoEnabled=1
+ClassGenCCAutoRoomEnabled=1
+ClassGenNCAutoScope=None
+DItemRevisionGUID=
+GenerateClassCluster=0
+DocumentUniqueId=
+
+[Document179]
+DocumentPath=..\..\libraries\imported\vault\TI Power Management Inverting Regulator.IntLib
+AnnotationEnabled=1
+AnnotateStartValue=1
+AnnotationIndexControlEnabled=0
+AnnotateSuffix=
+AnnotateScope=All
+AnnotateOrder=-1
+DoLibraryUpdate=1
+DoDatabaseUpdate=1
+ClassGenCCAutoEnabled=1
+ClassGenCCAutoRoomEnabled=1
+ClassGenNCAutoScope=None
+DItemRevisionGUID=
+GenerateClassCluster=0
+DocumentUniqueId=
+
+[Document180]
+DocumentPath=..\..\libraries\imported\vault\TI Power Management Hot Swap.IntLib
+AnnotationEnabled=1
+AnnotateStartValue=1
+AnnotationIndexControlEnabled=0
+AnnotateSuffix=
+AnnotateScope=All
+AnnotateOrder=-1
+DoLibraryUpdate=1
+DoDatabaseUpdate=1
+ClassGenCCAutoEnabled=1
+ClassGenCCAutoRoomEnabled=1
+ClassGenNCAutoScope=None
+DItemRevisionGUID=
+GenerateClassCluster=0
+DocumentUniqueId=
+
+[Document181]
+DocumentPath=..\..\libraries\imported\vault\TI Power Management Digital Power Control.IntLib
+AnnotationEnabled=1
+AnnotateStartValue=1
+AnnotationIndexControlEnabled=0
+AnnotateSuffix=
+AnnotateScope=All
+AnnotateOrder=-1
+DoLibraryUpdate=1
+DoDatabaseUpdate=1
+ClassGenCCAutoEnabled=1
+ClassGenCCAutoRoomEnabled=1
+ClassGenNCAutoScope=None
+DItemRevisionGUID=
+GenerateClassCluster=0
+DocumentUniqueId=
+
+[Document182]
+DocumentPath=..\..\libraries\imported\vault\TI Power Management DC-DC Controller (External Switch).IntLib
+AnnotationEnabled=1
+AnnotateStartValue=1
+AnnotationIndexControlEnabled=0
+AnnotateSuffix=
+AnnotateScope=All
+AnnotateOrder=-1
+DoLibraryUpdate=1
+DoDatabaseUpdate=1
+ClassGenCCAutoEnabled=1
+ClassGenCCAutoRoomEnabled=1
+ClassGenNCAutoScope=None
+DItemRevisionGUID=
+GenerateClassCluster=0
+DocumentUniqueId=
+
+[Document183]
+DocumentPath=..\..\libraries\imported\vault\TI Power Management Current Reference.IntLib
+AnnotationEnabled=1
+AnnotateStartValue=1
+AnnotationIndexControlEnabled=0
+AnnotateSuffix=
+AnnotateScope=All
+AnnotateOrder=-1
+DoLibraryUpdate=1
+DoDatabaseUpdate=1
+ClassGenCCAutoEnabled=1
+ClassGenCCAutoRoomEnabled=1
+ClassGenNCAutoScope=None
+DItemRevisionGUID=
+GenerateClassCluster=0
+DocumentUniqueId=
+
+[Document184]
+DocumentPath=..\..\libraries\imported\vault\TI Power Management Current Limited Switch.IntLib
+AnnotationEnabled=1
+AnnotateStartValue=1
+AnnotationIndexControlEnabled=0
+AnnotateSuffix=
+AnnotateScope=All
+AnnotateOrder=-1
+DoLibraryUpdate=1
+DoDatabaseUpdate=1
+ClassGenCCAutoEnabled=1
+ClassGenCCAutoRoomEnabled=1
+ClassGenNCAutoScope=None
+DItemRevisionGUID=
+GenerateClassCluster=0
+DocumentUniqueId=
+
+[Document185]
+DocumentPath=..\..\libraries\imported\vault\TI Power Management Buck-Boost Regulator.IntLib
+AnnotationEnabled=1
+AnnotateStartValue=1
+AnnotationIndexControlEnabled=0
+AnnotateSuffix=
+AnnotateScope=All
+AnnotateOrder=-1
+DoLibraryUpdate=1
+DoDatabaseUpdate=1
+ClassGenCCAutoEnabled=1
+ClassGenCCAutoRoomEnabled=1
+ClassGenNCAutoScope=None
+DItemRevisionGUID=
+GenerateClassCluster=0
+DocumentUniqueId=
+
+[Document186]
+DocumentPath=..\..\libraries\imported\vault\TI Power Management Battery Management.IntLib
+AnnotationEnabled=1
+AnnotateStartValue=1
+AnnotationIndexControlEnabled=0
+AnnotateSuffix=
+AnnotateScope=All
+AnnotateOrder=-1
+DoLibraryUpdate=1
+DoDatabaseUpdate=1
+ClassGenCCAutoEnabled=1
+ClassGenCCAutoRoomEnabled=1
+ClassGenNCAutoScope=None
+DItemRevisionGUID=
+GenerateClassCluster=0
+DocumentUniqueId=
+
+[Document187]
+DocumentPath=..\..\libraries\imported\vault\TI Microcontroller MSP430 16-bit Ultra-Low Power.IntLib
+AnnotationEnabled=1
+AnnotateStartValue=1
+AnnotationIndexControlEnabled=0
+AnnotateSuffix=
+AnnotateScope=All
+AnnotateOrder=-1
+DoLibraryUpdate=1
+DoDatabaseUpdate=1
+ClassGenCCAutoEnabled=1
+ClassGenCCAutoRoomEnabled=1
+ClassGenNCAutoScope=None
+DItemRevisionGUID=
+GenerateClassCluster=0
+DocumentUniqueId=
+
+[Document188]
+DocumentPath=..\..\libraries\imported\vault\TI Interface Serializer Deserializer.IntLib
+AnnotationEnabled=1
+AnnotateStartValue=1
+AnnotationIndexControlEnabled=0
+AnnotateSuffix=
+AnnotateScope=All
+AnnotateOrder=-1
+DoLibraryUpdate=1
+DoDatabaseUpdate=1
+ClassGenCCAutoEnabled=1
+ClassGenCCAutoRoomEnabled=1
+ClassGenNCAutoScope=None
+DItemRevisionGUID=
+GenerateClassCluster=0
+DocumentUniqueId=
+
+[Document189]
+DocumentPath=..\..\libraries\imported\vault\TI Interface Optical Module IC.IntLib
+AnnotationEnabled=1
+AnnotateStartValue=1
+AnnotationIndexControlEnabled=0
+AnnotateSuffix=
+AnnotateScope=All
+AnnotateOrder=-1
+DoLibraryUpdate=1
+DoDatabaseUpdate=1
+ClassGenCCAutoEnabled=1
+ClassGenCCAutoRoomEnabled=1
+ClassGenNCAutoScope=None
+DItemRevisionGUID=
+GenerateClassCluster=0
+DocumentUniqueId=
+
+[Document190]
+DocumentPath=..\..\libraries\imported\vault\TI Interface LVDS M-LVDS ECL CML.IntLib
+AnnotationEnabled=1
+AnnotateStartValue=1
+AnnotationIndexControlEnabled=0
+AnnotateSuffix=
+AnnotateScope=All
+AnnotateOrder=-1
+DoLibraryUpdate=1
+DoDatabaseUpdate=1
+ClassGenCCAutoEnabled=1
+ClassGenCCAutoRoomEnabled=1
+ClassGenNCAutoScope=None
+DItemRevisionGUID=
+GenerateClassCluster=0
+DocumentUniqueId=
+
+[Document191]
+DocumentPath=..\..\libraries\imported\vault\TI Interface Isolator.IntLib
+AnnotationEnabled=1
+AnnotateStartValue=1
+AnnotationIndexControlEnabled=0
+AnnotateSuffix=
+AnnotateScope=All
+AnnotateOrder=-1
+DoLibraryUpdate=1
+DoDatabaseUpdate=1
+ClassGenCCAutoEnabled=1
+ClassGenCCAutoRoomEnabled=1
+ClassGenNCAutoScope=None
+DItemRevisionGUID=
+GenerateClassCluster=0
+DocumentUniqueId=
+
+[Document192]
+DocumentPath=..\..\libraries\imported\vault\TI Interface ESD EMI Protection.IntLib
+AnnotationEnabled=1
+AnnotateStartValue=1
+AnnotationIndexControlEnabled=0
+AnnotateSuffix=
+AnnotateScope=All
+AnnotateOrder=-1
+DoLibraryUpdate=1
+DoDatabaseUpdate=1
+ClassGenCCAutoEnabled=1
+ClassGenCCAutoRoomEnabled=1
+ClassGenNCAutoScope=None
+DItemRevisionGUID=
+GenerateClassCluster=0
+DocumentUniqueId=
+
+[Document193]
+DocumentPath=..\..\libraries\imported\vault\TI Interface Display.IntLib
+AnnotationEnabled=1
+AnnotateStartValue=1
+AnnotationIndexControlEnabled=0
+AnnotateSuffix=
+AnnotateScope=All
+AnnotateOrder=-1
+DoLibraryUpdate=1
+DoDatabaseUpdate=1
+ClassGenCCAutoEnabled=1
+ClassGenCCAutoRoomEnabled=1
+ClassGenNCAutoScope=None
+DItemRevisionGUID=
+GenerateClassCluster=0
+DocumentUniqueId=
+
+[Document194]
+DocumentPath=..\..\libraries\imported\vault\TI Data Converters Digital to Analog Converter.IntLib
+AnnotationEnabled=1
+AnnotateStartValue=1
+AnnotationIndexControlEnabled=0
+AnnotateSuffix=
+AnnotateScope=All
+AnnotateOrder=-1
+DoLibraryUpdate=1
+DoDatabaseUpdate=1
+ClassGenCCAutoEnabled=1
+ClassGenCCAutoRoomEnabled=1
+ClassGenNCAutoScope=None
+DItemRevisionGUID=
+GenerateClassCluster=0
+DocumentUniqueId=
+
+[Document195]
+DocumentPath=..\..\libraries\imported\vault\TI Data Converters Analog to Digital Converter.IntLib
+AnnotationEnabled=1
+AnnotateStartValue=1
+AnnotationIndexControlEnabled=0
+AnnotateSuffix=
+AnnotateScope=All
+AnnotateOrder=-1
+DoLibraryUpdate=1
+DoDatabaseUpdate=1
+ClassGenCCAutoEnabled=1
+ClassGenCCAutoRoomEnabled=1
+ClassGenNCAutoScope=None
+DItemRevisionGUID=
+GenerateClassCluster=0
+DocumentUniqueId=
+
+[Document196]
+DocumentPath=..\..\libraries\imported\vault\TI Audio CODEC.IntLib
+AnnotationEnabled=1
+AnnotateStartValue=1
+AnnotationIndexControlEnabled=0
+AnnotateSuffix=
+AnnotateScope=All
+AnnotateOrder=-1
+DoLibraryUpdate=1
+DoDatabaseUpdate=1
+ClassGenCCAutoEnabled=1
+ClassGenCCAutoRoomEnabled=1
+ClassGenNCAutoScope=None
+DItemRevisionGUID=
+GenerateClassCluster=0
+DocumentUniqueId=
+
+[Document197]
+DocumentPath=..\..\libraries\imported\vault\TI Amplifiers and Linear Special Function Amplifier.IntLib
+AnnotationEnabled=1
+AnnotateStartValue=1
+AnnotationIndexControlEnabled=0
+AnnotateSuffix=
+AnnotateScope=All
+AnnotateOrder=-1
+DoLibraryUpdate=1
+DoDatabaseUpdate=1
+ClassGenCCAutoEnabled=1
+ClassGenCCAutoRoomEnabled=1
+ClassGenNCAutoScope=None
+DItemRevisionGUID=
+GenerateClassCluster=0
+DocumentUniqueId=
+
+[Document198]
+DocumentPath=..\..\libraries\imported\vault\TI Amplifiers and Linear PGA-VGA.IntLib
+AnnotationEnabled=1
+AnnotateStartValue=1
+AnnotationIndexControlEnabled=0
+AnnotateSuffix=
+AnnotateScope=All
+AnnotateOrder=-1
+DoLibraryUpdate=1
+DoDatabaseUpdate=1
+ClassGenCCAutoEnabled=1
+ClassGenCCAutoRoomEnabled=1
+ClassGenNCAutoScope=None
+DItemRevisionGUID=
+GenerateClassCluster=0
+DocumentUniqueId=
+
+[Document199]
+DocumentPath=..\..\libraries\imported\vault\TI Amplifiers and Linear Operational Amplifier Zero Drift Precision Amplifier.IntLib
+AnnotationEnabled=1
+AnnotateStartValue=1
+AnnotationIndexControlEnabled=0
+AnnotateSuffix=
+AnnotateScope=All
+AnnotateOrder=-1
+DoLibraryUpdate=1
+DoDatabaseUpdate=1
+ClassGenCCAutoEnabled=1
+ClassGenCCAutoRoomEnabled=1
+ClassGenNCAutoScope=None
+DItemRevisionGUID=
+GenerateClassCluster=0
+DocumentUniqueId=
+
+[Document200]
+DocumentPath=..\..\libraries\imported\vault\TI Amplifiers and Linear Operational Amplifier Precision Amplifier Part Two.IntLib
+AnnotationEnabled=1
+AnnotateStartValue=1
+AnnotationIndexControlEnabled=0
+AnnotateSuffix=
+AnnotateScope=All
+AnnotateOrder=-1
+DoLibraryUpdate=1
+DoDatabaseUpdate=1
+ClassGenCCAutoEnabled=1
+ClassGenCCAutoRoomEnabled=1
+ClassGenNCAutoScope=None
+DItemRevisionGUID=
+GenerateClassCluster=0
+DocumentUniqueId=
+
+[Document201]
+DocumentPath=..\..\libraries\imported\vault\TI Amplifiers and Linear Operational Amplifier Precision Amplifier Part One.IntLib
+AnnotationEnabled=1
+AnnotateStartValue=1
+AnnotationIndexControlEnabled=0
+AnnotateSuffix=
+AnnotateScope=All
+AnnotateOrder=-1
+DoLibraryUpdate=1
+DoDatabaseUpdate=1
+ClassGenCCAutoEnabled=1
+ClassGenCCAutoRoomEnabled=1
+ClassGenNCAutoScope=None
+DItemRevisionGUID=
+GenerateClassCluster=0
+DocumentUniqueId=
+
+[Document202]
+DocumentPath=..\..\libraries\imported\vault\TI Amplifiers and Linear Operational Amplifier Low Power Amplifier.IntLib
+AnnotationEnabled=1
+AnnotateStartValue=1
+AnnotationIndexControlEnabled=0
+AnnotateSuffix=
+AnnotateScope=All
+AnnotateOrder=-1
+DoLibraryUpdate=1
+DoDatabaseUpdate=1
+ClassGenCCAutoEnabled=1
+ClassGenCCAutoRoomEnabled=1
+ClassGenNCAutoScope=None
+DItemRevisionGUID=
+GenerateClassCluster=0
+DocumentUniqueId=
+
+[Document203]
+DocumentPath=..\..\libraries\imported\vault\TI Amplifiers and Linear Operational Amplifier High Speed.IntLib
+AnnotationEnabled=1
+AnnotateStartValue=1
+AnnotationIndexControlEnabled=0
+AnnotateSuffix=
+AnnotateScope=All
+AnnotateOrder=-1
+DoLibraryUpdate=1
+DoDatabaseUpdate=1
+ClassGenCCAutoEnabled=1
+ClassGenCCAutoRoomEnabled=1
+ClassGenNCAutoScope=None
+DItemRevisionGUID=
+GenerateClassCluster=0
+DocumentUniqueId=
+
+[Document204]
+DocumentPath=..\..\libraries\imported\vault\TI Amplifiers and Linear Operational Amplifier General Purpose.IntLib
+AnnotationEnabled=1
+AnnotateStartValue=1
+AnnotationIndexControlEnabled=0
+AnnotateSuffix=
+AnnotateScope=All
+AnnotateOrder=-1
+DoLibraryUpdate=1
+DoDatabaseUpdate=1
+ClassGenCCAutoEnabled=1
+ClassGenCCAutoRoomEnabled=1
+ClassGenNCAutoScope=None
+DItemRevisionGUID=
+GenerateClassCluster=0
+DocumentUniqueId=
+
+[Document205]
+DocumentPath=..\..\libraries\imported\vault\TI Amplifiers and Linear Operational Amplifier Fully Differential Amplifier.IntLib
+AnnotationEnabled=1
+AnnotateStartValue=1
+AnnotationIndexControlEnabled=0
+AnnotateSuffix=
+AnnotateScope=All
+AnnotateOrder=-1
+DoLibraryUpdate=1
+DoDatabaseUpdate=1
+ClassGenCCAutoEnabled=1
+ClassGenCCAutoRoomEnabled=1
+ClassGenNCAutoScope=None
+DItemRevisionGUID=
+GenerateClassCluster=0
+DocumentUniqueId=
+
+[Document206]
+DocumentPath=..\..\libraries\imported\vault\TI Amplifiers and Linear Operational Amplifier Audio Operational Amplifier.IntLib
+AnnotationEnabled=1
+AnnotateStartValue=1
+AnnotationIndexControlEnabled=0
+AnnotateSuffix=
+AnnotateScope=All
+AnnotateOrder=-1
+DoLibraryUpdate=1
+DoDatabaseUpdate=1
+ClassGenCCAutoEnabled=1
+ClassGenCCAutoRoomEnabled=1
+ClassGenNCAutoScope=None
+DItemRevisionGUID=
+GenerateClassCluster=0
+DocumentUniqueId=
+
+[Document207]
+DocumentPath=..\..\libraries\imported\vault\TI Amplifiers and Linear Isolation Amplifier.IntLib
+AnnotationEnabled=1
+AnnotateStartValue=1
+AnnotationIndexControlEnabled=0
+AnnotateSuffix=
+AnnotateScope=All
+AnnotateOrder=-1
+DoLibraryUpdate=1
+DoDatabaseUpdate=1
+ClassGenCCAutoEnabled=1
+ClassGenCCAutoRoomEnabled=1
+ClassGenNCAutoScope=None
+DItemRevisionGUID=
+GenerateClassCluster=0
+DocumentUniqueId=
+
+[Document208]
+DocumentPath=..\..\libraries\imported\vault\TI Amplifiers and Linear Instrumentation Amplifier.IntLib
+AnnotationEnabled=1
+AnnotateStartValue=1
+AnnotationIndexControlEnabled=0
+AnnotateSuffix=
+AnnotateScope=All
+AnnotateOrder=-1
+DoLibraryUpdate=1
+DoDatabaseUpdate=1
+ClassGenCCAutoEnabled=1
+ClassGenCCAutoRoomEnabled=1
+ClassGenNCAutoScope=None
+DItemRevisionGUID=
+GenerateClassCluster=0
+DocumentUniqueId=
+
+[Document209]
+DocumentPath=..\..\libraries\imported\vault\TI Amplifiers and Linear Haptic Driver.IntLib
+AnnotationEnabled=1
+AnnotateStartValue=1
+AnnotationIndexControlEnabled=0
+AnnotateSuffix=
+AnnotateScope=All
+AnnotateOrder=-1
+DoLibraryUpdate=1
+DoDatabaseUpdate=1
+ClassGenCCAutoEnabled=1
+ClassGenCCAutoRoomEnabled=1
+ClassGenNCAutoScope=None
+DItemRevisionGUID=
+GenerateClassCluster=0
+DocumentUniqueId=
+
+[Document210]
+DocumentPath=..\..\libraries\imported\vault\TI Amplifiers and Linear Difference Amplifier.IntLib
+AnnotationEnabled=1
+AnnotateStartValue=1
+AnnotationIndexControlEnabled=0
+AnnotateSuffix=
+AnnotateScope=All
+AnnotateOrder=-1
+DoLibraryUpdate=1
+DoDatabaseUpdate=1
+ClassGenCCAutoEnabled=1
+ClassGenCCAutoRoomEnabled=1
+ClassGenNCAutoScope=None
+DItemRevisionGUID=
+GenerateClassCluster=0
+DocumentUniqueId=
+
+[Document211]
+DocumentPath=..\..\libraries\imported\silicon_valley_garage\vh_altium_library.intLib
+AnnotationEnabled=1
+AnnotateStartValue=1
+AnnotationIndexControlEnabled=0
+AnnotateSuffix=
+AnnotateScope=All
+AnnotateOrder=-1
+DoLibraryUpdate=1
+DoDatabaseUpdate=1
+ClassGenCCAutoEnabled=1
+ClassGenCCAutoRoomEnabled=1
+ClassGenNCAutoScope=None
+DItemRevisionGUID=
+GenerateClassCluster=0
+DocumentUniqueId=
 
 [Configuration1]
 Name=Default Configuration
@@ -1894,7 +3641,7 @@ OutputDir=
 [OutputGroup1]
 Name=Netlist Outputs
 Description=
-TargetPrinter=Samsung C410 Series
+TargetPrinter=Brother MFC-J6520DW Printer
 PrinterOptions=Record=PrinterOptions|Copies=1|Duplex=1|TrueTypeOptions=3|Collate=1|PrintJobKind=1|PrintWhat=1
 OutputType1=CadnetixNetlist
 OutputName1=Cadnetix Netlist
@@ -2025,7 +3772,7 @@ OutputDefault25=0
 [OutputGroup2]
 Name=Simulator Outputs
 Description=
-TargetPrinter=Samsung C410 Series
+TargetPrinter=Brother MFC-J6520DW Printer
 PrinterOptions=Record=PrinterOptions|Copies=1|Duplex=1|TrueTypeOptions=3|Collate=1|PrintJobKind=1|PrintWhat=1
 OutputType1=AdvSimNetlist
 OutputName1=Mixed Sim
@@ -2156,11 +3903,17 @@ OutputDocumentPath18=
 OutputVariantName18=[No Variations]
 OutputDefault18=0
 PageOptions18=Record=PageOptions|CenterHorizontal=True|CenterVertical=True|PrintScale=1.00|XCorrection=1.00|YCorrection=1.00|PrintKind=1|BorderSize=5000000|LeftOffset=0|BottomOffset=0|Orientation=2|PaperLength=1000|PaperWidth=1000|Scale=100|PaperSource=7|PrintQuality=-3|MediaType=1|DitherType=10|PrintScaleMode=1|PaperKind=A4|PaperIndex=9
+OutputType19=Software Platform Print
+OutputName19=Software Platform Prints
+OutputDocumentPath19=
+OutputVariantName19=
+OutputDefault19=0
+PageOptions19=Record=PageOptions|CenterHorizontal=True|CenterVertical=True|PrintScale=1.00|XCorrection=1.00|YCorrection=1.00|PrintKind=1|BorderSize=5000000|LeftOffset=0|BottomOffset=0|Orientation=2|PaperLength=1000|PaperWidth=1000|Scale=100|PaperSource=7|PrintQuality=-3|MediaType=1|DitherType=10|PrintScaleMode=1|PaperKind=A4|PaperIndex=9
 
 [OutputGroup4]
 Name=Assembly Outputs
 Description=
-TargetPrinter=Samsung C410 Series
+TargetPrinter=Brother MFC-J6520DW Printer
 PrinterOptions=Record=PrinterOptions|Copies=1|Duplex=1|TrueTypeOptions=3|Collate=1|PrintJobKind=1|PrintWhat=1
 OutputType1=Assembly
 OutputName1=Assembly Drawings
@@ -2182,7 +3935,7 @@ OutputDefault3=0
 [OutputGroup5]
 Name=Fabrication Outputs
 Description=
-TargetPrinter=Samsung C410 Series
+TargetPrinter=Brother MFC-J6520DW Printer
 PrinterOptions=Record=PrinterOptions|Copies=1|Duplex=1|TrueTypeOptions=3|Collate=1|PrintJobKind=1|PrintWhat=1
 OutputType1=Board Stack Report
 OutputName1=Report Board Stack
@@ -2254,7 +4007,7 @@ OutputDefault12=0
 [OutputGroup6]
 Name=Report Outputs
 Description=
-TargetPrinter=Samsung C410 Series
+TargetPrinter=Brother MFC-J6520DW Printer
 PrinterOptions=Record=PrinterOptions|Copies=1|Duplex=1|TrueTypeOptions=3|Collate=1|PrintJobKind=1|PrintWhat=1
 OutputType1=BOM_PartType
 OutputName1=Bill of Materials
@@ -2291,7 +4044,7 @@ OutputDefault6=0
 [OutputGroup7]
 Name=Other Outputs
 Description=
-TargetPrinter=Samsung C410 Series
+TargetPrinter=Brother MFC-J6520DW Printer
 PrinterOptions=Record=PrinterOptions|Copies=1|Duplex=1|TrueTypeOptions=3|Collate=1|PrintJobKind=1|PrintWhat=1
 OutputType1=Text Print
 OutputName1=Text Print
@@ -2471,7 +4224,7 @@ PageOptions29=Record=PageOptions|CenterHorizontal=True|CenterVertical=True|Print
 [OutputGroup8]
 Name=Validation Outputs
 Description=
-TargetPrinter=Samsung C410 Series
+TargetPrinter=Brother MFC-J6520DW Printer
 PrinterOptions=Record=PrinterOptions|Copies=1|Duplex=1|TrueTypeOptions=3|Collate=1|PrintJobKind=1|PrintWhat=1
 OutputType1=Configuration compliance
 OutputName1=Environment configuration compliance check
@@ -2510,7 +4263,7 @@ OutputDefault6=0
 [OutputGroup9]
 Name=Export Outputs
 Description=
-TargetPrinter=Samsung C410 Series
+TargetPrinter=Brother MFC-J6520DW Printer
 PrinterOptions=Record=PrinterOptions|Copies=1|Duplex=1|TrueTypeOptions=3|Collate=1|PrintJobKind=1|PrintWhat=1
 OutputType1=AutoCAD dwg/dxf PCB
 OutputName1=AutoCAD dwg/dxf File PCB
