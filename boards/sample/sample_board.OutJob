@@ -74,7 +74,7 @@ OutputEnabled3_OutputMedium4=0
 OutputDefault3=0
 PageOptions3=Record=PageOptions|CenterHorizontal=True|CenterVertical=True|PrintScale=4.38|XCorrection=1.00|YCorrection=1.00|PrintKind=1|BorderSize=5000000|LeftOffset=0|BottomOffset=0|Orientation=2|PaperLength=1000|PaperWidth=1000|Scale=100|PaperSource=7|PrintQuality=-3|MediaType=1|DitherType=10|PrintScaleMode=1|PaperKind=A4|PaperIndex=9
 Configuration3_Name1=OutputConfigurationParameter1
-Configuration3_Item1=Record=Pcb3DPrintView|ResX=150|ResY=150|ViewX=9055120|ViewY=18897640|LookAtX=47355520|LookAtY=31272840|LookAtZ=0|QuatX=0|QuatY=0|QuatZ=0|QuatW=1|Zoom=1.92616644194725E-5|UnitsPercent=True|UnitsDPI=True|LockResAspect=True|ViewConfigType=.config_3d|CustomCamera=False|ViewFromTop=True|ViewConfig= 
+Configuration3_Item1=Record=Pcb3DPrintView|ResX=150|ResY=150|ViewX=9055120|ViewY=18897640|LookAtX=47355520|LookAtY=31272840|LookAtZ=0|QuatX=0|QuatY=0|QuatZ=0|QuatW=1|Zoom=1.92616644194725E-5|UnitsPercent=True|UnitsDPI=True|LockResAspect=True|ViewConfigType=.config_3d|CustomCamera=False|ViewFromTop=True|ViewConfig=
 OutputType4=PCB Print
 OutputName4=PCB Prints
 OutputCategory4=Documentation
@@ -107,9 +107,9 @@ OutputName5=Assembly Drawings
 OutputCategory5=Assembly
 OutputDocumentPath5=sample_board.PcbDoc
 OutputVariantName5=
-OutputEnabled5=1
+OutputEnabled5=0
 OutputEnabled5_OutputMedium1=0
-OutputEnabled5_OutputMedium2=5
+OutputEnabled5_OutputMedium2=0
 OutputEnabled5_OutputMedium3=0
 OutputEnabled5_OutputMedium4=0
 OutputDefault5=0
@@ -142,15 +142,15 @@ OutputName6=Design Rules Check
 OutputCategory6=Validation
 OutputDocumentPath6=sample_board.PcbDoc
 OutputVariantName6=
-OutputEnabled6=1
+OutputEnabled6=0
 OutputEnabled6_OutputMedium1=0
-OutputEnabled6_OutputMedium2=6
+OutputEnabled6_OutputMedium2=0
 OutputEnabled6_OutputMedium3=0
 OutputEnabled6_OutputMedium4=0
 OutputDefault6=0
 PageOptions6=Record=PageOptions|CenterHorizontal=True|CenterVertical=True|PrintScale=1.00|XCorrection=1.00|YCorrection=1.00|PrintKind=1|BorderSize=5000000|LeftOffset=0|BottomOffset=0|Orientation=2|PaperLength=1000|PaperWidth=1000|Scale=100|PaperSource=7|PrintQuality=-3|MediaType=1|DitherType=10|PrintScaleMode=1|PaperKind=A4|PaperIndex=9
 Configuration6_Name1=OutputConfigurationParameter1
-Configuration6_Item1=3DPrintView|ResX=150|ResY=150|ViewX=9055120|ViewY=18897640|LookAtX=47355520|LookAtY=31272840|LookAtZ=0|QuatX=0|QuatY=0|QuatZ=0|QuatW=1|Zoom=1.92616644194725E-5|UnitsPercent=True|UnitsDPI=True|LockResAspect=True|ViewConfigType=.config_3d|CustomCamera=False|ViewFromTop=True|ViewConfig= 
+Configuration6_Item1=3DPrintView|ResX=150|ResY=150|ViewX=9055120|ViewY=18897640|LookAtX=47355520|LookAtY=31272840|LookAtZ=0|QuatX=0|QuatY=0|QuatZ=0|QuatW=1|Zoom=1.92616644194725E-5|UnitsPercent=True|UnitsDPI=True|LockResAspect=True|ViewConfigType=.config_3d|CustomCamera=False|ViewFromTop=True|ViewConfig=
 OutputType7=PDF3D
 OutputName7=PDF3D
 OutputCategory7=Documentation
@@ -158,7 +158,7 @@ OutputDocumentPath7=sample_board.PcbDoc
 OutputVariantName7=
 OutputEnabled7=1
 OutputEnabled7_OutputMedium1=0
-OutputEnabled7_OutputMedium2=7
+OutputEnabled7_OutputMedium2=5
 OutputEnabled7_OutputMedium3=0
 OutputEnabled7_OutputMedium4=0
 OutputDefault7=0
@@ -167,9 +167,9 @@ Configuration7_Name1=OutputConfigurationParameter1
 Configuration7_Item1=Record=ExportPDF3DSetting|Version=110|Format=0|Flags=8158|Scheme=0|ViewColorR0=255|ViewColorG0=255|ViewColorB0=255|ViewLignt0=9|ViewColorR1=255|ViewColorG1=255|ViewColorB1=255|ViewLignt1=9|ViewColorR2=255|ViewColorG2=255|ViewColorB2=255|ViewLignt2=9|ViewColorR3=255|ViewColorG3=255|ViewColorB3=255|ViewLignt3=9
 
 [PublishSettings]
-OutputFilePath2=Project Outputs for Free Documents\sample_board.PDF
-ReleaseManaged2=1
-OutputBasePath2=Project Outputs for Sample Board
+OutputFilePath2=\\Mac\Home\Desktop\GitHub Repos\hall-electronic\exports\sample_board.PDF
+ReleaseManaged2=0
+OutputBasePath2=..\..\exports\
 OutputPathMedia2=
 OutputPathMediaValue2=
 OutputPathOutputer2=[Output Type]
@@ -194,7 +194,7 @@ ShowComponentParameters2=1
 GlobalBookmarks2=0
 OutputFilePath3=
 ReleaseManaged3=1
-OutputBasePath3=Project Outputs for Sample Board
+OutputBasePath3=Project Outputs for sample_board
 OutputPathMedia3=
 OutputPathMediaValue3=
 OutputPathOutputer3=[Output Type]
@@ -207,7 +207,7 @@ OutputFileNameSpecial3=
 OpenOutput3=1
 OutputFilePath4=
 ReleaseManaged4=1
-OutputBasePath4=Project Outputs for Sample Board
+OutputBasePath4=Project Outputs for sample_board
 OutputPathMedia4=
 OutputPathMediaValue4=
 OutputPathOutputer4=[Output Type]
@@ -244,7 +244,7 @@ WmvVideoCodecName4=Windows Media Video V7
 WmvQuality4=80
 
 [GeneratedFilesSettings]
-RelativeOutputPath2=Project Outputs for Free Documents\sample_board.PDF
+RelativeOutputPath2=\\Mac\Home\Desktop\GitHub Repos\hall-electronic\exports\sample_board.PDF
 OpenOutputs2=1
 RelativeOutputPath3=
 OpenOutputs3=1
