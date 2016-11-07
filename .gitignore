@@ -12,3 +12,5 @@ Project\ Outputs
 .LOG
 Project\ Logs
 
+*.LOG
+*.PrjPcbStructure
