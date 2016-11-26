@@ -1,0 +1,3 @@
+[submodule "scripts/altiumscriptcentral"]
+	path = scripts/altiumscriptcentral
+	url = git@github.com:mbedded-ninja/AltiumScriptCentral.git
