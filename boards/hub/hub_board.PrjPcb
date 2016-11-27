@@ -1328,7 +1328,7 @@ ClassGenCCAutoRoomEnabled=1
 ClassGenNCAutoScope=None
 DItemRevisionGUID=
 GenerateClassCluster=0
-DocumentUniqueId=BAULWRRO
+DocumentUniqueId=CHMIVICJ
 
 [Document77]
 DocumentPath=..\..\libraries\custom\custom_components.PcbLib
@@ -2369,6 +2369,23 @@ DocumentUniqueId=
 
 [Document138]
 DocumentPath=..\..\libraries\imported\silicon_valley_garage\vh_altium_library.intLib
+AnnotationEnabled=1
+AnnotateStartValue=1
+AnnotationIndexControlEnabled=0
+AnnotateSuffix=
+AnnotateScope=All
+AnnotateOrder=-1
+DoLibraryUpdate=1
+DoDatabaseUpdate=1
+ClassGenCCAutoEnabled=1
+ClassGenCCAutoRoomEnabled=1
+ClassGenNCAutoScope=None
+DItemRevisionGUID=
+GenerateClassCluster=0
+DocumentUniqueId=
+
+[Document139]
+DocumentPath=hub.BomDoc
 AnnotationEnabled=1
 AnnotateStartValue=1
 AnnotationIndexControlEnabled=0
