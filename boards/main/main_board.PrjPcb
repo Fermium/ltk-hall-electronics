@@ -2351,7 +2351,7 @@ GenerateClassCluster=0
 DocumentUniqueId=THBQFJVO
 
 [Document137]
-DocumentPath=bom.BomDoc
+DocumentPath=main_board.BomDoc
 AnnotationEnabled=1
 AnnotateStartValue=1
 AnnotationIndexControlEnabled=0
