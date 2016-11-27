@@ -7,3 +7,6 @@
 [submodule "libraries/imported/kitsprout"]
 	path = libraries/imported/kitsprout
 	url = git@github.com:KitSprout/AltiumDesigner_PcbLibrary.git
+[submodule "scripts/altium-designer-addons"]
+	path = scripts/altium-designer-addons
+	url = git@github.com:Altium-Designer-addons/scripts-libraries.git
