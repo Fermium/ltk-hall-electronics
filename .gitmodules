@@ -10,3 +10,6 @@
 [submodule "scripts/altium-designer-addons"]
 	path = scripts/altium-designer-addons
 	url = git@github.com:Altium-Designer-addons/scripts-libraries.git
+[submodule "presskit"]
+	path = presskit
+	url = git@github.com:fermiumlabs/presskit.git
