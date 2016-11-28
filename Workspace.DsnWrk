@@ -1,8 +1,8 @@
 [ProjectGroup]
 Version=1.0
 [Project1]
-ProjectPath=\\Mac\Workspace\Hall-electronic\boards\hub\hub_board.PrjPcb
+ProjectPath=boards\hub\hub_board.PrjPcb
 [Project2]
-ProjectPath=\\Mac\Workspace\Hall-electronic\boards\sample\sample_board.PrjPcb
+ProjectPath=boards\main\main_board.PrjPcb
 [Project3]
-ProjectPath=\\Mac\Workspace\Hall-electronic\boards\main\main_board.PrjPcb
+ProjectPath=boards\sample\sample_board.PrjPcb
