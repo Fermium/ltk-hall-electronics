@@ -15,3 +15,5 @@ Project\ Logs
 *.LOG
 *.PrjPcbStructure
 *.pdf
+exports/main/manufacturing_files
+exports/main/manufacturing_report
