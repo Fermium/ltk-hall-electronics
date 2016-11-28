@@ -56,23 +56,6 @@ GenerateClassCluster=0
 DocumentUniqueId=
 
 [Document2]
-DocumentPath=hub_board.PcbDoc
-AnnotationEnabled=1
-AnnotateStartValue=1
-AnnotationIndexControlEnabled=0
-AnnotateSuffix=
-AnnotateScope=All
-AnnotateOrder=-1
-DoLibraryUpdate=1
-DoDatabaseUpdate=1
-ClassGenCCAutoEnabled=1
-ClassGenCCAutoRoomEnabled=1
-ClassGenNCAutoScope=None
-DItemRevisionGUID=
-GenerateClassCluster=0
-DocumentUniqueId=OFXCNNDN
-
-[Document3]
 DocumentPath=hub_board.SchDoc
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -89,7 +72,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=CHMIVICJ
 
-[Document4]
+[Document3]
 DocumentPath=..\..\libraries\custom\custom_components.PcbLib
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -106,7 +89,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=
 
-[Document5]
+[Document4]
 DocumentPath=..\..\libraries\custom\custom_components.SchLib
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -123,7 +106,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=
 
-[Document6]
+[Document5]
 DocumentPath=..\..\libraries\imported\cpl\Octopart-CPL.PcbLib
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -140,7 +123,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=
 
-[Document7]
+[Document6]
 DocumentPath=..\..\libraries\imported\silicon_valley_garage\vh_altium_library.intLib
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -157,7 +140,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=
 
-[Document8]
+[Document7]
 DocumentPath=hub.BomDoc
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -174,7 +157,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=
 
-[Document9]
+[Document8]
 DocumentPath=..\..\libraries\imported\issus\Celestial Library.IntLib
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -191,7 +174,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=
 
-[Document10]
+[Document9]
 DocumentPath=..\..\libraries\imported\kitsprout\kitsprout.IntLib
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -208,7 +191,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=
 
-[Document11]
+[Document10]
 DocumentPath=..\..\libraries\imported\issus\Footprints\Passives.PcbLib
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -225,7 +208,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=
 
-[Document12]
+[Document11]
 DocumentPath=..\..\libraries\imported\vault\TI Power Management Series Voltage Reference.IntLib
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -242,7 +225,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=
 
-[Document13]
+[Document12]
 DocumentPath=..\..\libraries\imported\vault\Analog Devices Temperature Sensors.IntLib
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -259,7 +242,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=
 
-[Document14]
+[Document13]
 DocumentPath=..\..\libraries\imported\silicon_valley_garage\vh_altium_library\SMD Active.PcbLib
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -275,6 +258,23 @@ ClassGenNCAutoScope=None
 DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=UFKPBRLR
+
+[Document14]
+DocumentPath=hub_board.PcbDoc
+AnnotationEnabled=1
+AnnotateStartValue=1
+AnnotationIndexControlEnabled=0
+AnnotateSuffix=
+AnnotateScope=All
+AnnotateOrder=-1
+DoLibraryUpdate=1
+DoDatabaseUpdate=1
+ClassGenCCAutoEnabled=1
+ClassGenCCAutoRoomEnabled=1
+ClassGenNCAutoScope=None
+DItemRevisionGUID=
+GenerateClassCluster=0
+DocumentUniqueId=XOIECMXR
 
 [Configuration1]
 Name=Default Configuration
