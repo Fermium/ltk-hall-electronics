@@ -29,7 +29,7 @@ OutputMedium1_Printer=
 OutputMedium1_PrinterOptions=Record=PrinterOptions|Copies=1|Duplex=1|TrueTypeOptions=3|Collate=1|PrintJobKind=1|PrintWhat=1
 OutputMedium2=schematics
 OutputMedium2_Type=Publish
-OutputMedium3=pxb_view
+OutputMedium3=pcb_view
 OutputMedium3_Type=Publish
 OutputMedium4=manufacturing_files
 OutputMedium4_Type=GeneratedFiles
@@ -145,7 +145,7 @@ Configuration5_Item1=Setting|Version=110|Format=0|Flags=8158|Scheme=0|ViewColorR
 OutputType6=BOM_PartType
 OutputName6=Bill of Materials
 OutputCategory6=Report
-OutputDocumentPath6=bom.BomDoc
+OutputDocumentPath6=main_board.BomDoc
 OutputVariantName6=
 OutputEnabled6=1
 OutputEnabled6_OutputMedium1=0
