@@ -15,13 +15,13 @@ LifeCycleDefinitionGUID=
 RevisionNamingSchemeGUID=
 
 [OutputGroup1]
-Name=
+Name=hub_board.OutJob
 Description=
 TargetOutputMedium=manufacturing_files
 VariantName=[No Variations]
 VariantScope=1
 CurrentConfigurationName=
-TargetPrinter=Samsung C1860 Series
+TargetPrinter=Brother
 PrinterOptions=Record=PrinterOptions|Copies=1|Duplex=1|TrueTypeOptions=3|Collate=1|PrintJobKind=1|PrintWhat=1
 OutputMedium1=Print Job
 OutputMedium1_Type=Printer
@@ -182,7 +182,7 @@ Configuration7_Item1=Record=PickPlaceView|Units=Imperial|GenerateCSVFormat=False
 OutputType8=Gerber
 OutputName8=Gerber Files
 OutputCategory8=Fabrication
-OutputDocumentPath8=Z:\Hall-electronic\boards\hub\hub_board.PcbDoc
+OutputDocumentPath8=
 OutputVariantName8=
 OutputEnabled8=1
 OutputEnabled8_OutputMedium1=0
@@ -205,6 +205,8 @@ OutputEnabled9_OutputMedium3=0
 OutputEnabled9_OutputMedium4=3
 OutputEnabled9_OutputMedium5=0
 OutputDefault9=0
+Configuration9_Name1=OutputConfigurationParameter1
+Configuration9_Item1=FileComment= |FileSubject=Autodetect|GenerateDRCRulesFile=True|GerberUnit=Imperial|MinusApertureTolerance=50|NumberOfDecimals=6|OptimizeChangeLocationCommands=True|PlotBlindViasPairs=False|PlotBoardProfile=False|PlotDrillDrawingPairs=False|PlotDrillGuidePairs=False|PlotNPTHPairs=False|PlotPTHPairs=False|PlotX2.Set=SerializeLayerHash.Version~2,ClassName~TLayerToBoolean|PlusApertureTolerance=50|Record=GerberX2View|Sorted=False
 OutputType10=ODB
 OutputName10=ODB++ Files
 OutputCategory10=Fabrication
@@ -217,6 +219,8 @@ OutputEnabled10_OutputMedium3=0
 OutputEnabled10_OutputMedium4=4
 OutputEnabled10_OutputMedium5=0
 OutputDefault10=0
+Configuration10_Name1=OutputConfigurationParameter1
+Configuration10_Item1=AddToAllLayerClasses.Set= |AddToAllPlots_Mechanical 1=False|AddToAllPlots_Mechanical 10=False|AddToAllPlots_Mechanical 11=False|AddToAllPlots_Mechanical 12=False|AddToAllPlots_Mechanical 13=False|AddToAllPlots_Mechanical 14=False|AddToAllPlots_Mechanical 15=False|AddToAllPlots_Mechanical 16=False|AddToAllPlots_Mechanical 2=False|AddToAllPlots_Mechanical 3=False|AddToAllPlots_Mechanical 4=False|AddToAllPlots_Mechanical 5=False|AddToAllPlots_Mechanical 6=False|AddToAllPlots_Mechanical 7=False|AddToAllPlots_Mechanical 8=False|AddToAllPlots_Mechanical 9=False|ExportPositivePlaneLayers=False|GenerateDRCRulesFile=False|IncludeUnconnectedMidLayerPads=False|LayerClassesPlot.Set="Signal Layers","Electrical Layers","Component Layers","All Layers"|ObjsInsideBoardOutlineOnly=False|ODBProfileLayer=-1000|PlotBottomLayerPlot=True|PlotBottomOverlayPlot=True|PlotBottomPastePlot=True|PlotBottomSolderPlot=True|PlotInternalPlane10Plot=False|PlotInternalPlane11Plot=False|PlotInternalPlane12Plot=False|PlotInternalPlane13Plot=False|PlotInternalPlane14Plot=False|PlotInternalPlane15Plot=False|PlotInternalPlane16Plot=False|PlotInternalPlane1Plot=False|PlotInternalPlane2Plot=False|PlotInternalPlane3Plot=False|PlotInternalPlane4Plot=False|PlotInternalPlane5Plot=False|PlotInternalPlane6Plot=False|PlotInternalPlane7Plot=False|PlotInternalPlane8Plot=False|PlotInternalPlane9Plot=False|PlotKeepOutLayerPlot=True|PlotMechanical10Plot=False|PlotMechanical11Plot=False|PlotMechanical12Plot=False|PlotMechanical13Plot=True|PlotMechanical14Plot=False|PlotMechanical15Plot=True|PlotMechanical16Plot=False|PlotMechanical1Plot=True|PlotMechanical2Plot=False|PlotMechanical3Plot=False|PlotMechanical4Plot=False|PlotMechanical5Plot=False|PlotMechanical6Plot=False|PlotMechanical7Plot=False|PlotMechanical8Plot=False|PlotMechanical9Plot=False|PlotMidLayer10Plot=False|PlotMidLayer11Plot=False|PlotMidLayer12Plot=False|PlotMidLayer13Plot=False|PlotMidLayer14Plot=False|PlotMidLayer15Plot=False|PlotMidLayer16Plot=False|PlotMidLayer17Plot=False|PlotMidLayer18Plot=False|PlotMidLayer19Plot=False|PlotMidLayer1Plot=False|PlotMidLayer20Plot=False|PlotMidLayer21Plot=False|PlotMidLayer22Plot=False|PlotMidLayer23Plot=False|PlotMidLayer24Plot=False|PlotMidLayer25Plot=False|PlotMidLayer26Plot=False|PlotMidLayer27Plot=False|PlotMidLayer28Plot=False|PlotMidLayer29Plot=False|PlotMidLayer2Plot=False|PlotMidLayer30Plot=False|PlotMidLayer3Plot=False|PlotMidLayer4Plot=False|PlotMidLayer5Plot=False|PlotMidLayer6Plot=False|PlotMidLayer7Plot=False|PlotMidLayer8Plot=False|PlotMidLayer9Plot=False|PlotTopLayerPlot=True|PlotTopOverlayPlot=True|PlotTopPastePlot=True|PlotTopSolderPlot=True|Record=ODBView
 OutputType11=NC Drill
 OutputName11=NC Drill Files
 OutputCategory11=Fabrication
@@ -229,6 +233,8 @@ OutputEnabled11_OutputMedium3=0
 OutputEnabled11_OutputMedium4=5
 OutputEnabled11_OutputMedium5=0
 OutputDefault11=0
+Configuration11_Name1=OutputConfigurationParameter1
+Configuration11_Item1=BoardEdgeRoutToolDia=2000000|GenerateBoardEdgeRout=False|GenerateDrilledSlotsG85=False|GenerateEIADrillFile=False|GenerateSeparatePlatedNonPlatedFiles=False|NumberOfDecimals=5|NumberOfUnits=2|OptimizeChangeLocationCommands=True|OriginPosition=Relative|Record=DrillView|Units=Imperial|ZeroesMode=SuppressTrailingZeroes
 OutputType12=BOM_PartType
 OutputName12=Bill of Materials
 OutputCategory12=Report
@@ -242,6 +248,18 @@ OutputEnabled12_OutputMedium4=6
 OutputEnabled12_OutputMedium5=2
 OutputDefault12=0
 PageOptions12=Record=PageOptions|CenterHorizontal=True|CenterVertical=True|PrintScale=1.00|XCorrection=1.00|YCorrection=1.00|PrintKind=1|BorderSize=5000000|LeftOffset=0|BottomOffset=0|Orientation=2|PaperLength=1000|PaperWidth=1000|Scale=100|PaperSource=7|PrintQuality=-3|MediaType=1|DitherType=10|PrintScaleMode=1|PaperKind=A4|PaperIndex=9
+Configuration12_Name1=ColumnNameFormat
+Configuration12_Item1=CaptionAsName
+Configuration12_Name2=Filter
+Configuration12_Item2=545046300E5446696C74657257726170706572000D46696C7465722E416374697665090F46696C7465722E43726974657269610A04000000000000000000
+Configuration12_Name3=GroupOrder
+Configuration12_Item3=
+Configuration12_Name4=OutputConfigurationParameter1
+Configuration12_Item4=dgeRoutToolDia=2000000|GenerateBoardEdgeRout=False|GenerateDrilledSlotsG85=False|GenerateEIADrillFile=False|GenerateSeparatePlatedNonPlatedFiles=False|NumberOfDecimals=5|NumberOfUnits=2|OptimizeChangeLocationCommands=True|OriginPosition=Relative|Record=DrillView|Units=Imperial|ZeroesMode=SuppressTrailingZeroes
+Configuration12_Name5=SortOrder
+Configuration12_Item5=Description=Up|Designator=Up
+Configuration12_Name6=VisibleOrder
+Configuration12_Item6=Comment=100|Description=100|Designator=100|Footprint=100|LibRef=100|Quantity=100
 OutputType13=AutoCAD dwg/dxf PCB
 OutputName13=AutoCAD dwg/dxf File PCB
 OutputCategory13=Export
@@ -254,6 +272,8 @@ OutputEnabled13_OutputMedium3=0
 OutputEnabled13_OutputMedium4=8
 OutputEnabled13_OutputMedium5=0
 OutputDefault13=0
+Configuration13_Name1=OutputConfigurationParameter1
+Configuration13_Item1=Record=ExportDXFView|ACadVersion=60|UseRoundedTracks=True|Components=0|HoleMode=1|Units=0|OutputFormat=0|OnlyVisibleLayers=False|ZeroWidthLines=0
 OutputType14=ExportSTEP
 OutputName14=Export STEP
 OutputCategory14=Export
@@ -266,6 +286,35 @@ OutputEnabled14_OutputMedium3=0
 OutputEnabled14_OutputMedium4=9
 OutputEnabled14_OutputMedium5=0
 OutputDefault14=0
+Configuration14_Name1=OutputConfigurationParameter1
+Configuration14_Item1=Record=ExportSTEPView|ExportComponentOptions=0|ExportModelsOption=2|ExportHolesOption=0|CanSelectPrimitives=False|IncludeMechanicalPadHoles=False|IncludeElectricalPadHoles=False|IncludeFreePadHoles=False|ExportFoldedBoard=True|ExportFoldedBoardRate=100|ComponentSuffixType=0|ComponentSuffix= |ExportCopperOption=0|ExportCopperLayer=1|ExportPadAndViaBarrelsOnly=False|IgnoreBoardCopperLayerColors=False
+OutputType15=BOM_PartType
+OutputName15=Bill of Materials csv
+OutputCategory15=Report
+OutputDocumentPath15=hub.BomDoc
+OutputVariantName15=
+OutputEnabled15=1
+OutputEnabled15_OutputMedium1=0
+OutputEnabled15_OutputMedium2=0
+OutputEnabled15_OutputMedium3=0
+OutputEnabled15_OutputMedium4=10
+OutputEnabled15_OutputMedium5=4
+OutputDefault15=0
+PageOptions15=Record=PageOptions|CenterHorizontal=True|CenterVertical=True|PrintScale=1.00|XCorrection=1.00|YCorrection=1.00|PrintKind=1|BorderSize=5000000|LeftOffset=0|BottomOffset=0|Orientation=2|PaperLength=1000|PaperWidth=1000|Scale=100|PaperSource=7|PrintQuality=-3|MediaType=1|DitherType=10|PrintScaleMode=1|PaperKind=A4|PaperIndex=9
+Configuration15_Name1=ColumnNameFormat
+Configuration15_Item1=CaptionAsName
+Configuration15_Name2=Filter
+Configuration15_Item2=545046300E5446696C74657257726170706572000D46696C7465722E416374697665090F46696C7465722E43726974657269610A04000000000000000000
+Configuration15_Name3=General
+Configuration15_Item3=OpenExported=False|AddToProject=False|ForceFit=False|NotFitted=False|Database=False|DatabasePriority=False|IncludePCBData=False|IncludeVaultData=False|IncludeAlternatives=False|ShowExportOptions=True|TemplateFilename=|BatchMode=0|FormWidth=1772|FormHeight=649|SupplierProdQty=1|SupplierAutoQty=False|SupplierUseCachedPricing=False|SupplierCurrency=<none>
+Configuration15_Name4=GroupOrder
+Configuration15_Item4=
+Configuration15_Name5=OutputConfigurationParameter1
+Configuration15_Item5=dgeRoutToolDia=2000000|GenerateBoardEdgeRout=False|GenerateDrilledSlotsG85=False|GenerateEIADrillFile=False|GenerateSeparatePlatedNonPlatedFiles=False|NumberOfDecimals=5|NumberOfUnits=2|OptimizeChangeLocationCommands=True|OriginPosition=Relative|Record=DrillView|Units=Imperial|ZeroesMode=SuppressTrailingZeroes
+Configuration15_Name6=SortOrder
+Configuration15_Item6=Description=Up|Designator=Up
+Configuration15_Name7=VisibleOrder
+Configuration15_Item7=Comment=100|Description=100|Designator=100|Footprint=100|LibRef=100|Quantity=100
 
 [PublishSettings]
 OutputFilePath2=Z:\Hall-electronic\exports\hub\schematics\hub_board.PDF
@@ -317,7 +366,7 @@ MarkNetLabels3=1
 MarkPortsId3=1
 ShowComponentParameters3=1
 GlobalBookmarks3=0
-OutputFilePath4=Z:\Hall-electronic\exports\hub\
+OutputFilePath4=\\Mac\Workspace\Hall-electronic\exports\hub\manufacturing_files\
 ReleaseManaged4=0
 OutputBasePath4=..\..\exports\hub\
 OutputPathMedia4=[Media Name]
@@ -329,7 +378,7 @@ OutputFileName4=
 OutputFileNameMulti4=
 UseOutputNameForMulti4=1
 OutputFileNameSpecial4=
-OpenOutput4=1
+OpenOutput4=0
 OutputFilePath5=Z:\Hall-electronic\exports\hub\manufacturing_reports\hub_board.PDF
 ReleaseManaged5=0
 OutputBasePath5=..\..\exports\hub\
@@ -360,8 +409,8 @@ RelativeOutputPath2=Z:\Hall-electronic\exports\hub\schematics\hub_board.PDF
 OpenOutputs2=0
 RelativeOutputPath3=Z:\Hall-electronic\exports\hub\pcb_view\hub_board.PDF
 OpenOutputs3=0
-RelativeOutputPath4=Z:\Hall-electronic\exports\hub\
-OpenOutputs4=1
+RelativeOutputPath4=\\Mac\Workspace\Hall-electronic\exports\hub\manufacturing_files\
+OpenOutputs4=0
 AddToProject4=1
 TimestampFolder4=0
 UseOutputName4=0
