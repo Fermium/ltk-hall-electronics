@@ -412,6 +412,23 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=JOVTRAYM
 
+[Document23]
+DocumentPath=..\..\libraries\custom\custom_components.SchLib
+AnnotationEnabled=1
+AnnotateStartValue=1
+AnnotationIndexControlEnabled=0
+AnnotateSuffix=
+AnnotateScope=All
+AnnotateOrder=-1
+DoLibraryUpdate=1
+DoDatabaseUpdate=1
+ClassGenCCAutoEnabled=1
+ClassGenCCAutoRoomEnabled=1
+ClassGenNCAutoScope=None
+DItemRevisionGUID=
+GenerateClassCluster=0
+DocumentUniqueId=ODIHXBOR
+
 [GeneratedDocument1]
 DocumentPath=..\..\exports\main\manufacturing_files\BOM\Bill of Materials-bom.xls
 DItemRevisionGUID=
