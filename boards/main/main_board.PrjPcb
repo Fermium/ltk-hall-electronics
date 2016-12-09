@@ -30,7 +30,7 @@ DItemRevisionGUID=
 ReportSuppressedErrorsInMessages=0
 FSMCodingStyle=eFMSDropDownList_OneProcess
 FSMEncodingStyle=eFMSDropDownList_OneHot
-OutputPath=
+OutputPath=Project Outputs for main_board
 LogFolderPath=
 ManagedProjectGUID=
 
@@ -429,6 +429,23 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=ODIHXBOR
 
+[Document24]
+DocumentPath=..\..\libraries\imported\vault\TI Power Management Series Voltage Reference.IntLib
+AnnotationEnabled=1
+AnnotateStartValue=1
+AnnotationIndexControlEnabled=0
+AnnotateSuffix=
+AnnotateScope=All
+AnnotateOrder=-1
+DoLibraryUpdate=1
+DoDatabaseUpdate=1
+ClassGenCCAutoEnabled=1
+ClassGenCCAutoRoomEnabled=1
+ClassGenNCAutoScope=None
+DItemRevisionGUID=
+GenerateClassCluster=0
+DocumentUniqueId=
+
 [GeneratedDocument1]
 DocumentPath=..\..\exports\main\manufacturing_files\BOM\Bill of Materials-bom.xls
 DItemRevisionGUID=
@@ -647,7 +664,7 @@ SaveSettingsToOutJob=0
 StartProcName=..\..\libraries\imported\UL\max5805\UL_Form.pas>
 
 [Generic_EDE]
-OutputDir=
+OutputDir=Project Outputs for main_board
 
 [OutputGroup1]
 Name=Netlist Outputs
