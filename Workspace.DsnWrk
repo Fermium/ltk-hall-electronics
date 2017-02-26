@@ -6,3 +6,5 @@ ProjectPath=boards\hub\hub_board.PrjPcb
 ProjectPath=boards\main\main_board.PrjPcb
 [Project3]
 ProjectPath=boards\sample\sample_board.PrjPcb
+[Project4]
+ProjectPath=boards\probe\probe.PrjPcb
