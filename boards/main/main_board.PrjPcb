@@ -140,23 +140,6 @@ GenerateClassCluster=0
 DocumentUniqueId=JKYBHUCT
 
 [Document7]
-DocumentPath=main_board.BomDoc
-AnnotationEnabled=1
-AnnotateStartValue=1
-AnnotationIndexControlEnabled=0
-AnnotateSuffix=
-AnnotateScope=All
-AnnotateOrder=-1
-DoLibraryUpdate=1
-DoDatabaseUpdate=1
-ClassGenCCAutoEnabled=1
-ClassGenCCAutoRoomEnabled=1
-ClassGenNCAutoScope=None
-DItemRevisionGUID=
-GenerateClassCluster=0
-DocumentUniqueId=
-
-[Document8]
 DocumentPath=..\..\libraries\imported\cpl\Octopart-CPL.PcbLib
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -173,7 +156,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=
 
-[Document9]
+[Document8]
 DocumentPath=..\..\libraries\custom\custom_components.PcbLib
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -190,7 +173,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=QDIFGQRM
 
-[Document10]
+[Document9]
 DocumentPath=..\..\libraries\custom\custom_components.SchLib
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -207,7 +190,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=ODIHXBOR
 
-[Document11]
+[Document10]
 DocumentPath=..\..\libraries\imported\addons\Libs_RRutledge 2013-12-23-2\PBL - SMD Packages.PcbLib
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -224,7 +207,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=
 
-[Document12]
+[Document11]
 DocumentPath=..\..\libraries\imported\addons\Libs_RRutledge 2013-12-23-2\PBL - THD Packages.PcbLib
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -239,9 +222,9 @@ ClassGenCCAutoRoomEnabled=1
 ClassGenNCAutoScope=None
 DItemRevisionGUID=
 GenerateClassCluster=0
-DocumentUniqueId=
+DocumentUniqueId=ARBOWEOM
 
-[Document13]
+[Document12]
 DocumentPath=..\..\libraries\imported\silicon_valley_garage\vh_altium_library\SMD Connectors.PcbLib
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -258,7 +241,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=
 
-[Document14]
+[Document13]
 DocumentPath=..\..\libraries\imported\silicon_valley_garage\vh_altium_library\SMD Connectors.SchLib
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -275,7 +258,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=
 
-[Document15]
+[Document14]
 DocumentPath=..\..\libraries\imported\silicon_valley_garage\vh_altium_library\TH Connectors.PcbLib
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -292,7 +275,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=
 
-[Document16]
+[Document15]
 DocumentPath=..\..\libraries\imported\silicon_valley_garage\vh_altium_library\TH Connectors.SchLib
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -309,7 +292,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=
 
-[Document17]
+[Document16]
 DocumentPath=..\..\libraries\imported\vault\Atmel Microcontroller megaAVR.IntLib
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -326,7 +309,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=
 
-[Document18]
+[Document17]
 DocumentPath=..\..\libraries\imported\vault\TI Data Converters Analog to Digital Converter.IntLib
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -343,7 +326,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=
 
-[Document19]
+[Document18]
 DocumentPath=main_board.PCBDwf
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -360,7 +343,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=
 
-[Document20]
+[Document19]
 DocumentPath=cc_gen_and_heat_pwr.SchDoc
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -377,7 +360,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=BXJCIBKH
 
-[Document21]
+[Document20]
 DocumentPath=..\..\libraries\imported\vault\TI Amplifiers and Linear Operational Amplifier General Purpose.IntLib
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -394,7 +377,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=
 
-[Document22]
+[Document21]
 DocumentPath=..\..\libraries\imported\vault\TI Amplifiers and Linear Special Function Amplifier.IntLib
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -411,7 +394,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=
 
-[Document23]
+[Document22]
 DocumentPath=..\..\libraries\imported\silicon_valley_garage\vh_altium_library\IC Power.SchLib
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -428,7 +411,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=
 
-[Document24]
+[Document23]
 DocumentPath=..\..\libraries\imported\vault\TI Amplifiers and Linear Difference Amplifier.IntLib
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -445,7 +428,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=
 
-[Document25]
+[Document24]
 DocumentPath=..\..\libraries\imported\vault\TI Amplifiers and Linear Operational Amplifier Audio Operational Amplifier.IntLib
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -462,7 +445,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=
 
-[Document26]
+[Document25]
 DocumentPath=..\..\libraries\imported\silicon_valley_garage\vh_altium_library\TH Resistors.PcbLib
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -479,7 +462,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=
 
-[Document27]
+[Document26]
 DocumentPath=..\..\libraries\imported\silicon_valley_garage\vh_altium_library\TH Resistors.SchLib
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -496,7 +479,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=
 
-[Document28]
+[Document27]
 DocumentPath=..\..\libraries\imported\issus\Celestial Library.IntLib
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -513,8 +496,25 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=
 
-[Document29]
+[Document28]
 DocumentPath=..\..\libraries\imported\issus\Footprints\Passives.PcbLib
+AnnotationEnabled=1
+AnnotateStartValue=1
+AnnotationIndexControlEnabled=0
+AnnotateSuffix=
+AnnotateScope=All
+AnnotateOrder=-1
+DoLibraryUpdate=1
+DoDatabaseUpdate=1
+ClassGenCCAutoEnabled=1
+ClassGenCCAutoRoomEnabled=1
+ClassGenNCAutoScope=None
+DItemRevisionGUID=
+GenerateClassCluster=0
+DocumentUniqueId=
+
+[Document29]
+DocumentPath=main_board.BomDoc
 AnnotationEnabled=1
 AnnotateStartValue=1
 AnnotationIndexControlEnabled=0
