@@ -205,7 +205,7 @@ ClassGenCCAutoRoomEnabled=1
 ClassGenNCAutoScope=None
 DItemRevisionGUID=
 GenerateClassCluster=0
-DocumentUniqueId=
+DocumentUniqueId=XWBYDBFB
 
 [Document11]
 DocumentPath=..\..\libraries\imported\addons\Libs_RRutledge 2013-12-23-2\PBL - THD Packages.PcbLib
@@ -566,6 +566,23 @@ DocumentUniqueId=
 
 [Document32]
 DocumentPath=..\..\libraries\imported\addons\Lib_NetTieLib\NetTieLib.IntLib
+AnnotationEnabled=1
+AnnotateStartValue=1
+AnnotationIndexControlEnabled=0
+AnnotateSuffix=
+AnnotateScope=All
+AnnotateOrder=-1
+DoLibraryUpdate=1
+DoDatabaseUpdate=1
+ClassGenCCAutoEnabled=1
+ClassGenCCAutoRoomEnabled=1
+ClassGenNCAutoScope=None
+DItemRevisionGUID=
+GenerateClassCluster=0
+DocumentUniqueId=
+
+[Document33]
+DocumentPath=..\..\libraries\imported\silicon_valley_garage\vh_altium_library\SMD Diodes.PcbLib
 AnnotationEnabled=1
 AnnotateStartValue=1
 AnnotationIndexControlEnabled=0
