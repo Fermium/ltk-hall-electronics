@@ -20,3 +20,5 @@ exports/main/manufacturing_report
 exports
 *.htm
 *.$$$
+boards/main/Project Outputs for main_board/Design Rule Check - main_board.drc
+boards/main/Project Outputs for main_board/Design Rule Check - main_board.html
