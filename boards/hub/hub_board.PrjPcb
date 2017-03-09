@@ -188,7 +188,7 @@ ClassGenCCAutoRoomEnabled=1
 ClassGenNCAutoScope=None
 DItemRevisionGUID=
 GenerateClassCluster=0
-DocumentUniqueId=
+DocumentUniqueId=JPLXECUF
 
 [Document10]
 DocumentPath=..\..\libraries\imported\vault\TI Power Management Series Voltage Reference.IntLib
@@ -447,6 +447,23 @@ ContentTypeGUID=
 
 [Generic_EDE]
 OutputDir=
+
+[Generic_PCB]
+Collation=True
+Copies=1
+DelegateCopies=False
+PrinterName=Default
+Duplex=0
+Orientation=1
+PaperName=A4
+BinName=Default
+Units=1
+PageDef.mmHeight=210079
+PageDef.mmWidth=297127
+PageDef.mmMarginLeft=10160
+PageDef.mmMarginRight=10160
+PageDef.mmMarginTop=6350
+PageDef.mmMarginBottom=6350
 
 [OutputGroup1]
 Name=Netlist Outputs
