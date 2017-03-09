@@ -428,6 +428,10 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=INWFAVBW
 
+[GeneratedDocument1]
+DocumentPath=Project Outputs for hub_board\Design Rule Check - hub_board.html
+DItemRevisionGUID=
+
 [SearchPath1]
 Path=..\..\*.*
 IncludeSubFolders=1

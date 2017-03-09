@@ -22,3 +22,7 @@ exports
 *.$$$
 boards/main/Project Outputs for main_board/Design Rule Check - main_board.drc
 boards/main/Project Outputs for main_board/Design Rule Check - main_board.html
+boards/hub/Project Outputs for hub_board/Design Rule Check - hub_board.drc
+boards/hub/Project Outputs for hub_board/Design Rule Check - hub_board.html
+boards/probe/Project Outputs for probe/Design Rule Check - probe.drc
+boards/probe/Project Outputs for probe/Design Rule Check - probe.html
