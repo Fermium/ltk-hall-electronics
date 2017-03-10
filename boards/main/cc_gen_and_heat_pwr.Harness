@@ -1,0 +1,3 @@
+DB25={analog_in:DB25_analog_in},{aux:DB25_aux},{heater:DB25_heater},{sample_I:DB25_sample_I}
+DB25_sample_I=3_SAMPLE-I_P,4_SAMPLE-I_P,16_SAMPLE-I_P,19_SAMPLE-I_N,21_SAMPLE-I_N,23_SAMPLE-I_N
+I2c=SDA,SCL
