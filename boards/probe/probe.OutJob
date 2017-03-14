@@ -418,6 +418,8 @@ OutputEnabled21_OutputMedium5=0
 OutputEnabled21_OutputMedium6=4
 OutputDefault21=0
 PageOptions21=Record=PageOptions|CenterHorizontal=True|CenterVertical=True|PrintScale=1.00|XCorrection=1.00|YCorrection=1.00|PrintKind=1|BorderSize=5000000|LeftOffset=0|BottomOffset=0|Orientation=2|PaperLength=1000|PaperWidth=1000|Scale=100|PaperSource=7|PrintQuality=-3|MediaType=1|DitherType=10|PrintScaleMode=1|PaperKind=A4|PaperIndex=9
+Configuration21_Name1=OutputConfigurationParameter1
+Configuration21_Item1=DifferenceLevel1=1|DifferenceLevel10=1|DifferenceLevel11=1|DifferenceLevel12=1|DifferenceLevel13=1|DifferenceLevel14=1|DifferenceLevel15=1|DifferenceLevel16=1|DifferenceLevel17=1|DifferenceLevel18=1|DifferenceLevel19=1|DifferenceLevel2=1|DifferenceLevel20=1|DifferenceLevel21=1|DifferenceLevel22=1|DifferenceLevel23=1|DifferenceLevel24=1|DifferenceLevel25=1|DifferenceLevel26=1|DifferenceLevel27=1|DifferenceLevel28=1|DifferenceLevel29=1|DifferenceLevel3=1|DifferenceLevel30=1|DifferenceLevel31=1|DifferenceLevel32=1|DifferenceLevel33=1|DifferenceLevel34=1|DifferenceLevel35=1|DifferenceLevel36=1|DifferenceLevel37=1|DifferenceLevel38=1|DifferenceLevel39=1|DifferenceLevel4=1|DifferenceLevel40=1|DifferenceLevel41=1|DifferenceLevel42=1|DifferenceLevel43=1|DifferenceLevel44=1|DifferenceLevel45=1|DifferenceLevel46=1|DifferenceLevel47=1|DifferenceLevel48=1|DifferenceLevel49=1|DifferenceLevel5=1|DifferenceLevel6=1|DifferenceLevel7=1|DifferenceLevel8=1|DifferenceLevel9=1|Record=DiffReportView
 OutputType22=Configuration compliance
 OutputName22=Environment configuration compliance check
 OutputCategory22=Validation
@@ -431,6 +433,8 @@ OutputEnabled22_OutputMedium4=0
 OutputEnabled22_OutputMedium5=0
 OutputEnabled22_OutputMedium6=5
 OutputDefault22=0
+Configuration22_Name1=OutputConfigurationParameter1
+Configuration22_Item1=AllFromVault=False|Prefernces=&&&&|Record=EnvironmentReportView|UseOutJob=False|UsePrefernces=False|UseTemplate=False
 
 [PublishSettings]
 OutputFilePath1=C:\Users\d\Documents\Hall-electronic\exports\probe\schematics\probe_board.PDF
@@ -541,7 +545,7 @@ ShowComponentParameters4=1
 GlobalBookmarks4=0
 PDFACompliance4=Disabled
 PDFVersion4=Default
-OutputFilePath5=C:\Users\d\Documents\Hall-electronic\exports\probe \manufacturing_files\
+OutputFilePath5=C:\Users\d\Documents\Hall-electronic\exports\probe\manufacturing_files\
 ReleaseManaged5=0
 OutputBasePath5=..\..\exports\probe\
 OutputPathMedia5=[Media Name]
@@ -577,10 +581,10 @@ RelativeOutputPath3=C:\Users\d\Documents\Hall-electronic\exports\probe\manufactu
 OpenOutputs3=0
 RelativeOutputPath4=C:\Users\d\Documents\Hall-electronic\exports\probe\validation_reports_pdf\hub_board.PDF
 OpenOutputs4=0
-RelativeOutputPath5=C:\Users\d\Documents\Hall-electronic\exports\probe \manufacturing_files\
+RelativeOutputPath5=C:\Users\d\Documents\Hall-electronic\exports\probe\manufacturing_files\
 OpenOutputs5=0
 AddToProject5=1
-TimestampFolder5=1
+TimestampFolder5=0
 UseOutputName5=0
 OpenODBOutput5=0
 OpenGerberOutput5=0
