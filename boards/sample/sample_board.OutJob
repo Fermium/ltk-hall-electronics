@@ -15,7 +15,7 @@ LifeCycleDefinitionGUID=
 RevisionNamingSchemeGUID=
 
 [OutputGroup1]
-Name=sample_board.OutJob
+Name=
 Description=
 TargetOutputMedium=manufacturing_files
 VariantName=[No Variations]
@@ -580,7 +580,7 @@ AddToProject6=1
 TimestampFolder6=0
 UseOutputName6=0
 OpenODBOutput6=0
-OpenGerberOutput6=0
+OpenGerberOutput6=1
 OpenNCDrillOutput6=0
 OpenIPCOutput6=0
 EnableReload6=0

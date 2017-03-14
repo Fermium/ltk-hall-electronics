@@ -28,7 +28,7 @@ DItemRevisionGUID=
 ReportSuppressedErrorsInMessages=0
 FSMCodingStyle=eFMSDropDownList_OneProcess
 FSMEncodingStyle=eFMSDropDownList_OneHot
-OutputPath=
+OutputPath=Project Outputs for hub_board
 LogFolderPath=
 ManagedProjectGUID=
 LinkedManagedProjectGUID=
@@ -613,10 +613,25 @@ ConstraintFileCount=0
 ReleaseItemId=
 Variant=[No Variations]
 OutputJobsCount=0
-ContentTypeGUID=
+ContentTypeGUID=CB6F2064-E317-11DF-B822-12313F0024A2
 
-[Generic_EDE]
-OutputDir=
+[Configuration2]
+Name=Fabrication
+ParameterCount=0
+ConstraintFileCount=0
+ReleaseItemId=
+Variant=[No Variations]
+OutputJobsCount=0
+ContentTypeGUID=0C520D2A-E60C-11DF-B822-12313F0024A2
+
+[Configuration3]
+Name=Assembly
+ParameterCount=0
+ConstraintFileCount=0
+ReleaseItemId=
+Variant=[No Variations]
+OutputJobsCount=0
+ContentTypeGUID=0D12F8DC-E60C-11DF-B822-12313F0024A2
 
 [Generic_PCB]
 Collation=True
@@ -634,6 +649,9 @@ PageDef.mmMarginLeft=10160
 PageDef.mmMarginRight=10160
 PageDef.mmMarginTop=6350
 PageDef.mmMarginBottom=6350
+
+[Generic_EDE]
+OutputDir=Project Outputs for hub_board
 
 [OutputGroup1]
 Name=Netlist Outputs
