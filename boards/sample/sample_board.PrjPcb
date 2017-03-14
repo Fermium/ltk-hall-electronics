@@ -305,58 +305,38 @@ DocumentPath=..\..\exports\sample\manufacturing_files\AutoCAD PCB\sample_board.D
 DItemRevisionGUID=
 
 [GeneratedDocument38]
-DocumentPath=..\..\exports\sample\manufacturing_files\Gerber\sample_board.EXTREP
-DItemRevisionGUID=
-
-[GeneratedDocument39]
 DocumentPath=..\..\exports\sample\manufacturing_files\GerberX2\sample_board.EXTREP
 DItemRevisionGUID=
 
-[GeneratedDocument40]
-DocumentPath=..\..\exports\sample\validation_reports\DRC\sample_board.html
-DItemRevisionGUID=
-
-[GeneratedDocument41]
-DocumentPath=..\..\exports\sample\validation_reports\ERC\sample_board.html
-DItemRevisionGUID=
-
-[GeneratedDocument42]
+[GeneratedDocument39]
 DocumentPath=..\..\exports\sample\manufacturing_files\NC Drill\sample_board.LDP
 DItemRevisionGUID=
 
-[GeneratedDocument43]
-DocumentPath=..\..\exports\sample\manufacturing_files\Gerber\sample_board.REP
-DItemRevisionGUID=
-
-[GeneratedDocument44]
+[GeneratedDocument40]
 DocumentPath=..\..\exports\sample\manufacturing_files\GerberX2\sample_board.REP
 DItemRevisionGUID=
 
-[GeneratedDocument45]
+[GeneratedDocument41]
 DocumentPath=..\..\exports\sample\manufacturing_files\ODB\sample_board.REP
 DItemRevisionGUID=
 
-[GeneratedDocument46]
-DocumentPath=..\..\exports\sample\manufacturing_files\Gerber\sample_board.RUL
-DItemRevisionGUID=
-
-[GeneratedDocument47]
+[GeneratedDocument42]
 DocumentPath=..\..\exports\sample\manufacturing_files\GerberX2\sample_board.RUL
 DItemRevisionGUID=
 
-[GeneratedDocument48]
+[GeneratedDocument43]
 DocumentPath=..\..\exports\sample\manufacturing_files\ExportSTEP\sample_board.step
 DItemRevisionGUID=
 
-[GeneratedDocument49]
+[GeneratedDocument44]
 DocumentPath=..\..\exports\sample\manufacturing_files\ODB\odb\steps\pcb\stephdr
 DItemRevisionGUID=
 
-[GeneratedDocument50]
+[GeneratedDocument45]
 DocumentPath=..\..\exports\sample\manufacturing_files\ODB\odb\steps\pcb\layers\drill\tools
 DItemRevisionGUID=
 
-[GeneratedDocument51]
+[GeneratedDocument46]
 DocumentPath=..\..\exports\sample\manufacturing_files\ODB\odb\steps\pcb\layers\rout\tools
 DItemRevisionGUID=
 

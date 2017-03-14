@@ -28,7 +28,7 @@ DItemRevisionGUID=
 ReportSuppressedErrorsInMessages=0
 FSMCodingStyle=eFMSDropDownList_OneProcess
 FSMEncodingStyle=eFMSDropDownList_OneHot
-OutputPath=
+OutputPath=Project Outputs for main_board
 LogFolderPath=
 ManagedProjectGUID=
 LinkedManagedProjectGUID=
@@ -853,66 +853,94 @@ DocumentPath=..\..\exports\main\manufacturing_files\AutoCAD PCB\main_board.DWG
 DItemRevisionGUID=
 
 [GeneratedDocument39]
-DocumentPath=..\..\exports\main\manufacturing_files\Gerber\main_board.EXTREP
-DItemRevisionGUID=
-
-[GeneratedDocument40]
 DocumentPath=..\..\exports\main\manufacturing_files\GerberX2\main_board.EXTREP
 DItemRevisionGUID=
 
-[GeneratedDocument41]
-DocumentPath=..\..\exports\main\manufacturing_files\DRC\main_board.html
-DItemRevisionGUID=
-
-[GeneratedDocument42]
+[GeneratedDocument40]
 DocumentPath=..\..\exports\main\manufacturing_files\NC Drill\main_board.LDP
 DItemRevisionGUID=
 
-[GeneratedDocument43]
-DocumentPath=..\..\exports\main\manufacturing_files\Gerber\main_board.REP
+[GeneratedDocument41]
+DocumentPath=..\..\exports\main\manufacturing_files\Copy Files\main_board.PcbDoc
 DItemRevisionGUID=
 
-[GeneratedDocument44]
+[GeneratedDocument42]
 DocumentPath=..\..\exports\main\manufacturing_files\GerberX2\main_board.REP
 DItemRevisionGUID=
 
-[GeneratedDocument45]
+[GeneratedDocument43]
 DocumentPath=..\..\exports\main\manufacturing_files\ODB\main_board.REP
 DItemRevisionGUID=
 
-[GeneratedDocument46]
-DocumentPath=..\..\exports\main\manufacturing_files\Gerber\main_board.RUL
-DItemRevisionGUID=
-
-[GeneratedDocument47]
+[GeneratedDocument44]
 DocumentPath=..\..\exports\main\manufacturing_files\GerberX2\main_board.RUL
 DItemRevisionGUID=
 
-[GeneratedDocument48]
+[GeneratedDocument45]
 DocumentPath=..\..\exports\main\manufacturing_files\ExportSTEP\main_board.step
 DItemRevisionGUID=
 
+[GeneratedDocument46]
+DocumentPath=..\..\exports\main\manufacturing_files\GerberX2\main_board_Copper_Signal_Bot.gbr
+DItemRevisionGUID=
+
+[GeneratedDocument47]
+DocumentPath=..\..\exports\main\manufacturing_files\GerberX2\main_board_Copper_Signal_Top.gbr
+DItemRevisionGUID=
+
+[GeneratedDocument48]
+DocumentPath=..\..\exports\main\manufacturing_files\GerberX2\main_board_Legend_Bot.gbr
+DItemRevisionGUID=
+
 [GeneratedDocument49]
-DocumentPath=..\..\exports\main\manufacturing_files\ODB\odb\matrix\matrix
+DocumentPath=..\..\exports\main\manufacturing_files\GerberX2\main_board_Legend_Top.gbr
 DItemRevisionGUID=
 
 [GeneratedDocument50]
-DocumentPath=..\..\exports\main\manufacturing_files\ODB\odb\steps\pcb\netlists\cadnet\netlist
+DocumentPath=..\..\exports\main\manufacturing_files\GerberX2\main_board_Mechanical_1.gbr
 DItemRevisionGUID=
 
 [GeneratedDocument51]
-DocumentPath=..\..\exports\main\manufacturing_files\Pick Place\Pick Place for main_board.txt
+DocumentPath=..\..\exports\main\manufacturing_files\GerberX2\main_board_Paste_Bot.gbr
 DItemRevisionGUID=
 
 [GeneratedDocument52]
-DocumentPath=..\..\exports\main\manufacturing_files\ODB\odb\steps\pcb\profile
+DocumentPath=..\..\exports\main\manufacturing_files\GerberX2\main_board_Paste_Top.gbr
 DItemRevisionGUID=
 
 [GeneratedDocument53]
-DocumentPath=..\..\exports\main\manufacturing_files\ODB\odb\steps\pcb\stephdr
+DocumentPath=..\..\exports\main\manufacturing_files\GerberX2\main_board_Profile.gbr
 DItemRevisionGUID=
 
 [GeneratedDocument54]
+DocumentPath=..\..\exports\main\manufacturing_files\GerberX2\main_board_Soldermask_Bot.gbr
+DItemRevisionGUID=
+
+[GeneratedDocument55]
+DocumentPath=..\..\exports\main\manufacturing_files\GerberX2\main_board_Soldermask_Top.gbr
+DItemRevisionGUID=
+
+[GeneratedDocument56]
+DocumentPath=..\..\exports\main\manufacturing_files\ODB\odb\matrix\matrix
+DItemRevisionGUID=
+
+[GeneratedDocument57]
+DocumentPath=..\..\exports\main\manufacturing_files\ODB\odb\steps\pcb\netlists\cadnet\netlist
+DItemRevisionGUID=
+
+[GeneratedDocument58]
+DocumentPath=..\..\exports\main\manufacturing_files\Pick Place\Pick Place for main_board.txt
+DItemRevisionGUID=
+
+[GeneratedDocument59]
+DocumentPath=..\..\exports\main\manufacturing_files\ODB\odb\steps\pcb\profile
+DItemRevisionGUID=
+
+[GeneratedDocument60]
+DocumentPath=..\..\exports\main\manufacturing_files\ODB\odb\steps\pcb\stephdr
+DItemRevisionGUID=
+
+[GeneratedDocument61]
 DocumentPath=..\..\exports\main\manufacturing_files\ODB\odb\steps\pcb\layers\drill\tools
 DItemRevisionGUID=
 
@@ -960,9 +988,6 @@ SCH_ExpandSheetNumber=0
 SCH_ExpandDocumentNumber=0
 SCH_HasExpandLogicalToPhysicalSheets=-1
 SaveSettingsToOutJob=0
-
-[Generic_EDE]
-OutputDir=
 
 [Generic_SignalIntegrityPanelSetup]
 TerminationName0=No Termination
@@ -1069,6 +1094,9 @@ TerminationMinC7=0
 TerminationMaxC7=0
 TerminationPrefC7=0
 TerminationVCC7=5
+
+[Generic_EDE]
+OutputDir=Project Outputs for main_board
 
 [OutputGroup1]
 Name=Netlist Outputs
