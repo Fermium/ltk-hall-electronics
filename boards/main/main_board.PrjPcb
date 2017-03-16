@@ -701,27 +701,15 @@ GenerateClassCluster=0
 DocumentUniqueId=
 
 [GeneratedDocument1]
-DocumentPath=Project Outputs for main_board\Design Rule Check - main_board.html
+DocumentPath=..\..\exports\main\purchase_files\BOM\BOM, csv-main_board.csv
 DItemRevisionGUID=
 
 [GeneratedDocument2]
-DocumentPath=..\..\exports\main\validation_reports\DiffReport\main_board.html
+DocumentPath=..\..\exports\main\purchase_files\BOM\BOM, pdf, human-readable-main_board.pdf
 DItemRevisionGUID=
 
 [GeneratedDocument3]
-DocumentPath=..\..\exports\main\validation_reports\DRC\main_board.html
-DItemRevisionGUID=
-
-[GeneratedDocument4]
-DocumentPath=..\..\exports\main\validation_reports\ECCC\main_board.html
-DItemRevisionGUID=
-
-[GeneratedDocument5]
-DocumentPath=..\..\exports\main\validation_reports\ERC\main_board.html
-DItemRevisionGUID=
-
-[GeneratedDocument6]
-DocumentPath=..\..\exports\main\validation_reports\FootprintComparison\main_board.html
+DocumentPath=Project Outputs for main_board\Design Rule Check - main_board.html
 DItemRevisionGUID=
 
 [Configuration1]
