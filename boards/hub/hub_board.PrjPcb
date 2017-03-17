@@ -599,14 +599,10 @@ GenerateClassCluster=0
 DocumentUniqueId=
 
 [GeneratedDocument1]
-DocumentPath=..\..\exports\hub\purchase_files\BOM\BOM, csv-hub_board.csv
-DItemRevisionGUID=
-
-[GeneratedDocument2]
 DocumentPath=..\..\exports\hub\purchase_files\BOM\BOM, pdf, human-readable-hub_board.pdf
 DItemRevisionGUID=
 
-[GeneratedDocument3]
+[GeneratedDocument2]
 DocumentPath=Project Outputs for hub_board\Design Rule Check - hub_board.html
 DItemRevisionGUID=
 
