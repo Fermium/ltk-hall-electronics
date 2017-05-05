@@ -1,3 +1,5 @@
-*.SchDoc text eol=native
-*.Harness text eol=native
+*.SchDoc text eol=crlf
+*.Harness text eol=crlf
+*.BomDoc text eol=crlf
+*.OutJob text eol=crlf
 
