@@ -7,3 +7,6 @@
 [submodule "presskit"]
 	path = presskit
 	url = git@github.com:fermiumlabs/presskit.git
+[submodule "libraries"]
+	path = libraries
+	url = git@github.com:ddavidebor/altium-libraries.git
