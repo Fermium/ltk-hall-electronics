@@ -1,2 +1,3 @@
 *.SchDoc text eol=native
+*.Harness text eol=native
 
