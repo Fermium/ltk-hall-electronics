@@ -4,8 +4,6 @@ import glob
 
 partFileslist = glob.glob('../exports/*/purchase_files/BOM/*.csv')
 
-
-
 print("Opening files:")
 for file in partFileslist:
     print("\t", file)
@@ -36,10 +34,15 @@ for row in partslist:
     for key in row:
         if row[key] == "":
             row[key] = "N/A"
-            
 
+ordersBySupplier = {}
 for row in partslist:
-    print(row)
+    ordersBySupplier[row["Supplier 1"]] = []
+for row in partslist:
+    ordersBySupplier[row["Supplier 1"]].append(row)
     
+print(ordersBySupplier)
 
-    
+
+
+            
