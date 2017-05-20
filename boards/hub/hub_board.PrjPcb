@@ -28,7 +28,7 @@ DItemRevisionGUID=
 ReportSuppressedErrorsInMessages=0
 FSMCodingStyle=eFMSDropDownList_OneProcess
 FSMEncodingStyle=eFMSDropDownList_OneHot
-OutputPath=Project Outputs for hub_board
+OutputPath=
 LogFolderPath=
 ManagedProjectGUID=
 LinkedManagedProjectGUID=
@@ -590,22 +590,18 @@ DocumentPath=..\..\exports\hub\purchase_files\BOM\BOM-csv-hub_board.csv
 DItemRevisionGUID=
 
 [GeneratedDocument3]
-DocumentPath=..\..\exports\hub\purchase_files\BOM\BOM-pdf-hub_board.pdf
-DItemRevisionGUID=
-
-[GeneratedDocument4]
 DocumentPath=..\..\exports\hub\assembly_files\AutoCAD PCB\hub_board.DWG
 DItemRevisionGUID=
 
-[GeneratedDocument5]
+[GeneratedDocument4]
 DocumentPath=..\..\exports\hub\assembly_files\Copy Files\hub_board.PcbDoc
 DItemRevisionGUID=
 
-[GeneratedDocument6]
+[GeneratedDocument5]
 DocumentPath=..\..\exports\hub\assembly_files\ExportSTEP\hub_board.step
 DItemRevisionGUID=
 
-[GeneratedDocument7]
+[GeneratedDocument6]
 DocumentPath=..\..\exports\hub\assembly_files\Pick Place\Pick Place for hub_board.txt
 DItemRevisionGUID=
 
@@ -658,7 +654,7 @@ PageDef.mmMarginTop=6350
 PageDef.mmMarginBottom=6350
 
 [Generic_EDE]
-OutputDir=Project Outputs for hub_board
+OutputDir=
 
 [OutputGroup1]
 Name=Netlist Outputs
