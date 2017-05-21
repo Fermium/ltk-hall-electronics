@@ -88,7 +88,6 @@ def disty_price(distributor, mpn_or_sku, manufacturer=False):
     if response and response['results'][0]['items']:
         for offer in response['results'][0]['items'][0]['offers']:
             if offer['seller']['name'] == distributor:
-                print(offer['prices'])
                 return  offer['prices']['USD'][0][1] 
 
     return ERROR_MSG

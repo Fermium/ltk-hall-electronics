@@ -81,8 +81,8 @@ for supplier in itemsBySupplier:
     print("\t", itemsBySupplier[supplier])
     
 for supplier in itemsBySupplier:
-    for item in itemsBySupplier[supplier]:
-        itemsBySupplier[supplier][item]["price"] = disty_price(supplier, item)
+    for sku in itemsBySupplier[supplier]:
+        itemsBySupplier[supplier][sku]["price"] = disty_price(supplier, sku)
 
 for supplier in itemsBySupplier:
     print(supplier, ":")
