@@ -1,6 +1,7 @@
 #!/usr/bin/python3
 import csv
 import glob
+from  octopart import octopart_url, datasheet_url, disty_stock, disty_price
 
 Fileslist = glob.glob('../exports/*/purchase_files/BOM/*.csv')
 
@@ -79,3 +80,10 @@ for supplier in itemsBySupplier:
     print(supplier, ":")
     print("\t", itemsBySupplier[supplier])
     
+for supplier in itemsBySupplier:
+    for item in itemsBySupplier[supplier]:
+        itemsBySupplier[supplier][item]["price"] = disty_price(supplier, item)
+
+for supplier in itemsBySupplier:
+    print(supplier, ":")
+    print("\t", itemsBySupplier[supplier])
