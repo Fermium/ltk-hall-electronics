@@ -2,16 +2,18 @@
 import csv
 import glob
 
-partFileslist = glob.glob('../exports/*/purchase_files/BOM/*.csv')
+Fileslist = glob.glob('../exports/*/purchase_files/BOM/*.csv')
 
 print("Opening files:")
-for file in partFileslist:
+for file in Fileslist:
     print("\t", file)
     
 print("\n\n")
 
+#List of non-unique parts that may be duplicated
 partslist = []
-for file in partFileslist:
+
+for file in Fileslist:
     with open(file, 'rt', encoding='latin-1') as csvfile:
         reader = csv.DictReader(csvfile)
         for row in reader:
@@ -65,13 +67,13 @@ for supplier in itemsBySupplier:
     for row in partslist:
         if row["Supplier 1"] == supplier:
             itemsBySupplier[supplier][row["Supplier Part Number 1"]] = {}
-            itemsBySupplier[supplier][row["Supplier Part Number 1"]]["QNT"] = 0
-            
+            itemsBySupplier[supplier][row["Supplier Part Number 1"]]["qnt"] = 0
+#group by sku and sum quantities
 for row in partslist:
-    itemsBySupplier[row["Supplier 1"]][row["Supplier Part Number 1"]]["QNT"] += int(row["Quantity"])
-    itemsBySupplier[row["Supplier 1"]][row["Supplier Part Number 1"]]["MPN"] = row["Manufacturer Part Number"]
-    itemsBySupplier[row["Supplier 1"]][row["Supplier Part Number 1"]]["MN"] = row["Manufacturer"]
-    itemsBySupplier[row["Supplier 1"]][row["Supplier Part Number 1"]]["SKU"] = row["Supplier Part Number 1"]
+    itemsBySupplier[row["Supplier 1"]][row["Supplier Part Number 1"]]["qnt"] += int(row["Quantity"])
+    itemsBySupplier[row["Supplier 1"]][row["Supplier Part Number 1"]]["mnt"] = row["Manufacturer Part Number"]
+    itemsBySupplier[row["Supplier 1"]][row["Supplier Part Number 1"]]["brand"] = row["Manufacturer"]
+    itemsBySupplier[row["Supplier 1"]][row["Supplier Part Number 1"]]["sku"] = row["Supplier Part Number 1"]
     
 for supplier in itemsBySupplier:
     print(supplier, ":")
