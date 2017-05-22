@@ -201,8 +201,11 @@ for board in boardstats:
     print("| --- | --- | --- |", file=reportFile)
     for index, quantity in enumerate(boardstats[board]["quantities"]):
         print("|", quantity, "|", boardstats[board]["prices"][index], "|", boardstats[board]["Unit prices"][index], file=reportFile)
-        
+    print("\n", file=reportFile)
+    print("![" + board + " board" + "](" + board + ".png"+")", file=reportFile)
 print("Generated board stats report:", reportFileName)
+
+#################################### PRINT PRICE GRAPHS
 
 for board in boardstats:
     import matplotlib.pyplot as plt
