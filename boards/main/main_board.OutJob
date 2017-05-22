@@ -21,7 +21,7 @@ TargetOutputMedium=purchase_files
 VariantName=[No Variations]
 VariantScope=0
 CurrentConfigurationName=
-TargetPrinter=Google Cloud Printer
+TargetPrinter=Brother_MFC-J6520DW#:1
 PrinterOptions=Record=PrinterOptions|Copies=1|Duplex=1|TrueTypeOptions=3|Collate=1|PrintJobKind=1|PrintWhat=0
 OutputMedium1=Print Job
 OutputMedium1_Type=Printer
@@ -502,19 +502,19 @@ Configuration20_Item1=CaptionAsName
 Configuration20_Name2=Filter
 Configuration20_Item2=545046300E5446696C74657257726170706572000D46696C7465722E416374697665090F46696C7465722E43726974657269610A04000000000000000000
 Configuration20_Name3=General
-Configuration20_Item3=OpenExported=False|AddToProject=False|ForceFit=True|NotFitted=False|Database=False|DatabasePriority=False|IncludePCBData=False|IncludeVaultData=False|IncludeAlternatives=False|ShowExportOptions=True|TemplateFilename=|BatchMode=0|FormWidth=1772|FormHeight=661|SupplierProdQty=1|SupplierAutoQty=False|SupplierUseCachedPricing=False|SupplierCurrency=<none>
+Configuration20_Item3=OpenExported=False|AddToProject=False|ForceFit=True|NotFitted=False|Database=False|DatabasePriority=False|IncludePCBData=False|IncludeVaultData=False|IncludeAlternatives=False|ShowExportOptions=True|TemplateFilename=|BatchMode=0|FormWidth=2225|FormHeight=661|SupplierProdQty=1|SupplierAutoQty=False|SupplierUseCachedPricing=False|SupplierCurrency=<none>
 Configuration20_Name4=GroupOrder
-Configuration20_Item4=Value=True|Manufacturer Part Number=True|Resistance=True|Footprint=True|Description=True|Comment=True|Capacitance=True
+Configuration20_Item4=Pads=True|Value=True|Manufacturer Part Number=True|Resistance=True|Footprint=True|Description=True|Comment=True|Capacitance=True
 Configuration20_Name5=OutputConfigurationParameter1
 Configuration20_Item5=dgeRoutToolDia=2000000|GenerateBoardEdgeRout=False|GenerateDrilledSlotsG85=False|GenerateEIADrillFile=False|GenerateSeparatePlatedNonPlatedFiles=False|NumberOfDecimals=5|NumberOfUnits=2|OptimizeChangeLocationCommands=True|OriginPosition=Relative|Record=DrillView|Units=Imperial|ZeroesMode=SuppressTrailingZeroes
 Configuration20_Name6=PCBDocument
-Configuration20_Item6=FileName=hub_board.PcbDoc
+Configuration20_Item6=FileName=main_board.PcbDoc
 Configuration20_Name7=PCBDocument2
 Configuration20_Item7=FileName=[PCB Document 1]
 Configuration20_Name8=SortOrder
 Configuration20_Item8=Designator=Up
 Configuration20_Name9=VisibleOrder
-Configuration20_Item9=Supplier Part Number 1=142|Quantity=67|Manufacturer Part Number=160|Comment=99|Footprint=118|Capacitance=85|Resistance=77|Value=52|Supplier 1=100
+Configuration20_Item9=Supplier Part Number 1=142|Quantity=67|Manufacturer Part Number=160|Capacitance=85|Resistance=77|Value=52|Supplier 1=100|Pads=100|Designator=100
 OutputType21=BOM_PartType
 OutputName21=BOM-pdf
 OutputCategory21=Report

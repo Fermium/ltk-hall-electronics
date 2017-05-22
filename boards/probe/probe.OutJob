@@ -21,7 +21,7 @@ TargetOutputMedium=purchase_files
 VariantName=[No Variations]
 VariantScope=1
 CurrentConfigurationName=
-TargetPrinter=Google Cloud Printer
+TargetPrinter=Brother_MFC-J6520DW#:1
 PrinterOptions=Record=PrinterOptions|Copies=1|Duplex=1|TrueTypeOptions=3|Collate=1|PrintJobKind=1|PrintWhat=1
 OutputMedium1=schematics
 OutputMedium1_Type=Publish
@@ -472,17 +472,17 @@ Configuration22_Item2=545046300E5446696C74657257726170706572000D46696C7465722E41
 Configuration22_Name3=General
 Configuration22_Item3=OpenExported=False|AddToProject=False|ForceFit=True|NotFitted=False|Database=False|DatabasePriority=False|IncludePCBData=False|IncludeVaultData=False|IncludeAlternatives=False|ShowExportOptions=True|TemplateFilename=|BatchMode=0|FormWidth=1772|FormHeight=661|SupplierProdQty=1|SupplierAutoQty=False|SupplierUseCachedPricing=False|SupplierCurrency=<none>
 Configuration22_Name4=GroupOrder
-Configuration22_Item4=Value=True|Manufacturer Part Number=True|Resistance=True|Footprint=True|Description=True|Comment=True|Capacitance=True
+Configuration22_Item4=Pads=True|Manufacturer Part Number=True|Footprint=True|Description=True|Comment=True
 Configuration22_Name5=OutputConfigurationParameter1
 Configuration22_Item5=dgeRoutToolDia=2000000|GenerateBoardEdgeRout=False|GenerateDrilledSlotsG85=False|GenerateEIADrillFile=False|GenerateSeparatePlatedNonPlatedFiles=False|NumberOfDecimals=5|NumberOfUnits=2|OptimizeChangeLocationCommands=True|OriginPosition=Relative|Record=DrillView|Units=Imperial|ZeroesMode=SuppressTrailingZeroes
 Configuration22_Name6=PCBDocument
-Configuration22_Item6=FileName=hub_board.PcbDoc
+Configuration22_Item6=FileName=probe.PcbDoc
 Configuration22_Name7=PCBDocument2
 Configuration22_Item7=FileName=[PCB Document 1]
 Configuration22_Name8=SortOrder
 Configuration22_Item8=Designator=Up
 Configuration22_Name9=VisibleOrder
-Configuration22_Item9=Supplier Part Number 1=142|Quantity=67|Manufacturer Part Number=160|Comment=99|Footprint=118|Capacitance=85|Resistance=77|Value=52|Supplier 1=100
+Configuration22_Item9=Supplier Part Number 1=142|Quantity=67|Manufacturer Part Number=160|Comment=99|Footprint=118|Supplier 1=100|Designator=100|Pads=100
 OutputType23=BOM_PartType
 OutputName23=BOM-pdf
 OutputCategory23=Report
