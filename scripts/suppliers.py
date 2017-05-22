@@ -83,7 +83,30 @@ for supplier in itemsBySupplier:
 for supplier in itemsBySupplier:
     for sku in itemsBySupplier[supplier]:
         itemsBySupplier[supplier][sku]["price"] = disty_price(supplier, sku)
+        
+for supplier in itemsBySupplier:
+    for sku in itemsBySupplier[supplier]:
+        stock_count = disty_stock(supplier, sku)
+        itemsBySupplier[supplier][sku]["stock"] = stock_count
 
 for supplier in itemsBySupplier:
     print(supplier, ":")
     print("\t", itemsBySupplier[supplier])
+    
+import csv
+import os
+for supplier in itemsBySupplier:
+    outdir = "../exports/combined_BOM/" 
+    if not os.path.exists(outdir):
+        os.makedirs(outdir)
+    with open(outdir + supplier, 'w') as csvfile:
+        fieldnames = ['sku', 'qnt']
+        writer = csv.DictWriter(csvfile, fieldnames=fieldnames, restval='', extrasaction='ignore')
+        #writer.writeheader()
+        for sku in itemsBySupplier[supplier]:
+            writer.writerow(itemsBySupplier[supplier][sku])
+    
+totalUniqueParts = 0
+for supplier in itemsBySupplier:
+    totalUniqueParts += len(itemsBySupplier[supplier])
+print("Total number of unique parts:", totalUniqueParts)
