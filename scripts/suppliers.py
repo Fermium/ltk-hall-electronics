@@ -122,6 +122,8 @@ for row in partslist:
     itemsBySupplier[row["Supplier 1"]][row["Supplier Part Number 1"]]["brand"] = row["Manufacturer"]
     itemsBySupplier[row["Supplier 1"]][row["Supplier Part Number 1"]]["sku"] = row["Supplier Part Number 1"]
 
+#################################### GET PRICES FROM OCTOPART
+
 #for supplier in itemsBySupplier:
 #    print(supplier, ":")
 #    print("\t", itemsBySupplier[supplier])
@@ -169,7 +171,7 @@ from pcbway import getPCBWayPrice
 for board in boardstats:
     boardstats[board]["prices"] = []
     boardstats[board]["Unit prices"] = []
-    boardstats[board]["quantities"] = [10,20,30,40,50,75,100,150,200,250,300,350,400,450,500]
+    boardstats[board]["quantities"] = [10,20,30,40,50,60,70,80,80,100,150,200,250,300,400,500,600,700,800,900,1000]
     for quantity in boardstats[board]["quantities"]:
         uniqueparts = boardstats[board]["Total unique parts"]
         smtparts = boardstats[board]["Total SMD parts"]
@@ -179,7 +181,7 @@ for board in boardstats:
         boardstats[board]["prices"].append(price) 
         boardstats[board]["Unit prices"].append(price/quantity) 
 
-#################################### STATS REPORT
+#################################### STATS MARKDOWN REPORT
 
 reportFileName = outdir + "component_count_report.md"
 
@@ -203,13 +205,31 @@ for board in boardstats:
         print("|", quantity, "|", boardstats[board]["prices"][index], "|", boardstats[board]["Unit prices"][index], file=reportFile)
     print("\n", file=reportFile)
     print("![" + board + " board" + "](" + board + ".png"+")", file=reportFile)
+    print("\n", file=reportFile)
+    print("![" + board + " board" + "](" + board + "_zoomed" +  ".png"+")", file=reportFile)
 print("Generated board stats report:", reportFileName)
 
 #################################### PRINT PRICE GRAPHS
+import matplotlib.pyplot as plt
+
+index = 1
 
 for board in boardstats:
-    import matplotlib.pyplot as plt
+    plt.figure(index)
+    plt.title(board + " board PCBWay cost estimation") # subplot 211 title
+    index += 1
     plt.plot(boardstats[board]["quantities"], boardstats[board]["Unit prices"])
     plt.xlabel("Quantity")
     plt.ylabel("Unit Price")
     plt.savefig(outdir + board + ".png")
+
+for board in boardstats:
+    plt.figure(index)
+    plt.title(board + " board PCBWay cost estimation (zoomed)") # subplot 211 title
+    index += 1
+    plt.plot(boardstats[board]["quantities"][:5], boardstats[board]["Unit prices"][:5])
+    plt.xlabel("Quantity")
+    plt.ylabel("Unit Price")
+    plt.savefig(outdir + board + "_zoomed" ".png")
+    
+    
