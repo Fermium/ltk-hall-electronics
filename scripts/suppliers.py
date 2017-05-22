@@ -193,7 +193,8 @@ reportFile = open(reportFileName, "a")
 
 print("# Component and pad count", "\n", file=reportFile)
 for board in boardstats:
-    print("\n","###", board, "board", ":", "\n", file=reportFile)
+    print("\n", file=reportFile)
+    print("###", board, "board", ":", "\n", file=reportFile)
     print("|", "Stat", "|", "Count", "|", file=reportFile)
     print("| --- | --- |", file=reportFile)
     for stat in boardstats[board]:
@@ -232,4 +233,5 @@ for board in boardstats:
     plt.ylabel("Unit Price")
     plt.savefig(outdir + board + "_zoomed" ".png")
     
-    
+import subprocess
+subprocess.call(['./generate_html.sh']) 
