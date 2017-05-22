@@ -159,7 +159,26 @@ for supplier in itemsBySupplier:
         #writer.writeheader()
         for sku in itemsBySupplier[supplier]:
             writer.writerow(itemsBySupplier[supplier][sku])
-        
+
+#################################### GET PRICES OF ASSEMBLY FROM PCBWAY
+
+
+
+from pcbway import getPCBWayPrice
+
+for board in boardstats:
+    boardstats[board]["prices"] = []
+    boardstats[board]["Unit prices"] = []
+    boardstats[board]["quantities"] = [10,20,30,40,50,75,100,150,200,250,300,350,400,450,500]
+    for quantity in boardstats[board]["quantities"]:
+        uniqueparts = boardstats[board]["Total unique parts"]
+        smtparts = boardstats[board]["Total SMD parts"]
+        bgaparts = 0
+        thtparts =  boardstats[board]["Total THT parts"]
+        price = getPCBWayPrice(quantity, uniqueparts, smtparts, bgaparts, thtparts)
+        boardstats[board]["prices"].append(price) 
+        boardstats[board]["Unit prices"].append(price/quantity) 
+
 #################################### STATS REPORT
 
 reportFileName = outdir + "component_count_report.md"
@@ -177,5 +196,17 @@ for board in boardstats:
     print("| --- | --- |", file=reportFile)
     for stat in boardstats[board]:
         print("|", stat, "|", boardstats[board][stat], "|", file=reportFile)
+    print("\n", file=reportFile)
+    print("|", "Quantity", "|", "Assembly price (pcbway)", "|", "Unit Price", "|", file=reportFile)
+    print("| --- | --- | --- |", file=reportFile)
+    for index, quantity in enumerate(boardstats[board]["quantities"]):
+        print("|", quantity, "|", boardstats[board]["prices"][index], "|", boardstats[board]["Unit prices"][index], file=reportFile)
         
 print("Generated board stats report:", reportFileName)
+
+for board in boardstats:
+    import matplotlib.pyplot as plt
+    plt.plot(boardstats[board]["quantities"], boardstats[board]["Unit prices"])
+    plt.xlabel("Quantity")
+    plt.ylabel("Unit Price")
+    plt.savefig(outdir + board + ".png")
