@@ -1,8 +1,12 @@
 #!/usr/bin/python3
 import csv
+import os
 import glob
 from  octopart import octopart_url, datasheet_url, disty_stock, disty_price
+import re
 
+
+#################################### IMPORTING FILES
 Fileslist = glob.glob('../exports/*/purchase_files/BOM/*.csv')
 
 print("Opening files:")
@@ -18,9 +22,10 @@ for file in Fileslist:
     with open(file, 'rt', encoding='latin-1') as csvfile:
         reader = csv.DictReader(csvfile)
         for row in reader:
+            row["board"] = os.path.splitext(os.path.basename(file))[0].replace("BOM-csv-", "").replace("_board", "")
             partslist.append(row)
-            
 
+#################################### CLEANING, MERGING, CHECKING FOR PROBLEMS
 # Merge specific values (like Resistance and Capacitance) into "Value"
 for row in partslist:
     if row.get("Value", "") == "":
@@ -29,7 +34,8 @@ for row in partslist:
         row.pop("Capacitance", "")
         row.pop("Resistance", "")
 
-# Check for missing suppliers
+
+# Check for missing stuff
 for row in partslist:
     if row.get("Supplier 1", "") is ""  :
         print("Supplier missing for part:")
@@ -47,6 +53,10 @@ for row in partslist:
         print("Manufacturer data missing for part:")
         print("\t", {k: v for k, v in row.items() if v})
         row["Manufacturer"] = "N/A"
+    if row.get("Pads", "") is "":
+        print("Pads data missing for part:")
+        print("\t", {k: v for k, v in row.items() if v})
+        row["Manufacturer"] = "N/A"
 
 print("\n\n")
 
@@ -55,7 +65,42 @@ for i,row in enumerate(partslist):
     for key in row:
         if row[key] == "":
             partslist[i][key] = "N/A"
-            
+
+#################################### CALCULATING BOARD STATISTICS
+boardstats = {}
+
+#initialize board stats
+for row in partslist:
+    boardstats[row["board"]] = {}
+    boardstats[row["board"]]["THT Pads"] = 0
+    boardstats[row["board"]]["SMD Pads"] = 0
+    boardstats[row["board"]]["Unique SMD parts"] = 0
+    boardstats[row["board"]]["Unique THT parts"] = 0
+    boardstats[row["board"]]["Total SMD parts"] = 0
+    boardstats[row["board"]]["Total THT parts"] = 0
+    boardstats[row["board"]]["Total unique parts"] = 0
+    boardstats[row["board"]]["Total parts"] = 0
+for row in partslist:
+    # match regular expressions
+    thtpads = re.findall(r'\d+ THT', row["Pads"])
+    smdpads = re.findall(r'\d+ SMD', row["Pads"])
+    # if there are pads, att them to board count
+    if thtpads:
+        boardstats[row["board"]]["THT Pads"] += (int(thtpads[0].replace(" THT", "")) * int(row["Quantity"]))
+        boardstats[row["board"]]["Unique THT parts"] += 1
+        boardstats[row["board"]]["Total THT parts"] += int(row["Quantity"])
+
+
+    if smdpads:
+        boardstats[row["board"]]["SMD Pads"] += (int(smdpads[0].replace(" SMD", "")) * int(row["Quantity"]))
+        boardstats[row["board"]]["Unique SMD parts"] += 1
+        boardstats[row["board"]]["Total SMD parts"] += int(row["Quantity"])
+
+    
+    boardstats[row["board"]]["Total unique parts"] += 1
+    boardstats[row["board"]]["Total parts"] += int(row["Quantity"])
+
+#################################### CALCULATING PER-SUPPLIER BOM
 
 itemsBySupplier = {}    
 
@@ -69,44 +114,68 @@ for supplier in itemsBySupplier:
         if row["Supplier 1"] == supplier:
             itemsBySupplier[supplier][row["Supplier Part Number 1"]] = {}
             itemsBySupplier[supplier][row["Supplier Part Number 1"]]["qnt"] = 0
+
 #group by sku and sum quantities
 for row in partslist:
     itemsBySupplier[row["Supplier 1"]][row["Supplier Part Number 1"]]["qnt"] += int(row["Quantity"])
     itemsBySupplier[row["Supplier 1"]][row["Supplier Part Number 1"]]["mnt"] = row["Manufacturer Part Number"]
     itemsBySupplier[row["Supplier 1"]][row["Supplier Part Number 1"]]["brand"] = row["Manufacturer"]
     itemsBySupplier[row["Supplier 1"]][row["Supplier Part Number 1"]]["sku"] = row["Supplier Part Number 1"]
-    
-for supplier in itemsBySupplier:
-    print(supplier, ":")
-    print("\t", itemsBySupplier[supplier])
-    
-for supplier in itemsBySupplier:
-    for sku in itemsBySupplier[supplier]:
-        itemsBySupplier[supplier][sku]["price"] = disty_price(supplier, sku)
-        
-for supplier in itemsBySupplier:
-    for sku in itemsBySupplier[supplier]:
-        stock_count = disty_stock(supplier, sku)
-        itemsBySupplier[supplier][sku]["stock"] = stock_count
 
-for supplier in itemsBySupplier:
-    print(supplier, ":")
-    print("\t", itemsBySupplier[supplier])
+#for supplier in itemsBySupplier:
+#    print(supplier, ":")
+#    print("\t", itemsBySupplier[supplier])
     
-import csv
-import os
+#for supplier in itemsBySupplier:
+#    for sku in itemsBySupplier[supplier]:
+#        itemsBySupplier[supplier][sku]["price"] = disty_price(supplier, sku)
+#        
+#for supplier in itemsBySupplier:
+#    for sku in itemsBySupplier[supplier]:
+#       stock_count = disty_stock(supplier, sku)
+#        itemsBySupplier[supplier][sku]["stock"] = stock_count
+
+#for supplier in itemsBySupplier:
+#    print(supplier, ":")
+#    print("\t", itemsBySupplier[supplier])
+
+
+#################################### EXPORTING AND PRINTING
+
+outdir = "../exports/combined/"
+by_supplierdir = outdir + "by_supplier/"
+#create output dir
+if not os.path.exists(by_supplierdir):
+    os.makedirs(by_supplierdir)
+#delete all files in the output dir
+for f in glob.glob(outdir + "**/*"):
+    os.remove(f)
+    
+# Write basic CSV bom of items to by
 for supplier in itemsBySupplier:
-    outdir = "../exports/combined_BOM/" 
-    if not os.path.exists(outdir):
-        os.makedirs(outdir)
-    with open(outdir + supplier, 'w') as csvfile:
+    with open(by_supplierdir  +  supplier + ".csv", 'w') as csvfile:
         fieldnames = ['sku', 'qnt']
         writer = csv.DictWriter(csvfile, fieldnames=fieldnames, restval='', extrasaction='ignore')
         #writer.writeheader()
         for sku in itemsBySupplier[supplier]:
             writer.writerow(itemsBySupplier[supplier][sku])
+        
+#################################### STATS REPORT
+
+reportFileName = outdir + "component_count_report.md"
+
+
+if os.path.exists(reportFileName):
+    os.remove(reportFileName)
     
-totalUniqueParts = 0
-for supplier in itemsBySupplier:
-    totalUniqueParts += len(itemsBySupplier[supplier])
-print("Total number of unique parts:", totalUniqueParts)
+reportFile = open(reportFileName, "a")
+
+print("# Component and pad count", "\n", file=reportFile)
+for board in boardstats:
+    print("\n","###", board, "board", ":", "\n", file=reportFile)
+    print("|", "Stat", "|", "Count", "|", file=reportFile)
+    print("| --- | --- |", file=reportFile)
+    for stat in boardstats[board]:
+        print("|", stat, "|", boardstats[board][stat], "|", file=reportFile)
+        
+print("Generated board stats report:", reportFileName)

@@ -31,3 +31,5 @@ boards/sample/Project Outputs for sample_board/Design Rule Check - sample_board.
 boards/probe/Project Outputs for probe/Status Report.Txt
 *.log
 
+
+scripts/__pycache__/
