@@ -564,30 +564,6 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=
 
-[GeneratedDocument1]
-DocumentPath=..\..\exports\hub\assembly_files\BOM\BOM-csv-hub_board.csv
-DItemRevisionGUID=
-
-[GeneratedDocument2]
-DocumentPath=..\..\exports\hub\purchase_files\BOM\BOM-csv-hub_board.csv
-DItemRevisionGUID=
-
-[GeneratedDocument3]
-DocumentPath=..\..\exports\hub\assembly_files\AutoCAD PCB\hub_board.DWG
-DItemRevisionGUID=
-
-[GeneratedDocument4]
-DocumentPath=..\..\exports\hub\assembly_files\Copy Files\hub_board.PcbDoc
-DItemRevisionGUID=
-
-[GeneratedDocument5]
-DocumentPath=..\..\exports\hub\assembly_files\ExportSTEP\hub_board.step
-DItemRevisionGUID=
-
-[GeneratedDocument6]
-DocumentPath=..\..\exports\hub\assembly_files\Pick Place\Pick Place for hub_board.txt
-DItemRevisionGUID=
-
 [SearchPath1]
 Path=..\..\*.*
 IncludeSubFolders=1
