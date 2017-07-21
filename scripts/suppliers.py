@@ -163,7 +163,7 @@ for supplier in itemsBySupplier:
             writer.writerow(itemsBySupplier[supplier][sku])
 
 #################################### GET PRICES OF ASSEMBLY FROM PCBWAY
-
+"""
 
 
 from pcbway import getPCBWayPrice
@@ -180,7 +180,7 @@ for board in boardstats:
         price = getPCBWayPrice(quantity, uniqueparts, smtparts, bgaparts, thtparts)
         boardstats[board]["prices"].append(price) 
         boardstats[board]["Unit prices"].append(price/quantity) 
-
+"""
 #################################### STATS MARKDOWN REPORT
 
 reportFileName = outdir + "component_count_report.md"
@@ -200,6 +200,7 @@ for board in boardstats:
     for stat in boardstats[board]:
         print("|", stat, "|", boardstats[board][stat], "|", file=reportFile)
     print("\n", file=reportFile)
+    """
     print("|", "Quantity", "|", "Assembly price (pcbway)", "|", "Unit Price", "|", file=reportFile)
     print("| --- | --- | --- |", file=reportFile)
     for index, quantity in enumerate(boardstats[board]["quantities"]):
@@ -208,9 +209,11 @@ for board in boardstats:
     print("![" + board + " board" + "](" + board + ".png"+")", file=reportFile)
     print("\n", file=reportFile)
     print("![" + board + " board" + "](" + board + "_zoomed" +  ".png"+")", file=reportFile)
+    """
 print("Generated board stats report:", reportFileName)
 
 #################################### PRINT PRICE GRAPHS
+"""
 import matplotlib.pyplot as plt
 
 index = 1
@@ -232,6 +235,6 @@ for board in boardstats:
     plt.xlabel("Quantity")
     plt.ylabel("Unit Price")
     plt.savefig(outdir + board + "_zoomed" ".png")
-    
+"""
 import subprocess
 subprocess.call(['./generate_html.sh']) 
