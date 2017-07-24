@@ -1,3 +1,3 @@
-DB25_analog_in=14_Vr,6_Temp,7_Gauss,15_VHAMP,2_VH
+DB25_analog_in=14_Vr,6_Temp,7_Gauss,15_VhAmp,2_VH
 DB25_heater=9_Heater_P,8_Heater_P,20_Heater_P,22_Heater_N,11_Heater_N,10_Heater_N
 I2c=SDA,SCL
