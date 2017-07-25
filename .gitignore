@@ -11,25 +11,14 @@ History
 Project\ Outputs
 .LOG
 Project\ Logs
-
 *.LOG
 *.PrjPcbStructure
-*.pdf
-exports/main/manufacturing_files
-exports/main/manufacturing_report
-exports
 *.htm
 *.$$$
-boards/main/Project Outputs for main_board/Design Rule Check - main_board.drc
-boards/main/Project Outputs for main_board/Design Rule Check - main_board.html
-boards/hub/Project Outputs for hub_board/Design Rule Check - hub_board.drc
-boards/hub/Project Outputs for hub_board/Design Rule Check - hub_board.html
-boards/probe/Project Outputs for probe/Design Rule Check - probe.drc
-boards/probe/Project Outputs for probe/Design Rule Check - probe.html
-boards/sample/Project Outputs for sample_board/Design Rule Check - sample_board.drc
-boards/sample/Project Outputs for sample_board/Design Rule Check - sample_board.html
-boards/probe/Project Outputs for probe/Status Report.Txt
+boards/*/Project Outputs for*
 *.log
 
+exports
+!exports/aux
 
 scripts/__pycache__/
