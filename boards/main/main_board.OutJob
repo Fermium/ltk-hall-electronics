@@ -502,7 +502,7 @@ Configuration20_Item1=CaptionAsName
 Configuration20_Name2=Filter
 Configuration20_Item2=545046300E5446696C74657257726170706572000D46696C7465722E416374697665090F46696C7465722E43726974657269610A04000000000000000000
 Configuration20_Name3=General
-Configuration20_Item3=OpenExported=False|AddToProject=False|ForceFit=True|NotFitted=False|Database=False|DatabasePriority=False|IncludePCBData=False|IncludeVaultData=False|IncludeAlternatives=False|ShowExportOptions=True|TemplateFilename=|BatchMode=0|FormWidth=2225|FormHeight=661|SupplierProdQty=1|SupplierAutoQty=False|SupplierUseCachedPricing=False|SupplierCurrency=<none>
+Configuration20_Item3=OpenExported=False|AddToProject=False|ForceFit=True|NotFitted=False|Database=False|DatabasePriority=False|IncludePCBData=False|IncludeVaultData=False|IncludeAlternatives=False|ShowExportOptions=True|TemplateFilename=|BatchMode=0|FormWidth=1921|FormHeight=661|SupplierProdQty=1|SupplierAutoQty=False|SupplierUseCachedPricing=False|SupplierCurrency=<none>
 Configuration20_Name4=GroupOrder
 Configuration20_Item4=Pads=True|Value=True|Manufacturer Part Number=True|Resistance=True|Footprint=True|Description=True|Comment=True|Capacitance=True
 Configuration20_Name5=OutputConfigurationParameter1
@@ -514,7 +514,7 @@ Configuration20_Item7=FileName=[PCB Document 1]
 Configuration20_Name8=SortOrder
 Configuration20_Item8=Designator=Up
 Configuration20_Name9=VisibleOrder
-Configuration20_Item9=Supplier Part Number 1=142|Quantity=67|Manufacturer Part Number=160|Capacitance=85|Resistance=77|Value=52|Supplier 1=100|Pads=100|Designator=100
+Configuration20_Item9=Supplier Part Number 1=142|Quantity=67|Manufacturer Part Number=160|Capacitance=85|Resistance=77|Value=52|Supplier 1=100|Pads=100|Designator=100|Manufacturer=100
 OutputType21=BOM_PartType
 OutputName21=BOM-pdf
 OutputCategory21=Report
@@ -700,7 +700,7 @@ OutputFileNameMulti9=
 UseOutputNameForMulti9=1
 OutputFileNameSpecial9=
 OpenOutput9=1
-OutputFilePath10=C:\Users\d\Documents\Hall-electronic\exports\main\purchase_files\
+OutputFilePath10=\\vmware-host\Shared Folders\Desktop\Hall-electronic\exports\main\purchase_files\
 ReleaseManaged10=0
 OutputBasePath10=..\..\exports\main\
 OutputPathMedia10=[Media Name]
@@ -753,7 +753,7 @@ OpenGerberOutput9=1
 OpenNCDrillOutput9=0
 OpenIPCOutput9=0
 EnableReload9=0
-RelativeOutputPath10=C:\Users\d\Documents\Hall-electronic\exports\main\purchase_files\
+RelativeOutputPath10=\\vmware-host\Shared Folders\Desktop\Hall-electronic\exports\main\purchase_files\
 OpenOutputs10=0
 AddToProject10=1
 TimestampFolder10=0

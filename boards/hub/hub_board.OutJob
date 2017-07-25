@@ -77,7 +77,7 @@ Configuration1_Item7=FileName=[PCB Document 1]
 Configuration1_Name8=SortOrder
 Configuration1_Item8=Designator=Up
 Configuration1_Name9=VisibleOrder
-Configuration1_Item9=Supplier Part Number 1=142|Quantity=67|Manufacturer Part Number=160|Footprint=118|Capacitance=85|Resistance=77|Value=52|Supplier 1=100|Pads=100|Designator=100
+Configuration1_Item9=Supplier Part Number 1=142|Quantity=67|Manufacturer Part Number=160|Footprint=118|Capacitance=85|Resistance=77|Value=52|Supplier 1=100|Pads=100|Designator=100|Manufacturer=100
 OutputType2=PDF3D
 OutputName2=PDF3D
 OutputCategory2=Documentation
@@ -689,7 +689,7 @@ OutputFileNameMulti8=
 UseOutputNameForMulti8=1
 OutputFileNameSpecial8=
 OpenOutput8=1
-OutputFilePath9=C:\Users\d\Documents\Hall-electronic\exports\hub\purchase_files\
+OutputFilePath9=\\vmware-host\Shared Folders\Desktop\Hall-electronic\exports\hub\purchase_files\
 ReleaseManaged9=0
 OutputBasePath9=..\..\exports\hub\
 OutputPathMedia9=[Media Name]
@@ -742,7 +742,7 @@ OpenGerberOutput8=1
 OpenNCDrillOutput8=0
 OpenIPCOutput8=0
 EnableReload8=0
-RelativeOutputPath9=C:\Users\d\Documents\Hall-electronic\exports\hub\purchase_files\
+RelativeOutputPath9=\\vmware-host\Shared Folders\Desktop\Hall-electronic\exports\hub\purchase_files\
 OpenOutputs9=0
 AddToProject9=1
 TimestampFolder9=0

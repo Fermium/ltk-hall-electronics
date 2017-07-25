@@ -1,5 +1,0 @@
-DB25_analog_in=7_Gauss,6_Temp,15_VHAMP,2_VH,14_Vr
-DB25_aux=12_Aux1,24_Aux2
-DB25_heater=11_Heater_N,10_Heater_N,22_Heater_N,9_Heater_P,8_Heater_P,20_Heater_P
-DB25_pwr=12v,-12v,5v,GND
-DB25_sample_I=23_SAMPLE-I_N,21_SAMPLE-I_N,19_SAMPLE-I_N,4_SAMPLE-I_P,16_SAMPLE-I_P,3_SAMPLE-I_P

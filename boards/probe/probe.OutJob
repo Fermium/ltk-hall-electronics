@@ -470,7 +470,7 @@ Configuration22_Item1=CaptionAsName
 Configuration22_Name2=Filter
 Configuration22_Item2=545046300E5446696C74657257726170706572000D46696C7465722E416374697665090F46696C7465722E43726974657269610A04000000000000000000
 Configuration22_Name3=General
-Configuration22_Item3=OpenExported=False|AddToProject=False|ForceFit=True|NotFitted=False|Database=False|DatabasePriority=False|IncludePCBData=False|IncludeVaultData=False|IncludeAlternatives=False|ShowExportOptions=True|TemplateFilename=|BatchMode=0|FormWidth=1772|FormHeight=661|SupplierProdQty=1|SupplierAutoQty=False|SupplierUseCachedPricing=False|SupplierCurrency=<none>
+Configuration22_Item3=OpenExported=False|AddToProject=False|ForceFit=True|NotFitted=False|Database=False|DatabasePriority=False|IncludePCBData=False|IncludeVaultData=False|IncludeAlternatives=False|ShowExportOptions=True|TemplateFilename=|BatchMode=0|FormWidth=1772|FormHeight=654|SupplierProdQty=1|SupplierAutoQty=False|SupplierUseCachedPricing=False|SupplierCurrency=<none>
 Configuration22_Name4=GroupOrder
 Configuration22_Item4=Pads=True|Manufacturer Part Number=True|Footprint=True|Description=True|Comment=True
 Configuration22_Name5=OutputConfigurationParameter1
@@ -482,7 +482,7 @@ Configuration22_Item7=FileName=[PCB Document 1]
 Configuration22_Name8=SortOrder
 Configuration22_Item8=Designator=Up
 Configuration22_Name9=VisibleOrder
-Configuration22_Item9=Supplier Part Number 1=142|Quantity=67|Manufacturer Part Number=160|Comment=99|Footprint=118|Supplier 1=100|Designator=100|Pads=100
+Configuration22_Item9=Supplier Part Number 1=142|Quantity=67|Manufacturer Part Number=160|Comment=99|Footprint=118|Supplier 1=100|Designator=100|Pads=100|Manufacturer=100
 OutputType23=BOM_PartType
 OutputName23=BOM-pdf
 OutputCategory23=Report
@@ -666,7 +666,7 @@ OutputFileNameMulti7=
 UseOutputNameForMulti7=1
 OutputFileNameSpecial7=
 OpenOutput7=1
-OutputFilePath8=C:\Users\d\Documents\Hall-electronic\exports\probe\purchase_files\
+OutputFilePath8=\\vmware-host\Shared Folders\Desktop\Hall-electronic\exports\probe\purchase_files\
 ReleaseManaged8=0
 OutputBasePath8=..\..\exports\probe\
 OutputPathMedia8=[Media Name]
@@ -719,7 +719,7 @@ OpenGerberOutput7=1
 OpenNCDrillOutput7=0
 OpenIPCOutput7=0
 EnableReload7=0
-RelativeOutputPath8=C:\Users\d\Documents\Hall-electronic\exports\probe\purchase_files\
+RelativeOutputPath8=\\vmware-host\Shared Folders\Desktop\Hall-electronic\exports\probe\purchase_files\
 OpenOutputs8=0
 AddToProject8=1
 TimestampFolder8=0

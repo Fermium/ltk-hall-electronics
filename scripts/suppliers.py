@@ -56,7 +56,7 @@ for row in partslist:
     if row.get("Pads", "") is "":
         print("Pads data missing for part:")
         print("\t", {k: v for k, v in row.items() if v})
-        row["Manufacturer"] = "N/A"
+        row["Pads"] = "N/A"
 
 print("\n\n")
 
@@ -80,25 +80,27 @@ for row in partslist:
     boardstats[row["board"]]["Total THT parts"] = 0
     boardstats[row["board"]]["Total unique parts"] = 0
     boardstats[row["board"]]["Total parts"] = 0
+    
+    
 for row in partslist:
     # match regular expressions
     thtpads = re.findall(r'\d+ THT', row["Pads"])
     smdpads = re.findall(r'\d+ SMD', row["Pads"])
-    # if there are pads, att them to board count
+    # if there are pads, add them to board count
     if thtpads:
-        boardstats[row["board"]]["THT Pads"] += (int(thtpads[0].replace(" THT", "")) * int(row["Quantity"]))
+        boardstats[row["board"]]["THT Pads"] += (float(thtpads[0].replace(" THT", "")) * float(row["Quantity"]))
         boardstats[row["board"]]["Unique THT parts"] += 1
-        boardstats[row["board"]]["Total THT parts"] += int(row["Quantity"])
+        boardstats[row["board"]]["Total THT parts"] += float(row["Quantity"])
 
 
     if smdpads:
-        boardstats[row["board"]]["SMD Pads"] += (int(smdpads[0].replace(" SMD", "")) * int(row["Quantity"]))
+        boardstats[row["board"]]["SMD Pads"] += (float(smdpads[0].replace(" SMD", "")) * float(row["Quantity"]))
         boardstats[row["board"]]["Unique SMD parts"] += 1
-        boardstats[row["board"]]["Total SMD parts"] += int(row["Quantity"])
+        boardstats[row["board"]]["Total SMD parts"] += float(row["Quantity"])
 
     
     boardstats[row["board"]]["Total unique parts"] += 1
-    boardstats[row["board"]]["Total parts"] += int(row["Quantity"])
+    boardstats[row["board"]]["Total parts"] += float(row["Quantity"])
 
 #################################### CALCULATING PER-SUPPLIER BOM
 
@@ -117,7 +119,7 @@ for supplier in itemsBySupplier:
 
 #group by sku and sum quantities
 for row in partslist:
-    itemsBySupplier[row["Supplier 1"]][row["Supplier Part Number 1"]]["qnt"] += int(row["Quantity"])
+    itemsBySupplier[row["Supplier 1"]][row["Supplier Part Number 1"]]["qnt"] += float(row["Quantity"])
     itemsBySupplier[row["Supplier 1"]][row["Supplier Part Number 1"]]["mnt"] = row["Manufacturer Part Number"]
     itemsBySupplier[row["Supplier 1"]][row["Supplier Part Number 1"]]["brand"] = row["Manufacturer"]
     itemsBySupplier[row["Supplier 1"]][row["Supplier Part Number 1"]]["sku"] = row["Supplier Part Number 1"]
