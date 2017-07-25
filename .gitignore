@@ -1,24 +1,28 @@
-History/
-.PrjPCBStructure
-.SchDocPreview
-.PcbDocPreview
+# Various Altium files
+*.PrjPCBStructure
+*.SchDocPreview
+*.PcbDocPreview
 __Previews
-History
-.PrjPcbStructure
-.Dat
-.REP 
-.TLT
-Project\ Outputs
-.LOG
-Project\ Logs
-*.LOG
 *.PrjPcbStructure
+*.Dat
+*.REP 
+*.TLT
+*.LOG
+*.log
 *.htm
 *.$$$
-boards/*/Project Outputs for*
-*.log
 
-exports
-!exports/aux
+#useless dirs
+Project\ Outputs
+Project\ Logs
+Project Outputs for*
 
+#History
+History
+
+#Exports, but not manual ones
+exports/*
+!exports/manual
+
+#Python stuff
 scripts/__pycache__/
