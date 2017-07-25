@@ -4,6 +4,7 @@ import os
 import glob
 from  octopart import octopart_url, datasheet_url, disty_stock, disty_price
 import re
+import sys
 
 
 #################################### IMPORTING FILES
@@ -143,6 +144,20 @@ for row in partslist:
 #    print(supplier, ":")
 #    print("\t", itemsBySupplier[supplier])
 
+################################### ASK FOR QUANTITY AND ROUND UP
+
+productsToManufacture = input("Number of products to manufacture: ")
+try:
+    productsToManufacture = float(productsToManufacture)
+except ValueError:
+    print("Invalid Number!")
+    sys.exit(1)
+
+import math
+
+for supplier in itemsBySupplier:
+    for sku in itemsBySupplier[supplier]:
+        itemsBySupplier[supplier][sku]["qnt"] = math.ceil(itemsBySupplier[supplier][sku]["qnt"] * productsToManufacture)
 
 #################################### EXPORTING AND PRINTING
 
