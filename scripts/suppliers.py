@@ -5,6 +5,8 @@ import glob
 from  octopart import octopart_url, datasheet_url, disty_stock, disty_price
 import re
 import sys
+import math
+
 
 
 #################################### IMPORTING FILES
@@ -25,6 +27,10 @@ for file in Fileslist:
         for row in reader:
             row["board"] = os.path.splitext(os.path.basename(file))[0].replace("BOM-csv-", "").replace("_board", "")
             partslist.append(row)
+            
+################################### ASK FOR AMOUNT OF PRODUCTS TO manufacturer
+
+productsToManufacture = input("Number of products to manufacture: ")
 
 #################################### CLEANING, MERGING, CHECKING FOR PROBLEMS
 # Merge specific values (like Resistance and Capacitance) into "Value"
@@ -131,53 +137,120 @@ for row in partslist:
 #    print(supplier, ":")
 #    print("\t", itemsBySupplier[supplier])
     
-#for supplier in itemsBySupplier:
-#    for sku in itemsBySupplier[supplier]:
-#        itemsBySupplier[supplier][sku]["price"] = disty_price(supplier, sku)
-#        
-#for supplier in itemsBySupplier:
-#    for sku in itemsBySupplier[supplier]:
-#       stock_count = disty_stock(supplier, sku)
-#        itemsBySupplier[supplier][sku]["stock"] = stock_count
+for supplier in itemsBySupplier:
+    for sku in itemsBySupplier[supplier]:
+        itemsBySupplier[supplier][sku]["price"] = disty_price(supplier, sku)
+        print(sku,"price:", itemsBySupplier[supplier][sku]["price"], "EUR")
+        
+for supplier in itemsBySupplier:
+    for sku in itemsBySupplier[supplier]:
+        stock_count = disty_stock(supplier, sku)
+        itemsBySupplier[supplier][sku]["stock"] = stock_count
+        print(sku,"stock:", stock_count)
+
 
 #for supplier in itemsBySupplier:
 #    print(supplier, ":")
 #    print("\t", itemsBySupplier[supplier])
 
-################################### ASK FOR QUANTITY AND ROUND UP
+################################### MULTIPLY QUANTITY
 
-productsToManufacture = input("Number of products to manufacture: ")
 try:
     productsToManufacture = float(productsToManufacture)
 except ValueError:
     print("Invalid Number!")
     sys.exit(1)
 
-import math
 
 for supplier in itemsBySupplier:
     for sku in itemsBySupplier[supplier]:
         itemsBySupplier[supplier][sku]["qnt"] = math.ceil(itemsBySupplier[supplier][sku]["qnt"] * productsToManufacture)
 
+################################### CALCULATE TOTAL PRICE, CHECK IF STOCK IS OK
+
+for supplier in itemsBySupplier:
+    for sku in itemsBySupplier[supplier]:
+        try:
+            float(itemsBySupplier[supplier][sku]["price"])
+            itemsBySupplier[supplier][sku]["price_tot"] = float(itemsBySupplier[supplier][sku]["price"]) * float(itemsBySupplier[supplier][sku]["qnt"])
+        except ValueError:
+            itemsBySupplier[supplier][sku]["price_tot"] = "N/A"
+            
+for supplier in itemsBySupplier:
+    for sku in itemsBySupplier[supplier]:
+        try:
+            float(itemsBySupplier[supplier][sku]["stock"])
+            if itemsBySupplier[supplier][sku]["stock"] >= itemsBySupplier[supplier][sku]["qnt"]:
+                itemsBySupplier[supplier][sku]["stock_check"] = "pass"
+            else:
+                itemsBySupplier[supplier][sku]["stock_check"] = "fail"
+        except ValueError:
+            itemsBySupplier[supplier][sku]["stock_check"] = "N/A"
+
 #################################### EXPORTING AND PRINTING
 
 outdir = "../exports/combined/"
-by_supplierdir = outdir + "by_supplier/"
+by_supplierdir = os.path.join(outdir + "by_supplier")
 #create output dir
 if not os.path.exists(by_supplierdir):
     os.makedirs(by_supplierdir)
 #delete all files in the output dir
 for f in glob.glob(outdir + "**/*"):
-    os.remove(f)
-    
+    try:
+        os.remove(f)
+    except:
+        pass
 # Write basic CSV bom of items to by
 for supplier in itemsBySupplier:
     with open(by_supplierdir  +  supplier + ".csv", 'w') as csvfile:
-        fieldnames = ['sku', 'qnt']
+        fieldnames = ["sku", "qnt", "price", "price_tot", "stock", "stock_check"]
         writer = csv.DictWriter(csvfile, fieldnames=fieldnames, restval='', extrasaction='ignore')
-        #writer.writeheader()
+        writer.writeheader()
         for sku in itemsBySupplier[supplier]:
             writer.writerow(itemsBySupplier[supplier][sku])
+            
+            
+#################################### EXPORTING AND PRINTING for quickbuy
+
+by_supplierdir_quickbuy_auto = os.path.join(outdir + "quickbuy" + "auto")
+#create output dir
+if not os.path.exists(by_supplierdir_quickbuy_auto):
+    os.makedirs(by_supplierdir_quickbuy_auto)
+#delete all files in the output dir
+for f in glob.glob(by_supplierdir_quickbuy_auto + "**/*"):
+    try:
+        os.remove(f)
+    except:
+        pass
+        
+by_supplierdir_quickbuy_manual = os.path.join(outdir + "quickbuy" + "manual")
+#create output dir
+if not os.path.exists(by_supplierdir_quickbuy_manual):
+    os.makedirs(by_supplierdir_quickbuy_manual)
+#delete all files in the output dir
+for f in glob.glob(by_supplierdir_quickbuy_manual + "**/*"):
+    try:
+        os.remove(f)
+    except:
+        pass
+    
+
+
+# Write basic CSV bom of items to by
+for supplier in itemsBySupplier:
+    csvfile_manual = open(by_supplierdir_quickbuy_manual  +  supplier + ".csv", 'w')
+    csvfile_auto = open(by_supplierdir_quickbuy_auto  +  supplier + ".csv", 'w')
+    
+    fieldnames = ["sku", "qnt"]
+
+    writer_auto = csv.DictWriter(csvfile_auto, fieldnames=fieldnames, restval='', extrasaction='ignore')
+    writer_manual =  csv.DictWriter(csvfile_manual, fieldnames=fieldnames, restval='', extrasaction='ignore')
+    
+    for sku in itemsBySupplier[supplier]:
+        if itemsBySupplier[supplier][sku]["stock_check"] is "pass":
+            writer_auto.writerow(itemsBySupplier[supplier][sku])
+        else:
+            writer_manual.writerow(itemsBySupplier[supplier][sku])
 
 #################################### GET PRICES OF ASSEMBLY FROM PCBWAY
 """
