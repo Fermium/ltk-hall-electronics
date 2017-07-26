@@ -88,8 +88,8 @@ for row in partslist:
     boardstats[row["board"]]["Total unique parts"] = 0
     boardstats[row["board"]]["Total parts"] = 0
 
-
-
+#parts that can be trashed easly
+disposable = {}
     
 for row in partslist:
     # match regular expressions
@@ -100,12 +100,24 @@ for row in partslist:
         boardstats[row["board"]]["THT Pads"] += (float(thtpads[0].replace(" THT", "")) * float(row["Quantity"]))
         boardstats[row["board"]]["Unique THT parts"] += 1
         boardstats[row["board"]]["Total THT parts"] += float(row["Quantity"])
+        # THT parts are not disposable
+        disposable[row["Supplier Part Number 1"]] = False
 
 
     if smdpads:
-        boardstats[row["board"]]["SMD Pads"] += (float(smdpads[0].replace(" SMD", "")) * float(row["Quantity"]))
+        pads = (float(smdpads[0].replace(" SMD", "")) * float(row["Quantity"]))
+        boardstats[row["board"]]["SMD Pads"] += pads
         boardstats[row["board"]]["Unique SMD parts"] += 1
         boardstats[row["board"]]["Total SMD parts"] += float(row["Quantity"])
+        
+        if pads <= 3 and not thtpads:
+            disposable[row["Supplier Part Number 1"]] = True
+        else:
+            disposable[row["Supplier Part Number 1"]] = False
+
+    
+    if not smdpads and not thtpads:
+        disposable[row["Supplier Part Number 1"]] = False
 
     
     boardstats[row["board"]]["Total unique parts"] += 1
@@ -141,7 +153,7 @@ for row in partslist:
 #    print(supplier, ":")
 #    print("\t", itemsBySupplier[supplier])
 
-print("Fetching component data from octopart")
+print("Fetching component data from octopart...")
     
 for supplier in itemsBySupplier:
     for sku in itemsBySupplier[supplier]:
@@ -174,6 +186,33 @@ for supplier in itemsBySupplier:
     for sku in itemsBySupplier[supplier]:
         itemsBySupplier[supplier][sku]["qnt"] = math.ceil(itemsBySupplier[supplier][sku]["qnt"] * productsToManufacture)
 
+
+#################################### DISPOSABLE ITEMS CALCULATIONS
+
+# mark items as non-disposable based on price
+for supplier in itemsBySupplier:
+    for sku in itemsBySupplier[supplier]:
+        try:
+            float(itemsBySupplier[supplier][sku]["stock"])
+            if disposable[sku] == True:
+                if itemsBySupplier[supplier][sku]["price"] >= 0.15:
+                    disposable[sku] = False
+                    print("Item", sku, "was marked as non-disposable due to high price of", itemsBySupplier[supplier][sku]["price"])
+        except:
+            pass
+            
+
+# Increment quantity of disposable items based on pcbway rules
+for supplier in itemsBySupplier:
+    for sku in itemsBySupplier[supplier]:
+        if disposable[sku]:
+            # Follow PCBWAY pcb guidelines for minimun quantities
+            itemsBySupplier[supplier][sku]["qnt"] = itemsBySupplier[supplier][sku]["qnt"] + 30
+            itemsBySupplier[supplier][sku]["qnt"] = max(itemsBySupplier[supplier][sku]["qnt"], 50)
+            
+
+        
+
 ################################### CALCULATE TOTAL PRICE, CHECK IF STOCK IS OK
 
 for supplier in itemsBySupplier:
@@ -194,6 +233,7 @@ for supplier in itemsBySupplier:
                 itemsBySupplier[supplier][sku]["stock_check"] = "fail"
         except ValueError:
             itemsBySupplier[supplier][sku]["stock_check"] = "N/A"
+            
 
 #################################### EXPORTING AND PRINTING
 
