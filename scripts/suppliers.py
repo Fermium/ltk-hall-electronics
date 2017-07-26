@@ -87,7 +87,9 @@ for row in partslist:
     boardstats[row["board"]]["Total THT parts"] = 0
     boardstats[row["board"]]["Total unique parts"] = 0
     boardstats[row["board"]]["Total parts"] = 0
-    
+
+
+
     
 for row in partslist:
     # match regular expressions
@@ -108,6 +110,8 @@ for row in partslist:
     
     boardstats[row["board"]]["Total unique parts"] += 1
     boardstats[row["board"]]["Total parts"] += float(row["Quantity"])
+    
+#################################### 
 
 #################################### CALCULATING PER-SUPPLIER BOM
 
@@ -136,18 +140,22 @@ for row in partslist:
 #for supplier in itemsBySupplier:
 #    print(supplier, ":")
 #    print("\t", itemsBySupplier[supplier])
+
+print("Fetching component data from octopart")
     
 for supplier in itemsBySupplier:
     for sku in itemsBySupplier[supplier]:
         itemsBySupplier[supplier][sku]["price"] = disty_price(supplier, sku)
-        print(sku,"price:", itemsBySupplier[supplier][sku]["price"], "EUR")
+        #print(sku,"price:", itemsBySupplier[supplier][sku]["price"], "EUR")
+
         
 for supplier in itemsBySupplier:
     for sku in itemsBySupplier[supplier]:
         stock_count = disty_stock(supplier, sku)
         itemsBySupplier[supplier][sku]["stock"] = stock_count
-        print(sku,"stock:", stock_count)
+        #print(sku,"stock:", stock_count)
 
+print("\n")
 
 #for supplier in itemsBySupplier:
 #    print(supplier, ":")
@@ -190,7 +198,7 @@ for supplier in itemsBySupplier:
 #################################### EXPORTING AND PRINTING
 
 outdir = "../exports/combined/"
-by_supplierdir = os.path.join(outdir + "by_supplier")
+by_supplierdir = os.path.join(outdir + "/by_supplier")
 #create output dir
 if not os.path.exists(by_supplierdir):
     os.makedirs(by_supplierdir)
@@ -202,7 +210,7 @@ for f in glob.glob(outdir + "**/*"):
         pass
 # Write basic CSV bom of items to by
 for supplier in itemsBySupplier:
-    with open(by_supplierdir  +  supplier + ".csv", 'w') as csvfile:
+    with open(os.path.join(by_supplierdir + "/" , supplier + ".csv"), 'w') as csvfile:
         fieldnames = ["sku", "qnt", "price", "price_tot", "stock", "stock_check"]
         writer = csv.DictWriter(csvfile, fieldnames=fieldnames, restval='', extrasaction='ignore')
         writer.writeheader()
@@ -212,7 +220,7 @@ for supplier in itemsBySupplier:
             
 #################################### EXPORTING AND PRINTING for quickbuy
 
-by_supplierdir_quickbuy_auto = os.path.join(outdir + "quickbuy" + "auto")
+by_supplierdir_quickbuy_auto = os.path.join(outdir + "/quickbuy" + "/auto")
 #create output dir
 if not os.path.exists(by_supplierdir_quickbuy_auto):
     os.makedirs(by_supplierdir_quickbuy_auto)
@@ -223,7 +231,7 @@ for f in glob.glob(by_supplierdir_quickbuy_auto + "**/*"):
     except:
         pass
         
-by_supplierdir_quickbuy_manual = os.path.join(outdir + "quickbuy" + "manual")
+by_supplierdir_quickbuy_manual = os.path.join(outdir + "/quickbuy" + "/manual")
 #create output dir
 if not os.path.exists(by_supplierdir_quickbuy_manual):
     os.makedirs(by_supplierdir_quickbuy_manual)
@@ -236,15 +244,18 @@ for f in glob.glob(by_supplierdir_quickbuy_manual + "**/*"):
     
 
 
-# Write basic CSV bom of items to by
 for supplier in itemsBySupplier:
-    csvfile_manual = open(by_supplierdir_quickbuy_manual  +  supplier + ".csv", 'w')
-    csvfile_auto = open(by_supplierdir_quickbuy_auto  +  supplier + ".csv", 'w')
+    csvfile_manual = open(os.path.join(by_supplierdir_quickbuy_manual + "/"  +  supplier + ".csv"), 'w')
+    csvfile_auto = open(os.path.join(by_supplierdir_quickbuy_auto  + "/" + supplier + ".csv"), 'w')
     
     fieldnames = ["sku", "qnt"]
+    
+    delimiter = ","
+    if supplier == "Mouser":
+        delimiter = "|"
 
-    writer_auto = csv.DictWriter(csvfile_auto, fieldnames=fieldnames, restval='', extrasaction='ignore')
-    writer_manual =  csv.DictWriter(csvfile_manual, fieldnames=fieldnames, restval='', extrasaction='ignore')
+    writer_auto = csv.DictWriter(csvfile_auto, fieldnames=fieldnames, restval='', extrasaction='ignore', delimiter=delimiter)
+    writer_manual =  csv.DictWriter(csvfile_manual, fieldnames=fieldnames, restval='', extrasaction='ignore', delimiter=delimiter)
     
     for sku in itemsBySupplier[supplier]:
         if itemsBySupplier[supplier][sku]["stock_check"] is "pass":
