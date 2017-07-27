@@ -548,6 +548,23 @@ GenerateClassCluster=0
 DocumentUniqueId=
 
 [Document31]
+DocumentPath=db25.Harness
+AnnotationEnabled=1
+AnnotateStartValue=1
+AnnotationIndexControlEnabled=0
+AnnotateSuffix=
+AnnotateScope=All
+AnnotateOrder=-1
+DoLibraryUpdate=1
+DoDatabaseUpdate=1
+ClassGenCCAutoEnabled=1
+ClassGenCCAutoRoomEnabled=1
+ClassGenNCAutoScope=None
+DItemRevisionGUID=
+GenerateClassCluster=0
+DocumentUniqueId=
+
+[Document32]
 DocumentPath=gaussmeter_and_temp.Harness
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -566,10 +583,6 @@ DocumentUniqueId=
 
 [GeneratedDocument1]
 DocumentPath=..\..\exports\hub\purchase_files\BOM\BOM-csv-hub_board.csv
-DItemRevisionGUID=
-
-[GeneratedDocument2]
-DocumentPath=..\..\exports\hub\purchase_files\BOM\BOM-pdf-hub_board.pdf
 DItemRevisionGUID=
 
 [SearchPath1]
