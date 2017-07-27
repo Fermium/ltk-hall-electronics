@@ -671,6 +671,10 @@ DocumentPath=..\..\exports\main\purchase_files\BOM\BOM-csv-main_board.csv
 DItemRevisionGUID=
 
 [GeneratedDocument2]
+DocumentPath=..\..\exports\main\purchase_files\BOM\BOM-pdf-main_board.pdf
+DItemRevisionGUID=
+
+[GeneratedDocument3]
 DocumentPath=Project Outputs for main_board\Design Rule Check - main_board.html
 DItemRevisionGUID=
 

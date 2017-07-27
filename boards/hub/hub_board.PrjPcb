@@ -568,6 +568,10 @@ DocumentUniqueId=
 DocumentPath=..\..\exports\hub\purchase_files\BOM\BOM-csv-hub_board.csv
 DItemRevisionGUID=
 
+[GeneratedDocument2]
+DocumentPath=..\..\exports\hub\purchase_files\BOM\BOM-pdf-hub_board.pdf
+DItemRevisionGUID=
+
 [SearchPath1]
 Path=..\..\*.*
 IncludeSubFolders=1
