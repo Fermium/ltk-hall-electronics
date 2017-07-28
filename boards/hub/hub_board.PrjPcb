@@ -28,7 +28,7 @@ DItemRevisionGUID=
 ReportSuppressedErrorsInMessages=0
 FSMCodingStyle=eFMSDropDownList_OneProcess
 FSMEncodingStyle=eFMSDropDownList_OneHot
-OutputPath=
+OutputPath=Project Outputs for hub_board
 LogFolderPath=
 ManagedProjectGUID=
 LinkedManagedProjectGUID=
@@ -591,114 +591,138 @@ Variation1=Designator=P2|UniqueId=\LXOMJUGH\VNLQUFCJ|Kind=1|AlternatePart=
 ParamVariationCount=0
 
 [GeneratedDocument1]
-DocumentPath=..\..\exports\hub\assembly_files\BOM\BOM-csv-hub_board.csv
+DocumentPath=..\..\exports\hub\assembly_files\BOM\BOM-csv-hub_board(Hall).csv
 DItemRevisionGUID=
 
 [GeneratedDocument2]
-DocumentPath=..\..\exports\hub\purchase_files\BOM\BOM-csv-hub_board.csv
+DocumentPath=..\..\exports\hub\purchase_files\BOM\BOM-csv-hub_board(Hall).csv
 DItemRevisionGUID=
 
 [GeneratedDocument3]
-DocumentPath=..\..\exports\hub\purchase_files\BOM\BOM-pdf-hub_board.pdf
+DocumentPath=..\..\exports\hub\assembly_files\BOM\BOM-csv-hub_board.csv
 DItemRevisionGUID=
 
 [GeneratedDocument4]
-DocumentPath=..\..\exports\hub\Gerber\hub_board-RoundHoles.TXT
+DocumentPath=..\..\exports\hub\purchase_files\BOM\BOM-csv-hub_board.csv
 DItemRevisionGUID=
 
 [GeneratedDocument5]
-DocumentPath=..\..\exports\hub\Gerber\hub_board-SlotHoles.TXT
+DocumentPath=..\..\exports\hub\purchase_files\BOM\BOM-pdf-hub_board(Hall).pdf
 DItemRevisionGUID=
 
 [GeneratedDocument6]
-DocumentPath=..\..\exports\hub\Gerber\hub_board.DRR
+DocumentPath=..\..\exports\hub\purchase_files\BOM\BOM-pdf-hub_board.pdf
 DItemRevisionGUID=
 
 [GeneratedDocument7]
-DocumentPath=..\..\exports\hub\assembly_files\AutoCAD PCB\hub_board.DWG
+DocumentPath=Project Outputs for hub_board\Design Rule Check - hub_board.html
 DItemRevisionGUID=
 
 [GeneratedDocument8]
-DocumentPath=..\..\exports\hub\Gerber\hub_board.EXTREP
+DocumentPath=..\..\exports\hub\assembly_files\ExportSTEP\hub_board(Hall).step
 DItemRevisionGUID=
 
 [GeneratedDocument9]
-DocumentPath=..\..\exports\hub\Gerber\hub_board.GBL
+DocumentPath=..\..\exports\hub\Gerber\hub_board-RoundHoles.TXT
 DItemRevisionGUID=
 
 [GeneratedDocument10]
-DocumentPath=..\..\exports\hub\Gerber\hub_board.GBO
+DocumentPath=..\..\exports\hub\Gerber\hub_board-SlotHoles.TXT
 DItemRevisionGUID=
 
 [GeneratedDocument11]
-DocumentPath=..\..\exports\hub\Gerber\hub_board.GBP
+DocumentPath=..\..\exports\hub\Gerber\hub_board.DRR
 DItemRevisionGUID=
 
 [GeneratedDocument12]
-DocumentPath=..\..\exports\hub\Gerber\hub_board.GBS
+DocumentPath=..\..\exports\hub\assembly_files\AutoCAD PCB\hub_board.DWG
 DItemRevisionGUID=
 
 [GeneratedDocument13]
-DocumentPath=..\..\exports\hub\Gerber\hub_board.GD1
+DocumentPath=..\..\exports\hub\Gerber\hub_board.EXTREP
 DItemRevisionGUID=
 
 [GeneratedDocument14]
-DocumentPath=..\..\exports\hub\Gerber\hub_board.GTL
+DocumentPath=..\..\exports\hub\Gerber\hub_board.GBL
 DItemRevisionGUID=
 
 [GeneratedDocument15]
-DocumentPath=..\..\exports\hub\Gerber\hub_board.GTO
+DocumentPath=..\..\exports\hub\Gerber\hub_board.GBO
 DItemRevisionGUID=
 
 [GeneratedDocument16]
-DocumentPath=..\..\exports\hub\Gerber\hub_board.GTP
+DocumentPath=..\..\exports\hub\Gerber\hub_board.GBP
 DItemRevisionGUID=
 
 [GeneratedDocument17]
-DocumentPath=..\..\exports\hub\Gerber\hub_board.GTS
+DocumentPath=..\..\exports\hub\Gerber\hub_board.GBS
 DItemRevisionGUID=
 
 [GeneratedDocument18]
-DocumentPath=..\..\exports\hub\validation_reports\DiffReport\hub_board.html
+DocumentPath=..\..\exports\hub\Gerber\hub_board.GD1
 DItemRevisionGUID=
 
 [GeneratedDocument19]
-DocumentPath=..\..\exports\hub\validation_reports\DRC\hub_board.html
+DocumentPath=..\..\exports\hub\Gerber\hub_board.GTL
 DItemRevisionGUID=
 
 [GeneratedDocument20]
-DocumentPath=..\..\exports\hub\validation_reports\ECCC\hub_board.html
+DocumentPath=..\..\exports\hub\Gerber\hub_board.GTO
 DItemRevisionGUID=
 
 [GeneratedDocument21]
-DocumentPath=..\..\exports\hub\validation_reports\ERC\hub_board.html
+DocumentPath=..\..\exports\hub\Gerber\hub_board.GTP
 DItemRevisionGUID=
 
 [GeneratedDocument22]
-DocumentPath=..\..\exports\hub\validation_reports\FootprintComparison\hub_board.html
+DocumentPath=..\..\exports\hub\Gerber\hub_board.GTS
 DItemRevisionGUID=
 
 [GeneratedDocument23]
-DocumentPath=..\..\exports\hub\Gerber\hub_board.LDP
+DocumentPath=..\..\exports\hub\validation_reports\DiffReport\hub_board.html
 DItemRevisionGUID=
 
 [GeneratedDocument24]
-DocumentPath=..\..\exports\hub\assembly_files\Copy Files\hub_board.PcbDoc
+DocumentPath=..\..\exports\hub\validation_reports\DRC\hub_board.html
 DItemRevisionGUID=
 
 [GeneratedDocument25]
-DocumentPath=..\..\exports\hub\Gerber\hub_board.REP
+DocumentPath=..\..\exports\hub\validation_reports\ECCC\hub_board.html
 DItemRevisionGUID=
 
 [GeneratedDocument26]
-DocumentPath=..\..\exports\hub\Gerber\hub_board.RUL
+DocumentPath=..\..\exports\hub\validation_reports\ERC\hub_board.html
 DItemRevisionGUID=
 
 [GeneratedDocument27]
-DocumentPath=..\..\exports\hub\assembly_files\ExportSTEP\hub_board.step
+DocumentPath=..\..\exports\hub\validation_reports\FootprintComparison\hub_board.html
 DItemRevisionGUID=
 
 [GeneratedDocument28]
+DocumentPath=..\..\exports\hub\Gerber\hub_board.LDP
+DItemRevisionGUID=
+
+[GeneratedDocument29]
+DocumentPath=..\..\exports\hub\assembly_files\Copy Files\hub_board.PcbDoc
+DItemRevisionGUID=
+
+[GeneratedDocument30]
+DocumentPath=..\..\exports\hub\Gerber\hub_board.REP
+DItemRevisionGUID=
+
+[GeneratedDocument31]
+DocumentPath=..\..\exports\hub\Gerber\hub_board.RUL
+DItemRevisionGUID=
+
+[GeneratedDocument32]
+DocumentPath=..\..\exports\hub\assembly_files\ExportSTEP\hub_board.step
+DItemRevisionGUID=
+
+[GeneratedDocument33]
+DocumentPath=..\..\exports\hub\assembly_files\Pick Place\Pick Place for hub_board(Hall).txt
+DItemRevisionGUID=
+
+[GeneratedDocument34]
 DocumentPath=..\..\exports\hub\assembly_files\Pick Place\Pick Place for hub_board.txt
 DItemRevisionGUID=
 
@@ -768,7 +792,7 @@ PageDef.mmMarginTop=6350
 PageDef.mmMarginBottom=6350
 
 [Generic_EDE]
-OutputDir=
+OutputDir=Project Outputs for hub_board
 
 [OutputGroup1]
 Name=Netlist Outputs
