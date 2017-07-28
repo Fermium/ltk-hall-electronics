@@ -564,6 +564,15 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=
 
+[ProjectVariant1]
+UniqueID=5E0B6BEF-BC2C-485E-975D-21036444BD23
+Description=Hall
+AllowFabrication=0
+ParameterCount=0
+VariationCount=1
+Variation1=Designator=P2|UniqueId=\LXOMJUGH\VNLQUFCJ|Kind=1|AlternatePart= 
+ParamVariationCount=0
+
 [SearchPath1]
 Path=..\..\*.*
 IncludeSubFolders=1
