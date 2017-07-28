@@ -712,7 +712,9 @@ ParameterCount=0
 ConstraintFileCount=0
 ReleaseItemId=
 Variant=[No Variations]
-OutputJobsCount=0
+OutputJobsCount=1
+DocumentReferenceClass1=DocumentReference
+OutputJobFileName1=hub_board.OutJob
 ContentTypeGUID=CB6F2064-E317-11DF-B822-12313F0024A2
 
 [Configuration2]
@@ -721,7 +723,9 @@ ParameterCount=0
 ConstraintFileCount=0
 ReleaseItemId=
 Variant=[No Variations]
-OutputJobsCount=0
+OutputJobsCount=1
+DocumentReferenceClass1=DocumentReference
+OutputJobFileName1=hub_board.OutJob
 ContentTypeGUID=0C520D2A-E60C-11DF-B822-12313F0024A2
 
 [Configuration3]
@@ -730,7 +734,20 @@ ParameterCount=0
 ConstraintFileCount=0
 ReleaseItemId=
 Variant=[No Variations]
-OutputJobsCount=0
+OutputJobsCount=1
+DocumentReferenceClass1=DocumentReference
+OutputJobFileName1=hub_board.OutJob
+ContentTypeGUID=0D12F8DC-E60C-11DF-B822-12313F0024A2
+
+[Configuration4]
+Name=Assembly Hall
+ParameterCount=0
+ConstraintFileCount=0
+ReleaseItemId=
+Variant=Hall
+OutputJobsCount=1
+DocumentReferenceClass1=DocumentReference
+OutputJobFileName1=hub_board.OutJob
 ContentTypeGUID=0D12F8DC-E60C-11DF-B822-12313F0024A2
 
 [Generic_PCB]

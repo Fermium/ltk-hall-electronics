@@ -8,7 +8,3 @@ ProjectPath=boards\sample\sample_board.PrjPcb
 ProjectPath=boards\probe\probe.PrjPcb
 [Project4]
 ProjectPath=boards\main\main_board.PrjPcb
-[Project5]
-ProjectPath=..\LEMO Unipole And Multipole Type Connectors\LEMO Unipole And Multipole Type Connectors.LibPkg
-[Project6]
-ProjectPath=..\Atmel Microcontroller megaAVR\Atmel Microcontroller megaAVR.LibPkg
