@@ -61,8 +61,9 @@ for row in partslist:
         print("\t", {k: v for k, v in row.items() if v})
         row["Manufacturer"] = "N/A"
     if row.get("Pads", "") is "":
-        print("Pads data missing for part:")
-        print("\t", {k: v for k, v in row.items() if v})
+        if "MP" not in row.get("Designator", ""): #if not a mechanical part 
+            print("Pads data missing for part:")
+            print("\t", {k: v for k, v in row.items() if v})
         row["Pads"] = "N/A"
 
 print("\n\n")
@@ -89,6 +90,10 @@ for row in partslist:
     boardstats[row["board"]]["Total parts"] = 0
 
 #parts that can be trashed easly
+# 0 = not disposable
+# 1 = expensive smd parts
+# 2 = (0603, 0805, 1206, 2225, SOT, SOD, MELF - packages)
+# 3 = (0201, 0402, miniMelf, miniature packages)
 disposable = {}
     
 for row in partslist:
@@ -111,13 +116,17 @@ for row in partslist:
         boardstats[row["board"]]["Total SMD parts"] += float(row["Quantity"])
         
         if pads <= 3 and not thtpads:
-            disposable[row["Supplier Part Number 1"]] = True
+            # small disposable smd part
+            disposable[row["Supplier Part Number 1"]] = 2
+        elif pads > 3 and not thtpads:
+            # expensive smd part
+            disposable[row["Supplier Part Number 1"]] = 1
         else:
-            disposable[row["Supplier Part Number 1"]] = False
+            disposable[row["Supplier Part Number 1"]] = 0
 
     
     if not smdpads and not thtpads:
-        disposable[row["Supplier Part Number 1"]] = False
+        disposable[row["Supplier Part Number 1"]] = 0
 
     
     boardstats[row["board"]]["Total unique parts"] += 1
@@ -194,9 +203,9 @@ for supplier in itemsBySupplier:
     for sku in itemsBySupplier[supplier]:
         try:
             float(itemsBySupplier[supplier][sku]["stock"])
-            if disposable[sku] == True:
+            if disposable[sku] > 1: #if part is supposed to be cheap and disposable
                 if itemsBySupplier[supplier][sku]["price"] >= 0.15:
-                    disposable[sku] = False
+                    disposable[sku] = 0
                     print("Item", sku, "was marked as non-disposable due to high price of", itemsBySupplier[supplier][sku]["price"])
         except:
             pass
@@ -205,10 +214,17 @@ for supplier in itemsBySupplier:
 # Increment quantity of disposable items based on pcbway rules
 for supplier in itemsBySupplier:
     for sku in itemsBySupplier[supplier]:
-        if disposable[sku]:
+        if disposable[sku] == 1:
+            # Follow PCBWAY pcb guidelines for minimun quantities
+            itemsBySupplier[supplier][sku]["qnt"] = itemsBySupplier[supplier][sku]["qnt"] + 1
+        if disposable[sku] == 2:
             # Follow PCBWAY pcb guidelines for minimun quantities
             itemsBySupplier[supplier][sku]["qnt"] = itemsBySupplier[supplier][sku]["qnt"] + 30
             itemsBySupplier[supplier][sku]["qnt"] = max(itemsBySupplier[supplier][sku]["qnt"], 50)
+        if disposable[sku] == 3:
+            # Follow PCBWAY pcb guidelines for minimun quantities
+            itemsBySupplier[supplier][sku]["qnt"] = itemsBySupplier[supplier][sku]["qnt"] + 80
+            itemsBySupplier[supplier][sku]["qnt"] = max(itemsBySupplier[supplier][sku]["qnt"], 100)
             
 
         
@@ -238,7 +254,7 @@ for supplier in itemsBySupplier:
 #################################### EXPORTING AND PRINTING
 
 outdir = "../exports/combined/"
-by_supplierdir = os.path.join(outdir + "/by_supplier")
+by_supplierdir = os.path.join(outdir + "by_supplier")
 #create output dir
 if not os.path.exists(by_supplierdir):
     os.makedirs(by_supplierdir)
