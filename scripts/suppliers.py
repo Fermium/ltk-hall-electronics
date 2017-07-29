@@ -2,7 +2,7 @@
 import csv
 import os
 import glob
-from  octopart import octopart_url, datasheet_url, disty_stock, disty_price
+from  octopart import octopart_url, datasheet_url, disty_stock, disty_price, disty_moq
 import re
 import sys
 import math
@@ -196,7 +196,7 @@ for supplier in itemsBySupplier:
         itemsBySupplier[supplier][sku]["qnt"] = math.ceil(itemsBySupplier[supplier][sku]["qnt"] * productsToManufacture)
 
 
-#################################### DISPOSABLE ITEMS CALCULATIONS
+#################################### DISPOSABLE ITEMS CALCULATIONS, QUANTITY ADJUSTMENTS
 
 # mark items as non-disposable based on price
 for supplier in itemsBySupplier:
@@ -227,9 +227,25 @@ for supplier in itemsBySupplier:
             # Follow PCBWAY pcb guidelines for minimun quantities
             itemsBySupplier[supplier][sku]["qnt"] = itemsBySupplier[supplier][sku]["qnt"] + 80
             itemsBySupplier[supplier][sku]["qnt"] = max(itemsBySupplier[supplier][sku]["qnt"], 100)
-            
 
-        
+print("Fetching minimun order quantity...")
+# Increment quantity of disposable items based on minimun order quantity
+for supplier in itemsBySupplier:
+    for sku in itemsBySupplier[supplier]:
+        moq = disty_moq(supplier, sku)
+        try:
+            float(moq)
+            if itemsBySupplier[supplier][sku]["qnt"] < moq:
+                if itemsBySupplier[supplier][sku]["price"] <= 0.15 and moq < 200:
+                    oldquantity = itemsBySupplier[supplier][sku]["qnt"]
+                    itemsBySupplier[supplier][sku]["qnt"] = max(itemsBySupplier[supplier][sku]["qnt"], moq)
+                    print("updated", sku, "quantity from", oldquantity, "to MOQ of", itemsBySupplier[supplier][sku]["qnt"])
+                else:
+                    print("Item", sku, "by supplier", supplier , "quantity was not incremented to", moq, "from", itemsBySupplier[supplier][sku]["qnt"], "due to high price of", itemsBySupplier[supplier][sku]["price"], "or high MOQ of", moq , "too high")
+        except ValueError:
+            pass
+        except TypeError:
+            pass
 
 ################################### CALCULATE TOTAL PRICE, CHECK IF STOCK IS OK
 
@@ -297,6 +313,7 @@ for supplier in itemsBySupplier:
             writer.writerow(itemsBySupplier[supplier][sku])            
             
 #################################### EXPORTING AND PRINTING FOR QUICKBUY, SPLITTED
+"""
 by_supplierdir_quickbuy_auto = os.path.join(outdir + "/quickbuy_split" + "/auto")
 #create output dir
 if not os.path.exists(by_supplierdir_quickbuy_auto):
@@ -339,7 +356,7 @@ for supplier in itemsBySupplier:
             writer_auto.writerow(itemsBySupplier[supplier][sku])
         else:
             writer_manual.writerow(itemsBySupplier[supplier][sku])
-
+"""
 #################################### GET PRICES OF ASSEMBLY FROM PCBWAY
 """
 

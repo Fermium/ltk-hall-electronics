@@ -99,6 +99,28 @@ def disty_price(distributor, mpn_or_sku, manufacturer=False):
                     return c.convert('USD', 'EUR', float(offer['prices']['USD'][0][1]))
 
     return ERROR_MSG
+    
+
+# Fetches minimun order quantity, given a distributor
+def disty_moq(distributor, mpn_or_sku, manufacturer=False):
+    query_params = [
+        { 'seller' : distributor,
+          'mpn_or_sku' : mpn_or_sku }
+        ]
+
+    if manufacturer:
+        query_params[0]['brand'] = manufacturer
+
+    response = __request(query_params)
+
+    if response and response['results'][0]['items']:
+        for offer in response['results'][0]['items'][0]['offers']:
+            if offer['seller']['name'] == distributor:
+                return offer['moq']
+
+
+    return ERROR_MSG
+
 
 
 # Fetches the distributor's Buy Now link
