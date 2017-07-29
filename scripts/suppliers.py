@@ -204,9 +204,11 @@ for supplier in itemsBySupplier:
         try:
             float(itemsBySupplier[supplier][sku]["stock"])
             if disposable[sku] > 1: #if part is supposed to be cheap and disposable
-                if itemsBySupplier[supplier][sku]["price"] >= 0.15:
+                if itemsBySupplier[supplier][sku]["price"] >= 0.15 and itemsBySupplier[supplier][sku]["price"] < 5.0:
+                    disposable[sku] = 1
+                    #print("Item", sku, "was marked as non-disposable due to high price of", itemsBySupplier[supplier][sku]["price"])
+                elif itemsBySupplier[supplier][sku]["price"] >= 5.0:
                     disposable[sku] = 0
-                    print("Item", sku, "was marked as non-disposable due to high price of", itemsBySupplier[supplier][sku]["price"])
         except:
             pass
             
@@ -272,11 +274,30 @@ for supplier in itemsBySupplier:
         writer.writeheader()
         for sku in itemsBySupplier[supplier]:
             writer.writerow(itemsBySupplier[supplier][sku])
-            
-            
-#################################### EXPORTING AND PRINTING for quickbuy
+#################################### EXPORTING AND PRINTING FOR QUICKBUY
 
-by_supplierdir_quickbuy_auto = os.path.join(outdir + "/quickbuy" + "/auto")
+outdir = "../exports/combined/"
+by_supplierdir = os.path.join(outdir + "quickbuy")
+#create output dir
+if not os.path.exists(by_supplierdir):
+    os.makedirs(by_supplierdir)
+#delete all files in the output dir
+for f in glob.glob(outdir + "**/*"):
+    try:
+        os.remove(f)
+    except:
+        pass
+# Write basic CSV bom of items to by
+for supplier in itemsBySupplier:
+    with open(os.path.join(by_supplierdir + "/" , supplier + ".csv"), 'w') as csvfile:
+        fieldnames = ["sku", "qnt"]
+        writer = csv.DictWriter(csvfile, fieldnames=fieldnames, restval='', extrasaction='ignore')
+        writer.writeheader()
+        for sku in itemsBySupplier[supplier]:
+            writer.writerow(itemsBySupplier[supplier][sku])            
+            
+#################################### EXPORTING AND PRINTING FOR QUICKBUY, SPLITTED
+by_supplierdir_quickbuy_auto = os.path.join(outdir + "/quickbuy_split" + "/auto")
 #create output dir
 if not os.path.exists(by_supplierdir_quickbuy_auto):
     os.makedirs(by_supplierdir_quickbuy_auto)
@@ -287,7 +308,7 @@ for f in glob.glob(by_supplierdir_quickbuy_auto + "**/*"):
     except:
         pass
         
-by_supplierdir_quickbuy_manual = os.path.join(outdir + "/quickbuy" + "/manual")
+by_supplierdir_quickbuy_manual = os.path.join(outdir + "/quickbuy_split" + "/manual")
 #create output dir
 if not os.path.exists(by_supplierdir_quickbuy_manual):
     os.makedirs(by_supplierdir_quickbuy_manual)
