@@ -1,5 +1,12 @@
-*.SchDoc text eol=crlf
-*.Harness text eol=crlf
+*.SchDoc binary
+*.PcbDoc binary
+*.Harness binary
+*.PCBDwf binary
+*.Outhob binary
+*.cam binary
+*.DXPPrf binary
+*.DsnWrk binary
+*.PcbLib binary
+*.SchLib binary
 *.BomDoc text eol=crlf
 *.OutJob text eol=crlf
-
