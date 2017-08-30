@@ -32,7 +32,6 @@ OutputPath=
 LogFolderPath=
 ManagedProjectGUID=
 LinkedManagedProjectGUID=
-IncludeDesignInRelease=0
 
 [Preferences]
 PrefsVaultGUID=
@@ -612,34 +611,98 @@ DocumentPath=..\..\exports\hub\assembly_files\ExportSTEP\hub_board(Hall).step
 DItemRevisionGUID=
 
 [GeneratedDocument6]
-DocumentPath=..\..\exports\hub\assembly_files\AutoCAD PCB\hub_board.DWG
+DocumentPath=..\..\exports\hub\Gerber\hub_board-RoundHoles.TXT
 DItemRevisionGUID=
 
 [GeneratedDocument7]
-DocumentPath=..\..\exports\hub\validation_reports\DiffReport\hub_board.html
+DocumentPath=..\..\exports\hub\Gerber\hub_board-SlotHoles.TXT
 DItemRevisionGUID=
 
 [GeneratedDocument8]
-DocumentPath=..\..\exports\hub\validation_reports\DRC\hub_board.html
+DocumentPath=..\..\exports\hub\Gerber\hub_board.DRR
 DItemRevisionGUID=
 
 [GeneratedDocument9]
-DocumentPath=..\..\exports\hub\validation_reports\ECCC\hub_board.html
+DocumentPath=..\..\exports\hub\assembly_files\AutoCAD PCB\hub_board.DWG
 DItemRevisionGUID=
 
 [GeneratedDocument10]
-DocumentPath=..\..\exports\hub\validation_reports\ERC\hub_board.html
+DocumentPath=..\..\exports\hub\Gerber\hub_board.EXTREP
 DItemRevisionGUID=
 
 [GeneratedDocument11]
-DocumentPath=..\..\exports\hub\validation_reports\FootprintComparison\hub_board.html
+DocumentPath=..\..\exports\hub\Gerber\hub_board.GBL
 DItemRevisionGUID=
 
 [GeneratedDocument12]
-DocumentPath=..\..\exports\hub\assembly_files\Copy Files\hub_board.PcbDoc
+DocumentPath=..\..\exports\hub\Gerber\hub_board.GBO
 DItemRevisionGUID=
 
 [GeneratedDocument13]
+DocumentPath=..\..\exports\hub\Gerber\hub_board.GBP
+DItemRevisionGUID=
+
+[GeneratedDocument14]
+DocumentPath=..\..\exports\hub\Gerber\hub_board.GBS
+DItemRevisionGUID=
+
+[GeneratedDocument15]
+DocumentPath=..\..\exports\hub\Gerber\hub_board.GD1
+DItemRevisionGUID=
+
+[GeneratedDocument16]
+DocumentPath=..\..\exports\hub\Gerber\hub_board.GTL
+DItemRevisionGUID=
+
+[GeneratedDocument17]
+DocumentPath=..\..\exports\hub\Gerber\hub_board.GTO
+DItemRevisionGUID=
+
+[GeneratedDocument18]
+DocumentPath=..\..\exports\hub\Gerber\hub_board.GTP
+DItemRevisionGUID=
+
+[GeneratedDocument19]
+DocumentPath=..\..\exports\hub\Gerber\hub_board.GTS
+DItemRevisionGUID=
+
+[GeneratedDocument20]
+DocumentPath=..\..\exports\hub\validation_reports\DiffReport\hub_board.html
+DItemRevisionGUID=
+
+[GeneratedDocument21]
+DocumentPath=..\..\exports\hub\validation_reports\DRC\hub_board.html
+DItemRevisionGUID=
+
+[GeneratedDocument22]
+DocumentPath=..\..\exports\hub\validation_reports\ECCC\hub_board.html
+DItemRevisionGUID=
+
+[GeneratedDocument23]
+DocumentPath=..\..\exports\hub\validation_reports\ERC\hub_board.html
+DItemRevisionGUID=
+
+[GeneratedDocument24]
+DocumentPath=..\..\exports\hub\validation_reports\FootprintComparison\hub_board.html
+DItemRevisionGUID=
+
+[GeneratedDocument25]
+DocumentPath=..\..\exports\hub\Gerber\hub_board.LDP
+DItemRevisionGUID=
+
+[GeneratedDocument26]
+DocumentPath=..\..\exports\hub\assembly_files\Copy Files\hub_board.PcbDoc
+DItemRevisionGUID=
+
+[GeneratedDocument27]
+DocumentPath=..\..\exports\hub\Gerber\hub_board.REP
+DItemRevisionGUID=
+
+[GeneratedDocument28]
+DocumentPath=..\..\exports\hub\Gerber\hub_board.RUL
+DItemRevisionGUID=
+
+[GeneratedDocument29]
 DocumentPath=..\..\exports\hub\assembly_files\Pick Place\Pick Place for hub_board(Hall).txt
 DItemRevisionGUID=
 
@@ -657,7 +720,6 @@ OutputJobsCount=1
 DocumentReferenceClass1=DocumentReference
 OutputJobFileName1=hub_board.OutJob
 ContentTypeGUID=CB6F2064-E317-11DF-B822-12313F0024A2
-ConfigurationType=Source
 
 [Configuration2]
 Name=Fabrication
@@ -669,7 +731,6 @@ OutputJobsCount=1
 DocumentReferenceClass1=DocumentReference
 OutputJobFileName1=hub_board.OutJob
 ContentTypeGUID=0C520D2A-E60C-11DF-B822-12313F0024A2
-ConfigurationType=Fabrication
 
 [Configuration3]
 Name=Assembly
@@ -681,7 +742,6 @@ OutputJobsCount=1
 DocumentReferenceClass1=DocumentReference
 OutputJobFileName1=hub_board.OutJob
 ContentTypeGUID=0D12F8DC-E60C-11DF-B822-12313F0024A2
-ConfigurationType=Assembly
 
 [Configuration4]
 Name=Assembly Hall
@@ -693,7 +753,6 @@ OutputJobsCount=1
 DocumentReferenceClass1=DocumentReference
 OutputJobFileName1=hub_board.OutJob
 ContentTypeGUID=0D12F8DC-E60C-11DF-B822-12313F0024A2
-ConfigurationType=Assembly
 
 [Generic_PCB]
 Collation=True
@@ -911,7 +970,7 @@ PageOptions11=Record=PageOptions|CenterHorizontal=True|CenterVertical=True|Print
 OutputType12=PCBDrawing
 OutputName12=Draftsman
 OutputDocumentPath12=
-OutputVariantName12=[No Variations]
+OutputVariantName12=
 OutputDefault12=0
 PageOptions12=Record=PageOptions|CenterHorizontal=True|CenterVertical=True|PrintScale=1.00|XCorrection=1.00|YCorrection=1.00|PrintKind=1|BorderSize=5000000|LeftOffset=0|BottomOffset=0|Orientation=2|PaperLength=1000|PaperWidth=1000|Scale=100|PaperSource=7|PrintQuality=-3|MediaType=1|DitherType=10|PrintScaleMode=1|PaperKind=A4|PaperIndex=9
 
@@ -1655,7 +1714,7 @@ ComparisonOptions1=Kind=Net Class|MinPercent=75|MinMatch=3|ShowMatch=-1|Confirm=
 ComparisonOptions2=Kind=Component Class|MinPercent=75|MinMatch=3|ShowMatch=-1|Confirm=-1|UseName=-1|InclAllRules=0
 ComparisonOptions3=Kind=Rule|MinPercent=75|MinMatch=3|ShowMatch=-1|Confirm=-1|UseName=-1|InclAllRules=0
 ComparisonOptions4=Kind=Differential Pair|MinPercent=50|MinMatch=1|ShowMatch=0|Confirm=0|UseName=0|InclAllRules=0
-ComparisonOptions5=Kind=Structure Class|MinPercent=75|MinMatch=3|ShowMatch=-1|Confirm=-1|UseName=-1|InclAllRules=0
+ComparisonOptions5=Kind=Code Memory|MinPercent=75|MinMatch=3|ShowMatch=-1|Confirm=-1|UseName=-1|InclAllRules=0
 
 [SmartPDF]
 PageOptions=Record=PageOptions|CenterHorizontal=True|CenterVertical=True|PrintScale=1.00|XCorrection=1.00|YCorrection=1.00|PrintKind=1|BorderSize=5000000|LeftOffset=0|BottomOffset=0|Orientation=2|PaperLength=1000|PaperWidth=1000|Scale=100|PaperSource=7|PrintQuality=-3|MediaType=1|DitherType=10|PrintScaleMode=1|PaperKind=A4|PaperIndex=9
