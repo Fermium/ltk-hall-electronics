@@ -32,6 +32,7 @@ OutputPath=
 LogFolderPath=
 ManagedProjectGUID=
 LinkedManagedProjectGUID=
+IncludeDesignInRelease=0
 
 [Preferences]
 PrefsVaultGUID=
@@ -591,119 +592,7 @@ Variation1=Designator=P2|UniqueId=\LXOMJUGH\VNLQUFCJ|Kind=1|AlternatePart=
 ParamVariationCount=0
 
 [GeneratedDocument1]
-DocumentPath=..\..\exports\hub\assembly_files\BOM\BOM-csv-hub_board(Hall).csv
-DItemRevisionGUID=
-
-[GeneratedDocument2]
-DocumentPath=..\..\exports\hub\purchase_files\BOM\BOM-csv-hub_board(Hall).csv
-DItemRevisionGUID=
-
-[GeneratedDocument3]
-DocumentPath=..\..\exports\hub\purchase_files\BOM\BOM-pdf-hub_board(Hall).pdf
-DItemRevisionGUID=
-
-[GeneratedDocument4]
 DocumentPath=Project Outputs for hub_board\Design Rule Check - hub_board.html
-DItemRevisionGUID=
-
-[GeneratedDocument5]
-DocumentPath=..\..\exports\hub\assembly_files\ExportSTEP\hub_board(Hall).step
-DItemRevisionGUID=
-
-[GeneratedDocument6]
-DocumentPath=..\..\exports\hub\Gerber\hub_board-RoundHoles.TXT
-DItemRevisionGUID=
-
-[GeneratedDocument7]
-DocumentPath=..\..\exports\hub\Gerber\hub_board-SlotHoles.TXT
-DItemRevisionGUID=
-
-[GeneratedDocument8]
-DocumentPath=..\..\exports\hub\Gerber\hub_board.DRR
-DItemRevisionGUID=
-
-[GeneratedDocument9]
-DocumentPath=..\..\exports\hub\assembly_files\AutoCAD PCB\hub_board.DWG
-DItemRevisionGUID=
-
-[GeneratedDocument10]
-DocumentPath=..\..\exports\hub\Gerber\hub_board.EXTREP
-DItemRevisionGUID=
-
-[GeneratedDocument11]
-DocumentPath=..\..\exports\hub\Gerber\hub_board.GBL
-DItemRevisionGUID=
-
-[GeneratedDocument12]
-DocumentPath=..\..\exports\hub\Gerber\hub_board.GBO
-DItemRevisionGUID=
-
-[GeneratedDocument13]
-DocumentPath=..\..\exports\hub\Gerber\hub_board.GBP
-DItemRevisionGUID=
-
-[GeneratedDocument14]
-DocumentPath=..\..\exports\hub\Gerber\hub_board.GBS
-DItemRevisionGUID=
-
-[GeneratedDocument15]
-DocumentPath=..\..\exports\hub\Gerber\hub_board.GD1
-DItemRevisionGUID=
-
-[GeneratedDocument16]
-DocumentPath=..\..\exports\hub\Gerber\hub_board.GTL
-DItemRevisionGUID=
-
-[GeneratedDocument17]
-DocumentPath=..\..\exports\hub\Gerber\hub_board.GTO
-DItemRevisionGUID=
-
-[GeneratedDocument18]
-DocumentPath=..\..\exports\hub\Gerber\hub_board.GTP
-DItemRevisionGUID=
-
-[GeneratedDocument19]
-DocumentPath=..\..\exports\hub\Gerber\hub_board.GTS
-DItemRevisionGUID=
-
-[GeneratedDocument20]
-DocumentPath=..\..\exports\hub\validation_reports\DiffReport\hub_board.html
-DItemRevisionGUID=
-
-[GeneratedDocument21]
-DocumentPath=..\..\exports\hub\validation_reports\DRC\hub_board.html
-DItemRevisionGUID=
-
-[GeneratedDocument22]
-DocumentPath=..\..\exports\hub\validation_reports\ECCC\hub_board.html
-DItemRevisionGUID=
-
-[GeneratedDocument23]
-DocumentPath=..\..\exports\hub\validation_reports\ERC\hub_board.html
-DItemRevisionGUID=
-
-[GeneratedDocument24]
-DocumentPath=..\..\exports\hub\validation_reports\FootprintComparison\hub_board.html
-DItemRevisionGUID=
-
-[GeneratedDocument25]
-DocumentPath=..\..\exports\hub\Gerber\hub_board.LDP
-DItemRevisionGUID=
-
-[GeneratedDocument26]
-DocumentPath=..\..\exports\hub\assembly_files\Copy Files\hub_board.PcbDoc
-DItemRevisionGUID=
-
-[GeneratedDocument27]
-DocumentPath=..\..\exports\hub\Gerber\hub_board.REP
-DItemRevisionGUID=
-
-[GeneratedDocument28]
-DocumentPath=..\..\exports\hub\Gerber\hub_board.RUL
-DItemRevisionGUID=
-
-[GeneratedDocument29]
-DocumentPath=..\..\exports\hub\assembly_files\Pick Place\Pick Place for hub_board(Hall).txt
 DItemRevisionGUID=
 
 [SearchPath1]
@@ -720,6 +609,7 @@ OutputJobsCount=1
 DocumentReferenceClass1=DocumentReference
 OutputJobFileName1=hub_board.OutJob
 ContentTypeGUID=CB6F2064-E317-11DF-B822-12313F0024A2
+ConfigurationType=Source
 
 [Configuration2]
 Name=Fabrication
@@ -731,6 +621,7 @@ OutputJobsCount=1
 DocumentReferenceClass1=DocumentReference
 OutputJobFileName1=hub_board.OutJob
 ContentTypeGUID=0C520D2A-E60C-11DF-B822-12313F0024A2
+ConfigurationType=Fabrication
 
 [Configuration3]
 Name=Assembly
@@ -742,6 +633,7 @@ OutputJobsCount=1
 DocumentReferenceClass1=DocumentReference
 OutputJobFileName1=hub_board.OutJob
 ContentTypeGUID=0D12F8DC-E60C-11DF-B822-12313F0024A2
+ConfigurationType=Assembly
 
 [Configuration4]
 Name=Assembly Hall
@@ -753,6 +645,7 @@ OutputJobsCount=1
 DocumentReferenceClass1=DocumentReference
 OutputJobFileName1=hub_board.OutJob
 ContentTypeGUID=0D12F8DC-E60C-11DF-B822-12313F0024A2
+ConfigurationType=Assembly
 
 [Generic_PCB]
 Collation=True
@@ -884,6 +777,16 @@ OutputName21=WireList Netlist
 OutputDocumentPath21=
 OutputVariantName21=
 OutputDefault21=0
+OutputType22=SIMetrixNetlist
+OutputName22=SIMetrix
+OutputDocumentPath22=
+OutputVariantName22=
+OutputDefault22=0
+OutputType23=SIMPLISNetlist
+OutputName23=SIMPLIS
+OutputDocumentPath23=
+OutputVariantName23=
+OutputDefault23=0
 
 [OutputGroup2]
 Name=Simulator Outputs
@@ -895,6 +798,16 @@ OutputName1=Mixed Sim
 OutputDocumentPath1=
 OutputVariantName1=
 OutputDefault1=0
+OutputType2=SIMetrixSimulation
+OutputName2=SIMetrix
+OutputDocumentPath2=
+OutputVariantName2=
+OutputDefault2=0
+OutputType3=SIMPLISSimulation
+OutputName3=SIMPLIS
+OutputDocumentPath3=
+OutputVariantName3=
+OutputDefault3=0
 
 [OutputGroup3]
 Name=Documentation Outputs
@@ -970,9 +883,15 @@ PageOptions11=Record=PageOptions|CenterHorizontal=True|CenterVertical=True|Print
 OutputType12=PCBDrawing
 OutputName12=Draftsman
 OutputDocumentPath12=
-OutputVariantName12=
+OutputVariantName12=[No Variations]
 OutputDefault12=0
 PageOptions12=Record=PageOptions|CenterHorizontal=True|CenterVertical=True|PrintScale=1.00|XCorrection=1.00|YCorrection=1.00|PrintKind=1|BorderSize=5000000|LeftOffset=0|BottomOffset=0|Orientation=2|PaperLength=1000|PaperWidth=1000|Scale=100|PaperSource=7|PrintQuality=-3|MediaType=1|DitherType=10|PrintScaleMode=1|PaperKind=A4|PaperIndex=9
+OutputType13=Software Platform Print
+OutputName13=Software Platform Prints
+OutputDocumentPath13=
+OutputVariantName13=
+OutputDefault13=0
+PageOptions13=Record=PageOptions|CenterHorizontal=True|CenterVertical=True|PrintScale=1.00|XCorrection=1.00|YCorrection=1.00|PrintKind=1|BorderSize=5000000|LeftOffset=0|BottomOffset=0|Orientation=2|PaperLength=1000|PaperWidth=1000|Scale=100|PaperSource=7|PrintQuality=-3|MediaType=1|DitherType=10|PrintScaleMode=1|PaperKind=Letter|PaperIndex=1
 
 [OutputGroup4]
 Name=Assembly Outputs
@@ -1714,7 +1633,7 @@ ComparisonOptions1=Kind=Net Class|MinPercent=75|MinMatch=3|ShowMatch=-1|Confirm=
 ComparisonOptions2=Kind=Component Class|MinPercent=75|MinMatch=3|ShowMatch=-1|Confirm=-1|UseName=-1|InclAllRules=0
 ComparisonOptions3=Kind=Rule|MinPercent=75|MinMatch=3|ShowMatch=-1|Confirm=-1|UseName=-1|InclAllRules=0
 ComparisonOptions4=Kind=Differential Pair|MinPercent=50|MinMatch=1|ShowMatch=0|Confirm=0|UseName=0|InclAllRules=0
-ComparisonOptions5=Kind=Code Memory|MinPercent=75|MinMatch=3|ShowMatch=-1|Confirm=-1|UseName=-1|InclAllRules=0
+ComparisonOptions5=Kind=Structure Class|MinPercent=75|MinMatch=3|ShowMatch=-1|Confirm=-1|UseName=-1|InclAllRules=0
 
 [SmartPDF]
 PageOptions=Record=PageOptions|CenterHorizontal=True|CenterVertical=True|PrintScale=1.00|XCorrection=1.00|YCorrection=1.00|PrintKind=1|BorderSize=5000000|LeftOffset=0|BottomOffset=0|Orientation=2|PaperLength=1000|PaperWidth=1000|Scale=100|PaperSource=7|PrintQuality=-3|MediaType=1|DitherType=10|PrintScaleMode=1|PaperKind=A4|PaperIndex=9
