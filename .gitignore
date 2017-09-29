@@ -27,3 +27,5 @@ exports/*
 #Python stuff
 scripts/__pycache__/
 *.bak
+*.dwl
+*.dwl2
