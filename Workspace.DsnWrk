@@ -8,3 +8,5 @@ ProjectPath=boards\sample\sample_board.PrjPcb
 ProjectPath=boards\probe\probe.PrjPcb
 [Project4]
 ProjectPath=boards\main\main_board.PrjPcb
+[Project5]
+ProjectPath=boards\sample_cu\sample_board_cu.PrjPcb
