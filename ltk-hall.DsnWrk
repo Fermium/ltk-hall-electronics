@@ -1,0 +1,8 @@
+[ProjectGroup]
+Version=1.0
+[Project1]
+ProjectPath=boards\main\ltk-hall-main.PrjPCB
+[Project2]
+ProjectPath=boards\probe\probe.PrjPcb
+[Project3]
+ProjectPath=boards\sample\sample_board.PrjPcb
