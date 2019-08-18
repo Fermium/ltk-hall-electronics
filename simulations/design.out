@@ -1,0 +1,91 @@
+********************************************************************************
+***                                                                          ***
+*** SIMetrix/SIMPLIS Elite with DVM and Verilog for SIMPLIS Version 8.20a (x64) - 18/08/2019 02:24***
+*** Platform: Windows 10                                                     ***
+*** Architecture: x64                                                        ***
+*** Serial Number:                                                           ***
+*** User:                                                                    ***
+***                                                                          ***
+*** TITLE:   *                                                              ***
+*** NETLIST: C:\altium-projects\Hall-electronic\simulations\design.net       ***
+***                                                                          ***
+********************************************************************************
+
+********************************************************************************
+***                                                                          ***
+***                                Input Deck                                ***
+***                                                                          ***
+********************************************************************************
+
+.options allowdivzero=1
+.options initCondMode=2
+.options icres=0.001
+.options inhibitAttoISource=1
+#SIMETRIX
+V1 V1_P 0 AC 1
+R1 U1_OUT2 0 1K
+U1 V1_P V1_P U1_OUT2 U1_OUT2 U1$TP_ACTABLE
+.model U1$TP_ACTABLE ACTABLE load="\\mac\Home\Downloads\beads_commercial_power_mpz1608_spara\MPZ1608S102ATA00.s2p"
+.AC DEC 25 1k 1Meg
+
+********************************************************************************
+***                                                                          ***
+*** Starting AC analysis at 02:24                                            ***
+***                                                                          ***
+*** Analysis card: .AC DEC 25 1k 1Meg                                        ***
+***                                                                          ***
+********************************************************************************
+********************************************************************************
+***                                                                          ***
+***                            Simulation Options                            ***
+***                                                                          ***
+********************************************************************************
+RELTOL                    0.001
+ABSTOL                    1e-12
+VNTOL                     1e-06
+POINTTOL                  0.001
+TEMPERATURE               27C
+GMIN                      1e-12
+Matrix Solver             UF KLU Version 1.1
+
+
+
+Analysis statistics
+===================
+
+Nominal temperature = 27
+Operating temperature = 27
+Total iterations = 4
+Transient iterations = 0
+Transient timepoints = 0
+Accepted timepoints = 0
+Total analysis time = 0.047
+Transient time = 0
+Matrix reordering time = 0
+L-U decomposition time = 0
+Matrix solve time = 0
+Load time = 0
+Transient L-U decomp time = 0
+Transient solve time = 0
+Circuit build time = 0
+Simulator initialise time = 0
+Data write time = 0
+Convergence test time = 0
+LTE time = 0
+JI2 Iterations = 4
+Diag. GMIN stepping iterations = 0
+Junc. GMIN stepping iterations = 0
+Source stepping iterations = 0
+PTA iterations = 0
+Number of matrix fill ins = -3
+Number of initial matrix elements = 6
+Circuit equations = 4
+State vector size = 2
+Number of write buffer faults = 0
+
+Run statistics
+==============
+
+Netlist read in time = 0
+Total run time = 0.125 seconds
+Analysis concluded 18/08/2019 02:24

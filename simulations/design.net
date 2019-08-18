@@ -1,0 +1,8 @@
+* 
+*#SIMETRIX
+V1 V1_P 0 AC 1
+R1 U1_OUT2 0 1K
+U1 V1_P V1_P U1_OUT2 U1_OUT2 U1$TP_ACTABLE
+.model U1$TP_ACTABLE ACTABLE load="\\mac\Home\Downloads\beads_commercial_power_mpz1608_spara\MPZ1608S102ATA00.s2p"
+.AC DEC 25 1k 1Meg
+
