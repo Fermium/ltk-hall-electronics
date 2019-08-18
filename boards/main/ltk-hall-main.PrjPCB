@@ -431,18 +431,6 @@ ContentTypeGUID=0D12F8DC-E60C-11DF-B822-12313F0024A2
 ConfigurationType=Assembly
 
 [Configuration4]
-Name=Assembly AC OUT
-ParameterCount=0
-ConstraintFileCount=0
-ReleaseItemId=
-Variant=AC OUT
-OutputJobsCount=1
-DocumentReferenceClass1=DocumentReference
-OutputJobFileName1=030_Assembly.OutJob
-ContentTypeGUID=0D12F8DC-E60C-11DF-B822-12313F0024A2
-ConfigurationType=Assembly
-
-[Configuration5]
 Name=Dev
 ParameterCount=0
 ConstraintFileCount=0
@@ -457,6 +445,30 @@ DocumentReferenceClass3=DocumentReference
 OutputJobFileName3=001_DevMechanical.OutJob
 ContentTypeGUID=B953ABBB-897D-493B-96D2-85DABE1896C4
 ConfigurationType=Custom
+
+[Configuration5]
+Name=Assembly HALL
+ParameterCount=0
+ConstraintFileCount=0
+ReleaseItemId=
+Variant=HALL
+OutputJobsCount=1
+DocumentReferenceClass1=DocumentReference
+OutputJobFileName1=030_Assembly.OutJob
+ContentTypeGUID=0D12F8DC-E60C-11DF-B822-12313F0024A2
+ConfigurationType=Assembly
+
+[Configuration6]
+Name=Assembly RDT
+ParameterCount=0
+ConstraintFileCount=0
+ReleaseItemId=
+Variant=RDT
+OutputJobsCount=1
+DocumentReferenceClass1=DocumentReference
+OutputJobFileName1=030_Assembly.OutJob
+ContentTypeGUID=0D12F8DC-E60C-11DF-B822-12313F0024A2
+ConfigurationType=Assembly
 
 [Generic_SmartPDF]
 AutoOpenFile=0
