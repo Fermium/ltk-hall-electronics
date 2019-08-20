@@ -179,23 +179,6 @@ GenerateClassCluster=0
 DocumentUniqueId=
 
 [Document9]
-DocumentPath=010_Purchase.OutJob
-AnnotationEnabled=1
-AnnotateStartValue=1
-AnnotationIndexControlEnabled=0
-AnnotateSuffix=
-AnnotateScope=All
-AnnotateOrder=-1
-DoLibraryUpdate=1
-DoDatabaseUpdate=1
-ClassGenCCAutoEnabled=1
-ClassGenCCAutoRoomEnabled=1
-ClassGenNCAutoScope=None
-DItemRevisionGUID=
-GenerateClassCluster=0
-DocumentUniqueId=
-
-[Document10]
 DocumentPath=ltk-hall-main.BomDoc
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -212,7 +195,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=
 
-[Document11]
+[Document10]
 DocumentPath=ltk-hall-main.PcbDoc
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -229,7 +212,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=SROIDWTK
 
-[Document12]
+[Document11]
 DocumentPath=ltk-hall_main.SchDoc
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -246,7 +229,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=AUSRRYQM
 
-[Document13]
+[Document12]
 DocumentPath=ltk-hall_main_gauss.SchDoc
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -263,7 +246,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=CSUJXVQV
 
-[Document14]
+[Document13]
 DocumentPath=ltk-hall_main_igen.SchDoc
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -280,7 +263,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=PGTAZNMS
 
-[Document15]
+[Document14]
 DocumentPath=ltk-hall_main_tc_heater.SchDoc
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -297,7 +280,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=HMTWQMLE
 
-[Document16]
+[Document15]
 DocumentPath=ltk-hall_main_vh.SchDoc
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -314,7 +297,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=LBJWOZCT
 
-[Document17]
+[Document16]
 DocumentPath=ltk-hall_main_vr.SchDoc
 AnnotationEnabled=1
 AnnotateStartValue=1
