@@ -1,0 +1,14 @@
+[ProjectGroup]
+Version=1.0
+[Project1]
+ProjectPath=boards\main\ltk-hall-main.PrjPCB
+[Project2]
+ProjectPath=boards\probe\probe.PrjPcb
+[Project3]
+ProjectPath=boards\sample\sample_board.PrjPcb
+[Project4]
+ProjectPath=..\frm-voltrod\frm-voltrod.PrjPCB
+[Project5]
+ProjectPath=..\frm-mw-diode-detector\frm-mw-diode-detector.PrjPCB
+[Project6]
+ProjectPath=..\ltk-mw-electronic\ltk-mw-tx-rx.PrjPCB

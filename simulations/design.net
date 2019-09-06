@@ -1,0 +1,50 @@
+* C:\altium-projects\Hall-electronic\simulations\current_generator.sxsch
+*#SIMETRIX
+X1 R7_P V3_P V1_P 0 X1_out AD8605 pinnames: inp inn vsp vsn out
+V1 V1_P 0 5
+X2 R1_P C3_N V1_P 0 X2_out AD8605 pinnames: inp inn vsp vsn out
+V2 V2_P 0 1.5
+R1 R1_P 0 10
+V3 V3_P X2_out AC 1
+X4 R3_P V5_P V8_P 0 X4_out AD8605 pinnames: inp inn vsp vsn out
+R2 X1_out R2_N 0
+X$V4 R18_N 0 SQU_SOURCE pinnames: P N params: _V1=0 _V2=5 _FREQ=100 _DELAY=0 _DRATIOx100=50 _T_RISE=10u _T_FALL=10u _DAMP_COEF=0 _PWIDTH=4.99m _OFF_UNTIL_DELAY=0 _IDLE_IN_POP=0 _USEPHASE=0 _PHASE=0
+R3 R3_P R13_P 10k
+V5 V5_P V5_N AC 1
+R4 R2_N R1_P 10
+R5 R5_P V2_P 10k
+V7 V7_P 0 150m
+R6 X2_out C3_N 10k
+V8 V8_P 0 5
+R7 R7_P R5_P 10k
+R8 C3_N 0 1k
+R9 R10_P 0 10k
+R10 R10_P R18_N 100
+R11 R18_P 0 10k
+R12 V5_N 0 10
+R13 R13_P V7_P 10k
+R14 R16_N V5_N 10
+R16 X4_out R16_N 0
+R18 R18_P R18_N 100
+X$Q1 R5_P R10_P 0 2N7002/NXP pinnames: D G S
+X$Q2 R13_P R18_P 0 2N7002/NXP pinnames: D G S
+C1 R3_P 0 10n   
+C2 R7_P 0 10n   
+C3 X2_out C3_N 10n   
+.KEEP X2_out V3_P
+.GRAPH "db(:X2_out/:V3_P)" Curvelabel="Gain" nowarn=true yunit="dB" complete=True analysis="ac" ylog=lin xlog=auto  ydelta=20 persistence=-1 colourname=Probe1_bode_color     axisname=bodemag     userid=Probe1$GAIN. MeasureSpec="Gain\sCrossover\sFrequency\s(dB\sPlot)|0|0|0|0!Gain\sMargin\s(dB\sPlot)|0|0|0|0"
+.post_process probe_measure Probe1$GAIN. Gain\sCrossover\sFrequency\s(dB\sPlot)|0|0|0|0!Gain\sMargin\s(dB\sPlot)|0|0|0|0
+.GRAPH "ph(:X2_out/:V3_P)" Curvelabel="Phase" nowarn=true yunit="degrees" complete=True analysis="ac" ylog=lin xlog=auto  ydelta=45 persistence=-1 colourname=Probe1_bode_color   axistype=grid  axisname=bodephase    userid=Probe1$PHASE. MeasureSpec="Phase\sMargin\s(Phase\sPlot)|0|0|0|0"
+.post_process probe_measure Probe1$PHASE. Phase\sMargin\s(Phase\sPlot)|0|0|0|0
+.GRAPH R1#P curveLabel="I(R1-P)" nowarn=true analysis=tran|ac|dc disabled=false 
+.GRAPH R12#P curveLabel="I(R1-P)" nowarn=true analysis=tran|ac|dc disabled=false 
+.KEEP V5_N V5_P
+.GRAPH "db(:V5_N/:V5_P)" Curvelabel="Gain" nowarn=true yunit="dB" complete=True analysis="ac" ylog=lin xlog=auto  ydelta=20 persistence=-1 colourname=Probe4_bode_color     axisname=bodemag     userid=Probe4$GAIN. MeasureSpec="Gain\sCrossover\sFrequency\s(dB\sPlot)|0|0|0|0!Gain\sMargin\s(dB\sPlot)|0|0|0|0"
+.post_process probe_measure Probe4$GAIN. Gain\sCrossover\sFrequency\s(dB\sPlot)|0|0|0|0!Gain\sMargin\s(dB\sPlot)|0|0|0|0
+.GRAPH "ph(:V5_N/:V5_P)" Curvelabel="Phase" nowarn=true yunit="degrees" complete=True analysis="ac" ylog=lin xlog=auto  ydelta=45 persistence=-1 colourname=Probe4_bode_color   axistype=grid  axisname=bodephase    userid=Probe4$PHASE. MeasureSpec="Phase\sMargin\s(Phase\sPlot)|0|0|0|0"
+.post_process probe_measure Probe4$PHASE. Phase\sMargin\s(Phase\sPlot)|0|0|0|0
+*.TRAN 0 20m 0 10u ; SWEEP SINGLE DEVICE=C3 DEC 1 10p 100n
+.AC DEC 100 1m 100Meg SWEEP SINGLE DEVICE=R14 DEC 10 100m 100
+*.DC v2 0 2.5 2.5025025025025m
+.options KeepAllAci
+
