@@ -1,0 +1,16 @@
+Altium Designer Pick and Place Locations
+C:\Users\Shadow\Desktop\Repos\ltk-hall-electronics\exports\sample\assembly_files\Pick Place\Pick Place for sample_board.txt
+
+========================================================================================================================
+File Design Information:
+
+Date:       30/10/23
+Time:       16:42
+Revision:   0e8f27331904f66221922d58872edd293c87ba53
+Variant:    No variations
+Units used: mil
+
+Designator Comment          Layer    Footprint        Center-X(mil) Center-Y(mil) Rotation Description        
+logo       fermiumlabs-logo TopLayer frm-med          -4270.796     -2184.401     90       ""                 
+P1         "Header 8"       TopLayer Edge_Connector   574.016       1380.000      360      "Header, 8-Pin"    
+U1         Sample           TopLayer GERMANIUM_SAMPLE 582.779       569.299       0        "Sample germanium" 

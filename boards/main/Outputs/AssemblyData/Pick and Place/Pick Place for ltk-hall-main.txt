@@ -1,0 +1,223 @@
+Altium Designer Pick and Place Locations
+C:\Users\Shadow\Desktop\Repos\ltk-hall-electronics\boards\main\Project Outputs for Combined\AssemblyData\Pick and Place\Pick Place for ltk-hall-main.txt
+
+========================================================================================================================
+File Design Information:
+
+Date:       30/10/23
+Time:       16:35
+Revision:   9a3e12c10b810e242c752c6b59ebb58eb28667f6
+Variant:    No variations
+Units used: mil
+
+Center-X(mil) Center-Y(mil) Comment              Description                                                                         Designator Footprint                            Layer    Rotation 
+3820.000      600.000       0                    "RES SMD 0 OHM 5% 1/10W 0603"                                                       R20        RES_0603_1608                        TopLayer 90       
+3760.000      600.000       0                    "RES SMD 0 OHM 5% 1/10W 0603"                                                       R19        RES_0603_1608                        TopLayer 90       
+3700.000      600.000       0                    "RES SMD 0 OHM 5% 1/10W 0603"                                                       R18        RES_0603_1608                        TopLayer 90       
+3640.000      600.000       0                    "RES SMD 0 OHM 5% 1/10W 0603"                                                       R17        RES_0603_1608                        TopLayer 90       
+1058.662      3326.614      LTC6915CGN#PBF       "IC PGA G0-4094 SPI-PARALLEL 5V RRIO SSOP-16"                                       U39        517EE8A2-9FD8-4174-996D-BDBF76CA3EEB TopLayer 0        
+270.000       831.260       AD8605ARTZ           "IC OPAMP 65uV 1pA RRIO 5V 80mA SOT-23-5"                                           U38        A3DDA0BC-073E-4B18-9613-F713A7EC1E27 TopLayer 360      
+230.000       3680.000      AD8605ARTZ           "IC OPAMP 65uV 1pA RRIO 5V 80mA SOT-23-5"                                           U37        A3DDA0BC-073E-4B18-9613-F713A7EC1E27 TopLayer 270      
+348.662       3326.614      LTC6915CGN#PBF       "IC PGA G0-4094 SPI-PARALLEL 5V RRIO SSOP-16"                                       U36        517EE8A2-9FD8-4174-996D-BDBF76CA3EEB TopLayer 0        
+480.000       3680.000      AD8605ARTZ           "IC OPAMP 65uV 1pA RRIO 5V 80mA SOT-23-5"                                           U35        A3DDA0BC-073E-4B18-9613-F713A7EC1E27 TopLayer 270      
+932.756       828.662       AD8605ARTZ           "IC OPAMP 65uV 1pA RRIO 5V 80mA SOT-23-5"                                           U34        A3DDA0BC-073E-4B18-9613-F713A7EC1E27 TopLayer 0        
+1058.662      2926.614      LTC6915CGN#PBF       "IC PGA G0-4094 SPI-PARALLEL 5V RRIO SSOP-16"                                       U33        517EE8A2-9FD8-4174-996D-BDBF76CA3EEB TopLayer 0        
+740.000       3680.000      AD8605ARTZ           "IC OPAMP 65uV 1pA RRIO 5V 80mA SOT-23-5"                                           U32        A3DDA0BC-073E-4B18-9613-F713A7EC1E27 TopLayer 270      
+1260.000      831.260       AD8605ARTZ           "IC OPAMP 65uV 1pA RRIO 5V 80mA SOT-23-5"                                           U31        A3DDA0BC-073E-4B18-9613-F713A7EC1E27 TopLayer 360      
+718.662       3326.614      LTC6915CGN#PBF       "IC PGA G0-4094 SPI-PARALLEL 5V RRIO SSOP-16"                                       U30        517EE8A2-9FD8-4174-996D-BDBF76CA3EEB TopLayer 0        
+990.000       3680.000      AD8605ARTZ           "IC OPAMP 65uV 1pA RRIO 5V 80mA SOT-23-5"                                           U29        A3DDA0BC-073E-4B18-9613-F713A7EC1E27 TopLayer 270      
+1590.000      831.260       AD8605ARTZ           "IC OPAMP 65uV 1pA RRIO 5V 80mA SOT-23-5"                                           U28        A3DDA0BC-073E-4B18-9613-F713A7EC1E27 TopLayer 0        
+2500.000      3200.000      AD8605ARTZ           "IC OPAMP 65uV 1pA RRIO 5V 80mA SOT-23-5"                                           U27        A3DDA0BC-073E-4B18-9613-F713A7EC1E27 TopLayer 180      
+2690.000      2570.000      NE555DR              "IC SMD TIMER NE555 SOIC-8"                                                         U26        TI_SOIC-8_D                          TopLayer 0        
+3700.000      2390.000      NC7SZ58P6X           "IC LOGIC PORT CONFIGURABLE AND, OR, NAND, NOR, XOR, BUFFER, NOT 8ns  74XX58 SC-70" U25        CF792C6F-51F3-4C59-9918-AD84EFC14FA6 TopLayer 0        
+3510.000      2390.000      NC7SZ58P6X           "IC LOGIC PORT CONFIGURABLE AND, OR, NAND, NOR, XOR, BUFFER, NOT 8ns  74XX58 SC-70" U24        CF792C6F-51F3-4C59-9918-AD84EFC14FA6 TopLayer 0        
+3540.000      2610.000      2N7002K              "MOSFET N-CHANNEL LOGIC LEVEL 300mA 3ohm 60V ESD-PROT 2N7002K SOT-23"               U23        ON_SEMI_SOT-23-3                     TopLayer 180      
+3320.000      2610.000      2N7002K              "MOSFET N-CHANNEL LOGIC LEVEL 300mA 3ohm 60V ESD-PROT 2N7002K SOT-23"               U22        ON_SEMI_SOT-23-3                     TopLayer 180      
+2510.000      3560.000      AD8605ARTZ           "IC OPAMP 65uV 1pA RRIO 5V 80mA SOT-23-5"                                           U21        A3DDA0BC-073E-4B18-9613-F713A7EC1E27 TopLayer 0        
+2150.001      3490.000      AD8495ARMZ-R7        "IC THERMOCOUPLE AMPLIFIER MSOP-8"                                                  U20        ANALOG_MSOP-8_RM-8                   TopLayer 360      
+2510.000      3740.000      AD8605ARTZ           "IC OPAMP 65uV 1pA RRIO 5V 80mA SOT-23-5"                                           U19        A3DDA0BC-073E-4B18-9613-F713A7EC1E27 TopLayer 0        
+1720.000      2990.000      AD8605ARTZ           "IC OPAMP 65uV 1pA RRIO 5V 80mA SOT-23-5"                                           U18        A3DDA0BC-073E-4B18-9613-F713A7EC1E27 TopLayer 0        
+1720.000      3170.000      AD8605ARTZ           "IC OPAMP 65uV 1pA RRIO 5V 80mA SOT-23-5"                                           U17        A3DDA0BC-073E-4B18-9613-F713A7EC1E27 TopLayer 0        
+1420.000      3400.000      2N7002K              "MOSFET N-CHANNEL LOGIC LEVEL 300mA 3ohm 60V ESD-PROT 2N7002K SOT-23"               U16        ON_SEMI_SOT-23-3                     TopLayer 180      
+1720.000      3400.000      NC7SZ58P6X           "IC LOGIC PORT CONFIGURABLE AND, OR, NAND, NOR, XOR, BUFFER, NOT 8ns  74XX58 SC-70" U15        CF792C6F-51F3-4C59-9918-AD84EFC14FA6 TopLayer 180      
+1720.000      3550.000      AD8605ARTZ           "IC OPAMP 65uV 1pA RRIO 5V 80mA SOT-23-5"                                           U14        A3DDA0BC-073E-4B18-9613-F713A7EC1E27 TopLayer 0        
+2430.000      1180.000      AD8605ARTZ           "IC OPAMP 65uV 1pA RRIO 5V 80mA SOT-23-5"                                           U13        A3DDA0BC-073E-4B18-9613-F713A7EC1E27 TopLayer 0        
+2150.000      3220.000      LTC6915CGN#PBF       "IC PGA G0-4094 SPI-PARALLEL 5V RRIO SSOP-16"                                       U12        517EE8A2-9FD8-4174-996D-BDBF76CA3EEB TopLayer 0        
+1720.000      3740.000      AD8605ARTZ           "IC OPAMP 65uV 1pA RRIO 5V 80mA SOT-23-5"                                           U11        A3DDA0BC-073E-4B18-9613-F713A7EC1E27 TopLayer 0        
+600.000       831.260       AD8605ARTZ           "IC OPAMP 65uV 1pA RRIO 5V 80mA SOT-23-5"                                           U10        A3DDA0BC-073E-4B18-9613-F713A7EC1E27 TopLayer 360      
+1220.472      1377.952      A6R-162RS            "SWITCH ROTARY HEX/BCD 16 POSITIONS"                                                U9         2599C238-5645-4A8C-8BF9-C7515FACCFA0 TopLayer 270      
+393.700       1377.952      A6R-162RS            "SWITCH ROTARY HEX/BCD 16 POSITIONS"                                                U8         2599C238-5645-4A8C-8BF9-C7515FACCFA0 TopLayer 270      
+1220.472      2204.724      A6R-162RS            "SWITCH ROTARY HEX/BCD 16 POSITIONS"                                                U7         2599C238-5645-4A8C-8BF9-C7515FACCFA0 TopLayer 270      
+393.700       2204.724      A6R-162RS            "SWITCH ROTARY HEX/BCD 16 POSITIONS"                                                U6         2599C238-5645-4A8C-8BF9-C7515FACCFA0 TopLayer 270      
+2047.244      2204.724      A6R-162RS            "SWITCH ROTARY HEX/BCD 16 POSITIONS"                                                U5         2599C238-5645-4A8C-8BF9-C7515FACCFA0 TopLayer 270      
+2516.535      2809.055      AD8605ARTZ           "IC OPAMP 65uV 1pA RRIO 5V 80mA SOT-23-5"                                           U4         A3DDA0BC-073E-4B18-9613-F713A7EC1E27 TopLayer 0        
+2340.000      2840.000      REF3025AIDBZR        "IC VOLTAGE REF SERIES 2.5V 75ppm 0.2% SOT-23"                                      U3         TI_SOT-23-3_DBZ                      TopLayer 90       
+2516.536      2974.331      AD8605ARTZ           "IC OPAMP 65uV 1pA RRIO 5V 80mA SOT-23-5"                                           U2         A3DDA0BC-073E-4B18-9613-F713A7EC1E27 TopLayer 0        
+3125.433      1176.693      L78M05ABDT-TR        "IC SMD LINEAR VOLTAGE REGULATOR 5V 500mA DPAK/TO-252"                              U1         4BDA507D-BB70-4009-B963-85AD90086B51 TopLayer 180      
+2158.662      2496.614      10K                  "RES SMD 10K OHM 1% 1/10W 0603"                                                     R90        RES_0603_1608                        TopLayer 90       
+1978.662      2496.614      10K                  "RES SMD 10K OHM 1% 1/10W 0603"                                                     R89        RES_0603_1608                        TopLayer 90       
+2068.662      2496.614      10K                  "RES SMD 10K OHM 1% 1/10W 0603"                                                     R88        RES_0603_1608                        TopLayer 90       
+1888.662      2496.614      10K                  "RES SMD 10K OHM 1% 1/10W 0603"                                                     R87        RES_0603_1608                        TopLayer 90       
+140.000       831.260       100                  "RES SMD 100 OHM 1% 1/10W 0603"                                                     R86        RES_0603_1608                        TopLayer 90       
+1328.662      2526.614      10K                  "RES SMD 10K OHM 1% 1/10W 0603"                                                     R85        RES_0603_1608                        TopLayer 90       
+1168.662      2526.614      10K                  "RES SMD 10K OHM 1% 1/10W 0603"                                                     R84        RES_0603_1608                        TopLayer 90       
+1248.662      2526.614      10K                  "RES SMD 10K OHM 1% 1/10W 0603"                                                     R83        RES_0603_1608                        TopLayer 90       
+1088.662      2526.614      10K                  "RES SMD 10K OHM 1% 1/10W 0603"                                                     R82        RES_0603_1608                        TopLayer 90       
+418.662       2516.614      10K                  "RES SMD 10K OHM 1% 1/10W 0603"                                                     R81        RES_0603_1608                        TopLayer 90       
+490.000       2520.000      10K                  "RES SMD 10K OHM 1% 1/10W 0603"                                                     R80        RES_0603_1608                        TopLayer 90       
+338.662       2516.614      10K                  "RES SMD 10K OHM 1% 1/10W 0603"                                                     R79        RES_0603_1608                        TopLayer 90       
+258.660       2516.614      10K                  "RES SMD 10K OHM 1% 1/10W 0603"                                                     R78        RES_0603_1608                        TopLayer 90       
+230.000       3810.000      0                    "RES SMD 0 OHM 5% 1/10W 0603"                                                       R77        RES_0603_1608                        TopLayer 360      
+480.000       3810.000      0                    "RES SMD 0 OHM 5% 1/10W 0603"                                                       R76        RES_0603_1608                        TopLayer 360      
+800.000       831.260       100                  "RES SMD 100 OHM 1% 1/10W 0603"                                                     R75        RES_0603_1608                        TopLayer 270      
+730.000       3820.000      0                    "RES SMD 0 OHM 5% 1/10W 0603"                                                       R74        RES_0603_1608                        TopLayer 360      
+698.662       2926.614      "50K 25t"            "POT TRIMMER LINEAR 50K 25TURNS VERT THT"                                           R73        F9540903-09ED-4909-856A-DED10E64451E TopLayer 90       
+478.662       2926.614      "10K 25t"            "POT TRIMMER LINEAR 10K 25TURNS VERT THT"                                           R72        F9540903-09ED-4909-856A-DED10E64451E TopLayer 90       
+1130.000      831.260       100                  "RES SMD 100 OHM 1% 1/10W 0603"                                                     R71        RES_0603_1608                        TopLayer 270      
+268.662       2926.614      "50K 25t"            "POT TRIMMER LINEAR 50K 25TURNS VERT THT"                                           R70        F9540903-09ED-4909-856A-DED10E64451E TopLayer 90       
+990.000       3820.000      0                    "RES SMD 0 OHM 5% 1/10W 0603"                                                       R69        RES_0603_1608                        TopLayer 360      
+1460.000      831.260       100                  "RES SMD 100 OHM 1% 1/10W 0603"                                                     R68        RES_0603_1608                        TopLayer 270      
+3285.428      2261.812      100                  "RES SMD 100 OHM 1% 1/10W 0603"                                                     R67        RES_0603_1608                        TopLayer 180      
+3110.236      2571.812      100                  "RES SMD 100 OHM 1% 1/10W 0603"                                                     R66        RES_0603_1608                        TopLayer 360      
+2941.019      2261.812      100                  "RES SMD 100 OHM 1% 1/10W 0603"                                                     R65        RES_0603_1608                        TopLayer 180      
+2900.000      2520.000      10K                  "RES SMD 10K OHM 1% 1/10W 0603"                                                     R64        RES_0603_1608                        TopLayer 90       
+2560.000      3320.000      1.5K                 "RES SMD 1.5K OHM 1% 1/10W 0603"                                                    R63        RES_0603_1608                        TopLayer 180      
+2450.000      3320.000      1.2K                 "RES SMD 1.2K OHM 1% 1/10W 0603"                                                    R62        RES_0603_1608                        TopLayer 180      
+2900.000      2630.000      10K                  "RES SMD 10K OHM 1% 1/10W 0603"                                                     R61        RES_0603_1608                        TopLayer 90       
+2370.000      3560.000      39K                  "RES SMD 39K OHM 1% 1/10W 0603"                                                     R60        RES_0603_1608                        TopLayer 90       
+2620.000      2400.000      330                  "RES SMD 330 OHM 1% 1/10W 0603"                                                     R59        RES_0603_1608                        TopLayer 360      
+3390.000      2390.000      10K                  "RES SMD 10K OHM 1% 1/10W 0603"                                                     R58        RES_0603_1608                        TopLayer 90       
+3320.000      2390.000      10K                  "RES SMD 10K OHM 1% 1/10W 0603"                                                     R57        RES_0603_1608                        TopLayer 90       
+3540.000      2500.000      10K                  "RES SMD 10K OHM 1% 1/10W 0603"                                                     R56        RES_0603_1608                        TopLayer 0        
+3320.000      2500.000      10K                  "RES SMD 10K OHM 1% 1/10W 0603"                                                     R55        RES_0603_1608                        TopLayer 0        
+2450.000      3440.000      5.6K                 "RES SMD 5.6K OHM 1% 1/10W 0603"                                                    R54        RES_0603_1608                        TopLayer 360      
+3640.000      2610.000      100                  "RES SMD 100 OHM 1% 1/10W 0603"                                                     R53        RES_0603_1608                        TopLayer 270      
+3420.000      2610.000      100                  "RES SMD 100 OHM 1% 1/10W 0603"                                                     R52        RES_0603_1608                        TopLayer 270      
+2560.000      3440.000      3.3K                 "RES SMD 3.3K OHM 1% 1/10W 0603"                                                    R51        RES_0603_1608                        TopLayer 360      
+1990.000      3490.000      1M                   "RES SMD 1M OHM 1% 1/10W 0603"                                                      R50        RES_0603_1608                        TopLayer 90       
+2080.000      3780.000      10K                  "RES SMD 10K OHM 1% 1/10W 0603"                                                     R49        RES_0603_1608                        TopLayer 90       
+2220.000      3780.000      10K                  "RES SMD 10K OHM 1% 1/10W 0603"                                                     R48        RES_0603_1608                        TopLayer 90       
+560.000       651.260       100                  "RES SMD 100 OHM 1% 1/10W 0603"                                                     R47        RES_0603_1608                        TopLayer 270      
+1370.000      3170.000      0                    "RES SMD 0 OHM 5% 1/10W 0603"                                                       R46        RES_0603_1608                        TopLayer 270      
+1300.000      3170.000      "10 0.1%"            "RES SMD 10 OHM 0.1% 1/16W 25ppm  0603"                                             R45        RES_0603_1608                        TopLayer 270      
+1440.000      2990.000      100                  "RES SMD 100 OHM 1% 1/10W 0603"                                                     R44        RES_0603_1608                        TopLayer 270      
+1610.000      3400.000      10K                  "RES SMD 10K OHM 1% 1/10W 0603"                                                     R43        RES_0603_1608                        TopLayer 90       
+1540.000      3310.000      10K                  "RES SMD 10K OHM 1% 1/10W 0603"                                                     R42        RES_0603_1608                        TopLayer 180      
+1530.000      3400.000      100                  "RES SMD 100 OHM 1% 1/10W 0603"                                                     R41        RES_0603_1608                        TopLayer 270      
+2430.000      661.260       1K                   "RES SMD 1K OHM 1% 1/10W 0603"                                                      R40        RES_0603_1608                        TopLayer 270      
+1580.000      2990.000      24K                  "RES SMD 24K OHM 1% 1/10W 0603"                                                     R39        RES_0603_1608                        TopLayer 90       
+1510.000      2990.000      1K                   "RES SMD 1K OHM 1% 1/10W 0603"                                                      R38        RES_0603_1608                        TopLayer 270      
+1440.000      3170.000      1K                   "RES SMD 1K OHM 1% 1/10W 0603"                                                      R37        RES_0603_1608                        TopLayer 90       
+1580.000      3170.000      10K                  "RES SMD 10K OHM 1% 1/10W 0603"                                                     R36        RES_0603_1608                        TopLayer 90       
+2047.244      1240.157      "10K LIN"            "POT 10K 20% SHAFT 6mmx7.4mm LIN"                                                   R35        2EF88547-EDEF-4A49-A522-C215618D4BC7 TopLayer 360      
+1580.000      3550.000      10K                  "RES SMD 10K OHM 1% 1/10W 0603"                                                     R34        RES_0603_1608                        TopLayer 270      
+1310.000      3400.000      10K                  "RES SMD 10K OHM 1% 1/10W 0603"                                                     R33        RES_0603_1608                        TopLayer 270      
+1440.000      3550.000      0                    "RES SMD 0 OHM 5% 1/10W 0603"                                                       R32        RES_0603_1608                        TopLayer 270      
+1740.000      1150.000      0                    "RES SMD 0 OHM 5% 1/10W 0603"                                                       R31        RES_0603_1608                        TopLayer 90       
+500.000       1680.000      10K                  "RES SMD 10K OHM 1% 1/10W 0603"                                                     R30        RES_0603_1608                        TopLayer 90       
+340.000       1680.000      10K                  "RES SMD 10K OHM 1% 1/10W 0603"                                                     R29        RES_0603_1608                        TopLayer 90       
+420.000       1680.000      10K                  "RES SMD 10K OHM 1% 1/10W 0603"                                                     R28        RES_0603_1608                        TopLayer 90       
+260.000       1680.000      10K                  "RES SMD 10K OHM 1% 1/10W 0603"                                                     R27        RES_0603_1608                        TopLayer 90       
+1300.000      3740.000      499                  "RES SMD 499 OHM 1% 1/10W 0603"                                                     R26        RES_0603_1608                        TopLayer 270      
+1510.000      3740.000      1K                   "RES SMD 1K OHM 1% 1/10W 0603"                                                      R25        RES_0603_1608                        TopLayer 270      
+1370.000      3740.000      100                  "RES SMD 100 OHM 1% 1/10W 0603"                                                     R24        RES_0603_1608                        TopLayer 90       
+1440.000      3740.000      100                  "RES SMD 100 OHM 1% 1/10W 0603"                                                     R23        RES_0603_1608                        TopLayer 270      
+1580.000      3740.000      1K                   "RES SMD 1K OHM 1% 1/10W 0603"                                                      R22        RES_0603_1608                        TopLayer 270      
+470.000       831.260       100                  "RES SMD 100 OHM 1% 1/10W 0603"                                                     R21        RES_0603_1608                        TopLayer 270      
+620.001       651.259       0                    "RES SMD 0 OHM 5% 1/10W 0603"                                                       R16        RES_0603_1608                        TopLayer 270      
+440.001       651.260       0                    "RES SMD 0 OHM 5% 1/10W 0603"                                                       R15        RES_0603_1608                        TopLayer 270      
+2190.001      660.000       0                    "RES SMD 0 OHM 5% 1/10W 0603"                                                       R14        RES_0603_1608                        TopLayer 270      
+260.000       651.260       0                    "RES SMD 0 OHM 5% 1/10W 0603"                                                       R13        RES_0603_1608                        TopLayer 270      
+980.002       651.260       0                    "RES SMD 0 OHM 5% 1/10W 0603"                                                       R12        RES_0603_1608                        TopLayer 270      
+2490.002      661.261       0                    "RES SMD 0 OHM 5% 1/10W 0603"                                                       R11        RES_0603_1608                        TopLayer 270      
+800.001       651.260       0                    "RES SMD 0 OHM 5% 1/10W 0603"                                                       R10        RES_0603_1608                        TopLayer 270      
+1160.001      651.259       0                    "RES SMD 0 OHM 5% 1/10W 0603"                                                       R9         RES_0603_1608                        TopLayer 270      
+1040.001      651.260       0                    "RES SMD 0 OHM 5% 1/10W 0603"                                                       R8         RES_0603_1608                        TopLayer 270      
+860.002       651.260       0                    "RES SMD 0 OHM 5% 1/10W 0603"                                                       R7         RES_0603_1608                        TopLayer 270      
+2550.002      661.259       0                    "RES SMD 0 OHM 5% 1/10W 0603"                                                       R6         RES_0603_1608                        TopLayer 270      
+320.001       651.260       0                    "RES SMD 0 OHM 5% 1/10W 0603"                                                       R5         RES_0603_1608                        TopLayer 270      
+740.001       651.260       0                    "RES SMD 0 OHM 5% 1/10W 0603"                                                       R4         RES_0603_1608                        TopLayer 270      
+2610.000      660.000       100                  "RES SMD 100 OHM 1% 1/10W 0603"                                                     R3         RES_0603_1608                        TopLayer 270      
+2350.000      2970.001      1K                   "RES SMD 1K OHM 1% 1/10W 0603"                                                      R2         RES_0603_1608                        TopLayer 360      
+2952.757      846.457       330                  "RES SMD 330 OHM 1% 1/10W 0603"                                                     R1         RES_0603_1608                        TopLayer 270      
+2549.212      4350.393      MR30PW-M             "CONN DC 3 POLE 15A PCB MALE"                                                       P7         B3F23392-877C-4EEC-B1AF-B260E8D92153 TopLayer 0        
+1833.150      4228.386      IM-K-PCB             "CONN THERMOCOUPLE K-TYPE THT"                                                      P6         9044FB30-693E-4780-9B0B-95C5421D70E8 TopLayer 0        
+1160.000      4292.500      FC68125              "CONN JACK 3.5MM 4POLE THT"                                                         P5         977BFFC7-4CFC-4119-A8B4-AB88E5A1DB2B TopLayer 0        
+2401.575      393.701       ICD15S13E4GV00LF     "CONN D-SUB HD 15POLES BLACK THT"                                                   P4         66D8AC91-DC10-42D3-BF25-693004815827 TopLayer 360      
+488.661       4239.095      5555153-1            "CONN RJ45 SHIELDED"                                                                P3         03FA2727-72E9-446E-856D-3DD573B1EBDD TopLayer 180      
+748.031       393.700       ICD15S13E4GV00LF     "CONN D-SUB HD 15POLES BLACK THT"                                                   P2         66D8AC91-DC10-42D3-BF25-693004815827 TopLayer 360      
+3431.536      537.953       DC-005A-20A          "CONN THT DC JACK 0.5A 30VDC 5Kcycles"                                              P1         F0972D8A-C5C0-4A84-836D-A9666EE65C2D TopLayer 90       
+3339.999      910.000       MPZ1608S102ATA00     "FER SMD CHIP 0603 800mA 1K@100MHz 300mOhm"                                         L3         FER_0603_1608                        TopLayer 90       
+3339.999      780.000       MPZ1608S102ATA00     "FER SMD CHIP 0603 800mA 1K@100MHz 300mOhm"                                         L2         FER_0603_1608                        TopLayer 90       
+2310.000      660.000       MPZ1608S102ATA00     "FER SMD CHIP 0603 800mA 1K@100MHz 300mOhm"                                         L1         FER_0603_1608                        TopLayer 270      
+3238.189      3720.394      G5LE-14-DC12         "RELAY SPDT 10A 250VAC 12VDC SUBMINIATURE"                                          K2         AAE46D0F-8D2F-4914-8614-C04E242B4758 TopLayer 180      
+3238.189      3040.394      G5LE-14-DC12         "RELAY SPDT 10A 250VAC 12VDC SUBMINIATURE"                                          K1         AAE46D0F-8D2F-4914-8614-C04E242B4758 TopLayer 180      
+-3484.252     -2421.260     "FermiumLABS logo"   "GRAPHICS LOGO FERMIUM LABS SRL"                                                    GR2        5394DE47-A0E8-4329-8464-7791B7C19310 TopLayer 360      
+-3484.252     -2421.260     PASS-FAIL            "GRAPHICS PASS-FAIL MARK"                                                           GR1        0B1556B7-A534-4801-B57D-01EFA34B1205 TopLayer 360      
+3740.157      4429.133      "IPC-7351A FIDUCIAL" "GRAPHICS FIDUCIAL IPC-7351A"                                                       FD3        FIDUCIAL-IPC-7351A                   TopLayer 0        
+196.851       196.850       "IPC-7351A FIDUCIAL" "GRAPHICS FIDUCIAL IPC-7351A"                                                       FD2        FIDUCIAL-IPC-7351A                   TopLayer 0        
+3740.158      196.850       "IPC-7351A FIDUCIAL" "GRAPHICS FIDUCIAL IPC-7351A"                                                       FD1        FIDUCIAL-IPC-7351A                   TopLayer 0        
+380.000       651.260       5V                   "DIODE SMD TVS 5V BIDIRECTIONAL SOD-523"                                            D16        SOD523F                              TopLayer 270      
+920.000       651.260       5V                   "DIODE SMD TVS 5V BIDIRECTIONAL SOD-523"                                            D15        SOD523F                              TopLayer 270      
+1100.000      651.260       5V                   "DIODE SMD TVS 5V BIDIRECTIONAL SOD-523"                                            D14        SOD523F                              TopLayer 270      
+1220.000      651.260       5V                   "DIODE SMD TVS 5V BIDIRECTIONAL SOD-523"                                            D13        SOD523F                              TopLayer 90       
+3290.746      2100.508      "RED 200mcd"         "DIODE LED THT 5MM RED 200mcd"                                                      D12        ED49B4F6-595F-4D62-96BB-D7184CAA9B94 TopLayer 360      
+3110.236      2401.574      "RED 200mcd"         "DIODE LED THT 5MM RED 200mcd"                                                      D11        ED49B4F6-595F-4D62-96BB-D7184CAA9B94 TopLayer 360      
+2939.758      2106.300      "RED 200mcd"         "DIODE LED THT 5MM RED 200mcd"                                                      D10        ED49B4F6-595F-4D62-96BB-D7184CAA9B94 TopLayer 360      
+2637.796      2204.724      "RED 200mcd"         "DIODE LED THT 5MM RED 200mcd"                                                      D9         ED49B4F6-595F-4D62-96BB-D7184CAA9B94 TopLayer 360      
+3700.000      3720.000      1N4148W-TP           "DIODE SMD 100V 150mA 1.5Vf SOD-123 4148"                                           D8         SOD-123                              TopLayer 270      
+3700.000      3040.000      1N4148W-TP           "DIODE SMD 100V 150mA 1.5Vf SOD-123 4148"                                           D7         SOD-123                              TopLayer 270      
+680.000       651.260       5V                   "DIODE SMD TVS 5V BIDIRECTIONAL SOD-523"                                            D6         SOD523F                              TopLayer 270      
+200.000       651.260       5V                   "DIODE SMD TVS 5V BIDIRECTIONAL SOD-523"                                            D5         SOD523F                              TopLayer 270      
+2370.000      661.260       5V                   "DIODE SMD TVS 5V BIDIRECTIONAL SOD-523"                                            D4         SOD523F                              TopLayer 270      
+500.000       651.260       5V                   "DIODE SMD TVS 5V BIDIRECTIONAL SOD-523"                                            D3         SOD523F                              TopLayer 270      
+2670.000      660.000       5V                   "DIODE SMD TVS 5V BIDIRECTIONAL SOD-523"                                            D2         SOD523F                              TopLayer 270      
+3110.236      846.457       "RED 200mcd"         "DIODE LED THT 5MM RED 200mcd"                                                      D1         ED49B4F6-595F-4D62-96BB-D7184CAA9B94 TopLayer 180      
+400.000       831.260       100nF                "CAP SMD MLCC 100nF 25V 0603 X7R"                                                   C48        CAP_0603_1608                        TopLayer 270      
+1120.000      3080.000      100nF                "CAP SMD MLCC 100nF 25V 0603 X7R"                                                   C47        CAP_0603_1608                        TopLayer 180      
+1060.000      831.260       100nF                "CAP SMD MLCC 100nF 25V 0603 X7R"                                                   C46        CAP_0603_1608                        TopLayer 270      
+1720.000      831.260       100nF                "CAP SMD MLCC 100nF 25V 0603 X7R"                                                   C45        CAP_0603_1608                        TopLayer 270      
+1390.000      831.260       100nF                "CAP SMD MLCC 100nF 25V 0603 X7R"                                                   C44        CAP_0603_1608                        TopLayer 270      
+1150.000      3480.000      100nF                "CAP SMD MLCC 100nF 25V 0603 X7R"                                                   C43        CAP_0603_1608                        TopLayer 180      
+810.000       3470.000      100nF                "CAP SMD MLCC 100nF 25V 0603 X7R"                                                   C42        CAP_0603_1608                        TopLayer 180      
+440.000       3480.000      100nF                "CAP SMD MLCC 100nF 25V 0603 X7R"                                                   C41        CAP_0603_1608                        TopLayer 180      
+120.000       3680.000      100nF                "CAP SMD MLCC 100nF 25V 0603 X7R"                                                   C40        CAP_0603_1608                        TopLayer 90       
+370.000       3680.000      100nF                "CAP SMD MLCC 100nF 25V 0603 X7R"                                                   C39        CAP_0603_1608                        TopLayer 90       
+620.000       3678.525      100nF                "CAP SMD MLCC 100nF 25V 0603 X7R"                                                   C38        CAP_0603_1608                        TopLayer 90       
+880.000       3680.118      100nF                "CAP SMD MLCC 100nF 25V 0603 X7R"                                                   C37        CAP_0603_1608                        TopLayer 90       
+3700.000      2300.000      100nF                "CAP SMD MLCC 100nF 25V 0603 X7R"                                                   C36        CAP_0603_1608                        TopLayer 180      
+3510.000      2300.000      100nF                "CAP SMD MLCC 100nF 25V 0603 X7R"                                                   C35        CAP_0603_1608                        TopLayer 180      
+2640.000      3740.000      100nF                "CAP SMD MLCC 100nF 25V 0603 X7R"                                                   C34        CAP_0603_1608                        TopLayer 270      
+2640.000      3570.000      100nF                "CAP SMD MLCC 100nF 25V 0603 X7R"                                                   C33        CAP_0603_1608                        TopLayer 270      
+2370.000      3200.000      100nF                "CAP SMD MLCC 100nF 25V 0603 X7R"                                                   C32        CAP_0603_1608                        TopLayer 90       
+2250.000      660.000       100nF                "CAP SMD MLCC 100nF 25V 0603 X7R"                                                   C31        CAP_0603_1608                        TopLayer 270      
+2150.000      3600.000      100nF                "CAP SMD MLCC 100nF 25V 0603 X7R"                                                   C30        CAP_0603_1608                        TopLayer 180      
+2480.000      2570.000      10uF                 "CAP SMD MLCC 10uF 25V 0805 X5R"                                                    C29        CAP_0805_2012                        TopLayer 90       
+2010.000      3680.000      10uF                 "CAP SMD MLCC 10uF 25V 0805 X5R"                                                    C28        CAP_0805_2012                        TopLayer 360      
+2150.000      3680.000      10uF                 "CAP SMD MLCC 10uF 25V 0805 X5R"                                                    C27        CAP_0805_2012                        TopLayer 360      
+2290.000      3680.000      10uF                 "CAP SMD MLCC 10uF 25V 0805 X5R"                                                    C26        CAP_0805_2012                        TopLayer 360      
+2560.000      1180.000      100nF                "CAP SMD MLCC 100nF 25V 0603 X7R"                                                   C25        CAP_0603_1608                        TopLayer 270      
+1850.000      2990.000      100nF                "CAP SMD MLCC 100nF 25V 0603 X7R"                                                   C24        CAP_0603_1608                        TopLayer 270      
+1820.000      3400.000      100nF                "CAP SMD MLCC 100nF 25V 0603 X7R"                                                   C23        CAP_0603_1608                        TopLayer 270      
+1850.000      3160.000      100nF                "CAP SMD MLCC 100nF 25V 0603 X7R"                                                   C22        CAP_0603_1608                        TopLayer 270      
+1850.000      3550.000      100nF                "CAP SMD MLCC 100nF 25V 0603 X7R"                                                   C21        CAP_0603_1608                        TopLayer 270      
+1510.000      3550.000      10nF                 "CAP SMD MLCC 10nF 50V 0603 X7R"                                                    C20        CAP_0603_1608                        TopLayer 90       
+1510.000      3170.000      10nF                 "CAP SMD MLCC 10nF 50V 0603 X7R"                                                    C19        CAP_0603_1608                        TopLayer 270      
+2240.000      3370.000      100nF                "CAP SMD MLCC 100nF 25V 0603 X7R"                                                   C18        CAP_0603_1608                        TopLayer 180      
+730.000       831.260       100nF                "CAP SMD MLCC 100nF 25V 0603 X7R"                                                   C17        CAP_0603_1608                        TopLayer 270      
+1850.000      3740.000      100nF                "CAP SMD MLCC 100nF 25V 0603 X7R"                                                   C16        CAP_0603_1608                        TopLayer 270      
+2660.000      2810.000      100nF                "CAP SMD MLCC 100nF 25V 0603 X7R"                                                   C15        CAP_0603_1608                        TopLayer 270      
+2660.000      2970.000      100nF                "CAP SMD MLCC 100nF 25V 0603 X7R"                                                   C14        CAP_0603_1608                        TopLayer 270      
+1947.087      2991.417      22uF                 "CAP SMD MLCC 22uF 25V 0805 X5R"                                                    C13        CAP_0805_2012                        TopLayer 270      
+3611.732      2127.087      22uF                 "CAP SMD MLCC 22uF 25V 0805 X5R"                                                    C12        CAP_0805_2012                        TopLayer 0        
+1164.881      3947.087      22uF                 "CAP SMD MLCC 22uF 25V 0805 X5R"                                                    C11        CAP_0805_2012                        TopLayer 0        
+3410.000      1220.000      22uF                 "CAP SMD MLCC 22uF 25V 0805 X5R"                                                    C10        CAP_0805_2012                        TopLayer 0        
+2350.000      3039.999      100nF                "CAP SMD MLCC 100nF 25V 0603 X7R"                                                   C9         CAP_0603_1608                        TopLayer 180      
+2340.000      2730.000      100nF                "CAP SMD MLCC 100nF 25V 0603 X7R"                                                   C8         CAP_0603_1608                        TopLayer 360      
+3410.001      1290.001      100nF                "CAP SMD MLCC 100nF 25V 0603 X7R"                                                   C7         CAP_0603_1608                        TopLayer 0        
+1800.000      831.496       22uF                 "CAP SMD MLCC 22uF 25V 0805 X5R"                                                    C6         CAP_0805_2012                        TopLayer 270      
+3400.000      1080.000      22uF                 "CAP SMD MLCC 22uF 25V 0805 X5R"                                                    C5         CAP_0805_2012                        TopLayer 0        
+3700.787      820.000       220uF                "CAP  THT ELEC 220uF 25V 20%"                                                       C4         3924B366-8672-45E9-B0BE-62DACC24E783 TopLayer 0        
+3699.212      1080.000      220uF                "CAP  THT ELEC 220uF 25V 20%"                                                       C3         3924B366-8672-45E9-B0BE-62DACC24E783 TopLayer 0        
+3430.000      930.000       22uF                 "CAP SMD MLCC 22uF 25V 0805 X5R"                                                    C2         CAP_0805_2012                        TopLayer 270      
+3430.000      780.001       22uF                 "CAP SMD MLCC 22uF 25V 0805 X5R"                                                    C1         CAP_0805_2012                        TopLayer 270      

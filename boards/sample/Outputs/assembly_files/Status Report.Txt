@@ -1,0 +1,10 @@
+Output: BOM-csv
+Type  : BOM
+From  : Variant [[No Variations]] of Project [sample_board.PrjPcb]
+   Generated File[BOM-csv-sample_board.csv]
+
+
+Files Generated   : 1
+Documents Printed : 0
+
+Finished Output Generation At 4:42:42 PM On 10/30/2023

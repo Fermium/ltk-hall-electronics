@@ -1,0 +1,10 @@
+Output: Report Board Stack metric
+Type  : Report Board Stack
+From  : PCB Document [ltk-hall-main.PcbDoc]
+   Generated File[ltk-hall-main.xls]
+
+
+Files Generated   : 1
+Documents Printed : 0
+
+Finished Output Generation At 4:35:14 PM On 10/30/2023

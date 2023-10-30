@@ -1,0 +1,10 @@
+Output: AutoCAD dwg/dxf File PCB
+Type  : AutoCAD PCB
+From  : PCB Document [ltk-hall-main.PcbDoc]
+   Generated File[ltk-hall-main.DWG]
+
+
+Files Generated   : 1
+Documents Printed : 0
+
+Finished Output Generation At 4:35:38 PM On 10/30/2023

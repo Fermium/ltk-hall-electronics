@@ -1,0 +1,440 @@
+<html>
+<head>
+<META http-equiv="Content-Type" content="text/html">
+<style type="text/css">
+        h1, h2, h3, h4, h5, h6 {
+			font-family : segoe ui;
+			color : black;
+			background-color : #EDE7D9;
+            padding: 0.3em;
+        }
+
+		h1 {
+			font-size: 1.2em;
+		}		
+
+		h2 {
+			font-size: 1.2em;
+		}
+
+        body {
+			font-family : segoe ui;
+        }
+
+        td, th {
+            padding: 0.5em;
+			text-align : left;
+			width: 10em;
+        }
+        th {
+			background-color : #EEEEEE;
+
+        }
+        th.column1, td.column1 {
+            text-align: left;
+            width : auto;
+        }
+        table {
+            width : 100%;
+			font-size: 0.9em;
+        }
+        
+        .DRC_summary_header {                           
+            padding-bottom : 0.1em;
+            border : 0px solid black;                           
+            width: 100%;
+			align: left;
+        }
+
+        .DRC_summary_header_col1, 
+        .DRC_summary_header_col2, 
+        .DRC_summary_header_col3  {
+            color : black;
+            font-size:100%;
+                        padding : 0em;
+            padding-top : 0.2em;
+            padding-bottom 0.2em;
+            border : 0px solid black;
+            vertical-align: top;
+			text-align: left;
+        }
+        
+        .DRC_summary_header_col1 {                              
+			font-weight: bold;
+			width: 8em;
+        }
+
+        .DRC_summary_header_col2 {       
+			width: 0.1em;
+		
+        }
+
+        .DRC_summary_header_col3 {       
+			width : auto;
+        }
+
+        .header_holder  {
+        Width = 100%;
+        border = 0px solid green;
+        padding = 0;
+        }
+        
+        
+        .front_matter, .front_matter_column1, .front_matter_column2, .front_matter_column3
+                {
+            left:0;
+            top:0;
+			padding: 0em;
+            padding-top : 0.1em;            
+            border : 0px solid black;
+            width : 100%;
+            vertical-align: top;
+            text-align: left;
+        }
+
+        .front_matter_column1 {
+            width : 8em;   
+			font-weight: bold;
+        }
+        
+        .front_matter_column2 {
+            width: 0.1em;
+        }
+
+        .front_matter_column3 {
+            width         : auto;  
+        }
+        
+        .total_column1, .total_column {
+            font-weight : bold;
+        }
+        .total_column1 {
+			text-align : left;
+        }
+        .warning, .error {
+            color : red;
+            font-weight : bold;
+        }
+        tr.onmouseout_odd {
+			background-color : #white;
+        }
+        tr.onmouseout_even { 
+			background-color : #FAFAFA;
+        }
+        tr.onmouseover_odd, tr.onmouseover_even { 
+			background-color : #EEEEEE;
+        } 
+        a:link, a:visited, .q a:link,.q a:active,.q {
+            color: #21489e; 
+        }
+        a:link.callback, a:visited.callback { 
+            color: #21489e; 
+        }
+        p.contents_level1 {
+            font-weight : bold;
+            font-size : 110%;
+            margin : 0.5em;
+        }
+        p.contents_level2 {
+            position : relative;
+            left : 20px;
+            margin : 0.5em;
+        }
+    </style><script type="text/javascript">
+        function coordToMils(coord) {
+            var number = coord / 10000;
+            
+            if (number != number.toFixed(3))
+                number = number.toFixed(3);
+
+            return number + 'mil'
+        }
+
+        function coordToMM(coord) {
+            var number = 0.0254 * coord / 10000;
+            
+            if (number != number.toFixed(4))
+                number = number.toFixed(4);
+            
+            return number + 'mm'
+        }
+    
+        function convertCoord(coordNode, units) {
+            for (var i = 0; i < coordNode.childNodes.length; i++) {
+                coordNode.removeChild(coordNode.childNodes[i]);
+            }
+
+            var coord = coordNode.getAttribute('value');
+            if (coord != null) {
+                if (units == 'mm') {
+                    textNode = document.createTextNode(coordToMM(coord));
+                    coordNode.appendChild(textNode);
+                } else if (units == 'mil') {
+                    textNode = document.createTextNode(coordToMils(coord));     
+                    coordNode.appendChild(textNode);    
+                }
+            }
+        }
+    
+        function convertUnits(unitNode, units) {
+            for (var i = 0; i < unitNode.childNodes.length; i++) {
+                unitNode.removeChild(unitNode.childNodes[i]);       
+            }
+        
+            textNode = document.createTextNode(units); 
+            unitNode.appendChild(textNode);
+        }
+    
+        function changeUnits(radio_input, units) {
+            if (radio_input.checked) {
+            
+                var elements = document.getElementsByName('coordinate');
+                if (elements) {
+                    for (var i = 0; i < elements.length; i++) {
+                        convertCoord(elements[i], units);
+                    }
+                }
+    
+                var elements = document.getElementsByName('units');
+                if (elements) {
+                    for (var i = 0; i < elements.length; i++) {
+                        convertUnits(elements[i], units);
+                    }
+                }
+            }
+        }
+    </script></head>
+<body onload=""><img ALT="Altium" src="
+			file://C:\Users\Public\Documents\Altium\AD23\Templates\AD_logo.png
+        "><h1>Design Rule Verification Report</h1>
+<table class="header_holder">
+<td class="column1">
+<table class="front_matter">
+<tr class="front_matter">
+<td class="front_matter_column1">Date:</td>
+<td class="front_matter_column2"></td>
+<td class="front_matter_column3">10/30/2023</td>
+</tr>
+<tr class="front_matter">
+<td class="front_matter_column1">Time:</td>
+<td class="front_matter_column2"></td>
+<td class="front_matter_column3">4:41:53 PM</td>
+</tr>
+<tr class="front_matter">
+<td class="front_matter_column1">Elapsed Time:</td>
+<td class="front_matter_column2"></td>
+<td class="front_matter_column3">00:00:01</td>
+</tr>
+<tr class="front_matter">
+<td class="front_matter_column1">Filename:</td>
+<td class="front_matter_column2"></td>
+<td class="front_matter_column3"><a href="file:///C:\Users\Shadow\Desktop\Repos\ltk-hall-electronics\boards\probe\probe.PcbDoc" class="file"><acronym title="C:\Users\Shadow\Desktop\Repos\ltk-hall-electronics\boards\probe\probe.PcbDoc">C:\Users\Shadow\Desktop\Repos\ltk-hall-electronics\boards\probe\probe.PcbDoc</acronym></a></td>
+</tr>
+</table>
+</td>
+<td class="column2">
+<table class="DRC_summary_header">
+<tr>
+<td class="DRC_summary_header_col1">Warnings:</td>
+<td class="DRC_summary_header_col2"></td>
+<td class="DRC_summary_header_col3">0</td></tr>
+<tr>
+<td class="DRC_summary_header_col1">Rule Violations:</td>
+<td class="DRC_summary_header_col2"></td>
+<td class="DRC_summary_header_col3" style="color : red">34</td></tr>
+</table>
+</td>
+</table><a name="IDNNARG3SGVT0FPKAEUJXVLP0RZJOCY53AG51HEMIZIH51FWHCSMVJ"><h2>Summary</h2></a><table>
+<tr>
+<th class="column1">Warnings</th>
+<th class="column2">Count</th>
+</tr>
+<tr>
+<td style="font-weight : bold; text-align : right" class="column1">Total</td>
+<td style="font-weight : bold" class="column2">0</td>
+</tr>
+</table><br><table>
+<tr>
+<th class="column1">Rule Violations</th>
+<th class="column2">Count</th>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="#IDPKUX4C0NBIN0KAQEYUIENGGAKIS12EKRZDPUBUILU5M0LCLW3VVI">Clearance Constraint (Gap=6mil) (All),(All)</a></td>
+<td class="column2">12</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="#IDTY0CCDAIJZEMB5KSC0NEHBHFYNDJZ1SS3CJJQPDJ1UTYAVPAC3EM">Short-Circuit Constraint (Allowed=No) (All),(All)</a></td>
+<td class="column2">13</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="#IDJVKAGPAOKCSTBVMDQ3ELTAKUUGXXYBQOIPQQKLIETWCU52JTFWPM">Un-Routed Net Constraint ( (All) )</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="#IDQBJJ0VTRU1F5FQH2JX5UTKUPTKN422D10KXGZEWV0NJ5UO0HYOC">Modified Polygon (Allow modified: No), (Allow shelved: No)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="#IDSB1P4M0WZ55OKCD1CUFGFJWMKKBWVFUVLM0U3EOY2OA3QDSVTOM">Width Constraint (Min=6mil) (Max=200mil) (Preferred=10mil) (All)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="#IDZBCX1HHITON3PBYGPL24CCTXVI0ETHCDL12KN5GXVC2CGCAQWO3O">Power Plane Connect Rule(Relief Connect )(Expansion=20mil) (Conductor Width=10mil) (Air Gap=10mil) (Entries=4) (All)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="#ID2RF4KBM10ALRDE0FY2Z2NFJLINZJMXVJIYYETEP5VSGFGLQEZ34D">Hole Size Constraint (Min=11.811mil) (Max=100mil) (All)</a></td>
+<td class="column2">4</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="#IDPWHGFYV1MYFREPQ5B1TE51OPCN541DR5AMRE3PJACILGIMGQLCB">Hole To Hole Clearance (Gap=10mil) (All),(All)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="#IDJ3LTHBKFYWIWCELX5RT1XMRBCBJJSV4ZFJ3HWLO02KR1KVENNXPG">Minimum Solder Mask Sliver (Gap=10mil) (All),(All)</a></td>
+<td class="column2">3</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="#IDBGNNUUYSQCXJETUIMXX3DJZUILGMFG34DVZ1DRGTTA0HAFF5FQCB">Silk To Solder Mask (Clearance=10mil) (IsPad),(All)</a></td>
+<td class="column2">2</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="#IDSRRXG5QLSHJROYB4BQGH0WPSNINLXH20W1UB4ZNA2OZSO3AMRS5H">Silk to Silk (Clearance=10mil) (All),(All)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="#IDZ32AZP30ITDOMTZKHHO0DTHQSDXUF3ZIAW2UO3C10HS4YSF3RJ4G">Net Antennae (Tolerance=0mil) (All)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="#IDERQQJGFT3CGBPGQ04RJZXKBQZFHO1I2ONJL41IRNFCFOVAEA1PB">Height Constraint (Min=0mil) (Max=1000mil) (Prefered=500mil) (All)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr>
+<td style="font-weight : bold; text-align : right" class="column1">Total</td>
+<td style="font-weight : bold" class="column2">34</td>
+</tr>
+</table><br><a name="IDPKUX4C0NBIN0KAQEYUIENGGAKIS12EKRZDPUBUILU5M0LCLW3VVI"><table>
+<tr>
+<th style="text-align : left" colspan="1" class="rule">Clearance Constraint (Gap=6mil) (All),(All)</th>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Shadow\Desktop\Repos\ltk-hall-electronics\boards\probe\probe.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4749.043mil|Location2.X=4754.043mil|Location1.Y=5527.996mil|Location2.Y=5532.996mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Shadow\Desktop\Repos\ltk-hall-electronics\boards\probe\probe.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4749.043mil|Location2.X=4754.043mil|Location1.Y=5527.996mil|Location2.Y=5532.996mil|Absolute=True">Clearance Constraint: (Collision &lt; 6mil) Between Board Cutout (Multi-Layer)Region (0 hole(s)) Multi-Layer And Pad U1-1(302.724mil,3542.307mil) on Multi-Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Shadow\Desktop\Repos\ltk-hall-electronics\boards\probe\probe.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4749.043mil|Location2.X=4754.043mil|Location1.Y=5527.996mil|Location2.Y=5532.996mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Shadow\Desktop\Repos\ltk-hall-electronics\boards\probe\probe.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4749.043mil|Location2.X=4754.043mil|Location1.Y=5527.996mil|Location2.Y=5532.996mil|Absolute=True">Clearance Constraint: (Collision &lt; 6mil) Between Board Cutout (Multi-Layer)Region (0 hole(s)) Multi-Layer And Pad U1-1(302.724mil,3542.307mil) on Multi-Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Shadow\Desktop\Repos\ltk-hall-electronics\boards\probe\probe.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4701.043mil|Location2.X=4706.043mil|Location1.Y=5526.996mil|Location2.Y=5531.996mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Shadow\Desktop\Repos\ltk-hall-electronics\boards\probe\probe.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4701.043mil|Location2.X=4706.043mil|Location1.Y=5526.996mil|Location2.Y=5531.996mil|Absolute=True">Clearance Constraint: (Collision &lt; 6mil) Between Board Cutout (Multi-Layer)Region (0 hole(s)) Multi-Layer And Pad U1-2(254.724mil,3541.307mil) on Multi-Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Shadow\Desktop\Repos\ltk-hall-electronics\boards\probe\probe.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4701.043mil|Location2.X=4706.043mil|Location1.Y=5526.996mil|Location2.Y=5531.996mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Shadow\Desktop\Repos\ltk-hall-electronics\boards\probe\probe.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4701.043mil|Location2.X=4706.043mil|Location1.Y=5526.996mil|Location2.Y=5531.996mil|Absolute=True">Clearance Constraint: (Collision &lt; 6mil) Between Board Cutout (Multi-Layer)Region (0 hole(s)) Multi-Layer And Pad U1-2(254.724mil,3541.307mil) on Multi-Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Shadow\Desktop\Repos\ltk-hall-electronics\boards\probe\probe.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4651.043mil|Location2.X=4656.043mil|Location1.Y=5528.996mil|Location2.Y=5533.996mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Shadow\Desktop\Repos\ltk-hall-electronics\boards\probe\probe.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4651.043mil|Location2.X=4656.043mil|Location1.Y=5528.996mil|Location2.Y=5533.996mil|Absolute=True">Clearance Constraint: (Collision &lt; 6mil) Between Board Cutout (Multi-Layer)Region (0 hole(s)) Multi-Layer And Pad U1-3(204.724mil,3543.307mil) on Multi-Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Shadow\Desktop\Repos\ltk-hall-electronics\boards\probe\probe.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4651.043mil|Location2.X=4656.043mil|Location1.Y=5528.996mil|Location2.Y=5533.996mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Shadow\Desktop\Repos\ltk-hall-electronics\boards\probe\probe.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4651.043mil|Location2.X=4656.043mil|Location1.Y=5528.996mil|Location2.Y=5533.996mil|Absolute=True">Clearance Constraint: (Collision &lt; 6mil) Between Board Cutout (Multi-Layer)Region (0 hole(s)) Multi-Layer And Pad U1-3(204.724mil,3543.307mil) on Multi-Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Shadow\Desktop\Repos\ltk-hall-electronics\boards\probe\probe.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4602.043mil|Location2.X=4607.043mil|Location1.Y=5527.996mil|Location2.Y=5532.996mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Shadow\Desktop\Repos\ltk-hall-electronics\boards\probe\probe.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4602.043mil|Location2.X=4607.043mil|Location1.Y=5527.996mil|Location2.Y=5532.996mil|Absolute=True">Clearance Constraint: (Collision &lt; 6mil) Between Board Cutout (Multi-Layer)Region (0 hole(s)) Multi-Layer And Pad U1-4(155.724mil,3542.307mil) on Multi-Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Shadow\Desktop\Repos\ltk-hall-electronics\boards\probe\probe.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4602.043mil|Location2.X=4607.043mil|Location1.Y=5527.996mil|Location2.Y=5532.996mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Shadow\Desktop\Repos\ltk-hall-electronics\boards\probe\probe.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4602.043mil|Location2.X=4607.043mil|Location1.Y=5527.996mil|Location2.Y=5532.996mil|Absolute=True">Clearance Constraint: (Collision &lt; 6mil) Between Board Cutout (Multi-Layer)Region (0 hole(s)) Multi-Layer And Pad U1-4(155.724mil,3542.307mil) on Multi-Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Shadow\Desktop\Repos\ltk-hall-electronics\boards\probe\probe.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4603.799mil|Location2.X=4608.799mil|Location1.Y=5518.311mil|Location2.Y=5523.311mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Shadow\Desktop\Repos\ltk-hall-electronics\boards\probe\probe.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4603.799mil|Location2.X=4608.799mil|Location1.Y=5518.311mil|Location2.Y=5523.311mil|Absolute=True">Clearance Constraint: (Collision &lt; 6mil) Between Board Cutout (Multi-Layer)Region (0 hole(s)) Multi-Layer And Track (157.48mil,3456.693mil)(157.48mil,3602.132mil) on Top Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Shadow\Desktop\Repos\ltk-hall-electronics\boards\probe\probe.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4603.799mil|Location2.X=4608.799mil|Location1.Y=5518.311mil|Location2.Y=5523.311mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Shadow\Desktop\Repos\ltk-hall-electronics\boards\probe\probe.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4603.799mil|Location2.X=4608.799mil|Location1.Y=5518.311mil|Location2.Y=5523.311mil|Absolute=True">Clearance Constraint: (Collision &lt; 6mil) Between Board Cutout (Multi-Layer)Region (0 hole(s)) Multi-Layer And Track (157.48mil,3456.693mil)(157.48mil,3602.132mil) on Top Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Shadow\Desktop\Repos\ltk-hall-electronics\boards\probe\probe.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4751.65mil|Location2.X=4756.65mil|Location1.Y=5566.854mil|Location2.Y=5571.854mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Shadow\Desktop\Repos\ltk-hall-electronics\boards\probe\probe.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4751.65mil|Location2.X=4756.65mil|Location1.Y=5566.854mil|Location2.Y=5571.854mil|Absolute=True">Clearance Constraint: (Collision &lt; 6mil) Between Board Cutout (Multi-Layer)Region (0 hole(s)) Multi-Layer And Track (303.15mil,3456.693mil)(303.15mil,3598.95mil) on Top Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Shadow\Desktop\Repos\ltk-hall-electronics\boards\probe\probe.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4751.509mil|Location2.X=4756.509mil|Location1.Y=5566.995mil|Location2.Y=5571.995mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Shadow\Desktop\Repos\ltk-hall-electronics\boards\probe\probe.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4751.509mil|Location2.X=4756.509mil|Location1.Y=5566.995mil|Location2.Y=5571.995mil|Absolute=True">Clearance Constraint: (Collision &lt; 6mil) Between Board Cutout (Multi-Layer)Region (0 hole(s)) Multi-Layer And Track (303.15mil,3456.693mil)(303.15mil,3598.95mil) on Top Layer </acronym></a><br></td>
+</tr>
+</table></a><hr color="#EEEEEE"><a href="#top" style="font-size: 0.9em">Back to top</a><br><br><a name="IDTY0CCDAIJZEMB5KSC0NEHBHFYNDJZ1SS3CJJQPDJ1UTYAVPAC3EM"><table>
+<tr>
+<th style="text-align : left" colspan="1" class="rule">Short-Circuit Constraint (Allowed=No) (All),(All)</th>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Shadow\Desktop\Repos\ltk-hall-electronics\boards\probe\probe.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4549.408mil|Location2.X=4811.962mil|Location1.Y=5478.117mil|Location2.Y=5740.67mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Shadow\Desktop\Repos\ltk-hall-electronics\boards\probe\probe.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4549.408mil|Location2.X=4811.962mil|Location1.Y=5478.117mil|Location2.Y=5740.67mil|Absolute=True">Short-Circuit Constraint: Between Board Cutout (Multi-Layer)Region (0 hole(s)) Multi-Layer And Board Cutout (Multi-Layer)Region (0 hole(s)) Multi-Layer Location : [X = 4680.685mil][Y = 5609.394mil]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Shadow\Desktop\Repos\ltk-hall-electronics\boards\probe\probe.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4718.487mil|Location2.X=4784.599mil|Location1.Y=5512.342mil|Location2.Y=5578.454mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Shadow\Desktop\Repos\ltk-hall-electronics\boards\probe\probe.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4718.487mil|Location2.X=4784.599mil|Location1.Y=5512.342mil|Location2.Y=5578.454mil|Absolute=True">Short-Circuit Constraint: Between Board Cutout (Multi-Layer)Region (0 hole(s)) Multi-Layer And Pad U1-1(302.724mil,3542.307mil) on Multi-Layer Location : [X = 4751.543mil][Y = 5545.398mil]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Shadow\Desktop\Repos\ltk-hall-electronics\boards\probe\probe.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4718.487mil|Location2.X=4784.599mil|Location1.Y=5512.342mil|Location2.Y=5578.454mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Shadow\Desktop\Repos\ltk-hall-electronics\boards\probe\probe.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4718.487mil|Location2.X=4784.599mil|Location1.Y=5512.342mil|Location2.Y=5578.454mil|Absolute=True">Short-Circuit Constraint: Between Board Cutout (Multi-Layer)Region (0 hole(s)) Multi-Layer And Pad U1-1(302.724mil,3542.307mil) on Multi-Layer Location : [X = 4751.543mil][Y = 5545.398mil]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Shadow\Desktop\Repos\ltk-hall-electronics\boards\probe\probe.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4670.894mil|Location2.X=4736.193mil|Location1.Y=5512.225mil|Location2.Y=5577.524mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Shadow\Desktop\Repos\ltk-hall-electronics\boards\probe\probe.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4670.894mil|Location2.X=4736.193mil|Location1.Y=5512.225mil|Location2.Y=5577.524mil|Absolute=True">Short-Circuit Constraint: Between Board Cutout (Multi-Layer)Region (0 hole(s)) Multi-Layer And Pad U1-2(254.724mil,3541.307mil) on Multi-Layer Location : [X = 4703.543mil][Y = 5544.874mil]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Shadow\Desktop\Repos\ltk-hall-electronics\boards\probe\probe.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4670.894mil|Location2.X=4736.193mil|Location1.Y=5512.225mil|Location2.Y=5577.524mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Shadow\Desktop\Repos\ltk-hall-electronics\boards\probe\probe.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4670.894mil|Location2.X=4736.193mil|Location1.Y=5512.225mil|Location2.Y=5577.524mil|Absolute=True">Short-Circuit Constraint: Between Board Cutout (Multi-Layer)Region (0 hole(s)) Multi-Layer And Pad U1-2(254.724mil,3541.307mil) on Multi-Layer Location : [X = 4703.543mil][Y = 5544.874mil]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Shadow\Desktop\Repos\ltk-hall-electronics\boards\probe\probe.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4620.115mil|Location2.X=4686.972mil|Location1.Y=5512.446mil|Location2.Y=5579.303mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Shadow\Desktop\Repos\ltk-hall-electronics\boards\probe\probe.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4620.115mil|Location2.X=4686.972mil|Location1.Y=5512.446mil|Location2.Y=5579.303mil|Absolute=True">Short-Circuit Constraint: Between Board Cutout (Multi-Layer)Region (0 hole(s)) Multi-Layer And Pad U1-3(204.724mil,3543.307mil) on Multi-Layer Location : [X = 4653.543mil][Y = 5545.874mil]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Shadow\Desktop\Repos\ltk-hall-electronics\boards\probe\probe.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4620.115mil|Location2.X=4686.972mil|Location1.Y=5512.446mil|Location2.Y=5579.303mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Shadow\Desktop\Repos\ltk-hall-electronics\boards\probe\probe.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4620.115mil|Location2.X=4686.972mil|Location1.Y=5512.446mil|Location2.Y=5579.303mil|Absolute=True">Short-Circuit Constraint: Between Board Cutout (Multi-Layer)Region (0 hole(s)) Multi-Layer And Pad U1-3(204.724mil,3543.307mil) on Multi-Layer Location : [X = 4653.543mil][Y = 5545.874mil]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Shadow\Desktop\Repos\ltk-hall-electronics\boards\probe\probe.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4572.507mil|Location2.X=4637.659mil|Location1.Y=5512.638mil|Location2.Y=5577.789mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Shadow\Desktop\Repos\ltk-hall-electronics\boards\probe\probe.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4572.507mil|Location2.X=4637.659mil|Location1.Y=5512.638mil|Location2.Y=5577.789mil|Absolute=True">Short-Circuit Constraint: Between Board Cutout (Multi-Layer)Region (0 hole(s)) Multi-Layer And Pad U1-4(155.724mil,3542.307mil) on Multi-Layer Location : [X = 4605.083mil][Y = 5545.214mil]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Shadow\Desktop\Repos\ltk-hall-electronics\boards\probe\probe.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4572.499mil|Location2.X=4637.667mil|Location1.Y=5512.64mil|Location2.Y=5577.807mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Shadow\Desktop\Repos\ltk-hall-electronics\boards\probe\probe.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4572.499mil|Location2.X=4637.667mil|Location1.Y=5512.64mil|Location2.Y=5577.807mil|Absolute=True">Short-Circuit Constraint: Between Board Cutout (Multi-Layer)Region (0 hole(s)) Multi-Layer And Pad U1-4(155.724mil,3542.307mil) on Multi-Layer Location : [X = 4605.083mil][Y = 5545.224mil]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Shadow\Desktop\Repos\ltk-hall-electronics\boards\probe\probe.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4578.158mil|Location2.X=4634.44mil|Location1.Y=5518.819mil|Location2.Y=5575.101mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Shadow\Desktop\Repos\ltk-hall-electronics\boards\probe\probe.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4578.158mil|Location2.X=4634.44mil|Location1.Y=5518.819mil|Location2.Y=5575.101mil|Absolute=True">Short-Circuit Constraint: Between Board Cutout (Multi-Layer)Region (0 hole(s)) Multi-Layer And Track (157.48mil,3456.693mil)(157.48mil,3602.132mil) on Top Layer Location : [X = 4606.299mil][Y = 5546.96mil]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Shadow\Desktop\Repos\ltk-hall-electronics\boards\probe\probe.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4577.135mil|Location2.X=4635.463mil|Location1.Y=5518.837mil|Location2.Y=5577.165mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Shadow\Desktop\Repos\ltk-hall-electronics\boards\probe\probe.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4577.135mil|Location2.X=4635.463mil|Location1.Y=5518.837mil|Location2.Y=5577.165mil|Absolute=True">Short-Circuit Constraint: Between Board Cutout (Multi-Layer)Region (0 hole(s)) Multi-Layer And Track (157.48mil,3456.693mil)(157.48mil,3602.132mil) on Top Layer Location : [X = 4606.299mil][Y = 5548.001mil]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Shadow\Desktop\Repos\ltk-hall-electronics\boards\probe\probe.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4724.183mil|Location2.X=4779.754mil|Location1.Y=5518.812mil|Location2.Y=5574.383mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Shadow\Desktop\Repos\ltk-hall-electronics\boards\probe\probe.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4724.183mil|Location2.X=4779.754mil|Location1.Y=5518.812mil|Location2.Y=5574.383mil|Absolute=True">Short-Circuit Constraint: Between Board Cutout (Multi-Layer)Region (0 hole(s)) Multi-Layer And Track (303.15mil,3456.693mil)(303.15mil,3598.95mil) on Top Layer Location : [X = 4751.968mil][Y = 5546.597mil]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Shadow\Desktop\Repos\ltk-hall-electronics\boards\probe\probe.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4724.1mil|Location2.X=4779.837mil|Location1.Y=5518.814mil|Location2.Y=5574.55mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Shadow\Desktop\Repos\ltk-hall-electronics\boards\probe\probe.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4724.1mil|Location2.X=4779.837mil|Location1.Y=5518.814mil|Location2.Y=5574.55mil|Absolute=True">Short-Circuit Constraint: Between Board Cutout (Multi-Layer)Region (0 hole(s)) Multi-Layer And Track (303.15mil,3456.693mil)(303.15mil,3598.95mil) on Top Layer Location : [X = 4751.968mil][Y = 5546.682mil]</acronym></a><br></td>
+</tr>
+</table></a><hr color="#EEEEEE"><a href="#top" style="font-size: 0.9em">Back to top</a><br><br><a name="ID2RF4KBM10ALRDE0FY2Z2NFJLINZJMXVJIYYETEP5VSGFGLQEZ34D"><table>
+<tr>
+<th style="text-align : left" colspan="1" class="rule">Hole Size Constraint (Min=11.811mil) (Max=100mil) (All)</th>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Shadow\Desktop\Repos\ltk-hall-electronics\boards\probe\probe.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4691.863mil|Location2.X=4811.223mil|Location1.Y=5451.131mil|Location2.Y=5570.491mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Shadow\Desktop\Repos\ltk-hall-electronics\boards\probe\probe.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4691.863mil|Location2.X=4811.223mil|Location1.Y=5451.131mil|Location2.Y=5570.491mil|Absolute=True">Hole Size Constraint: (118.11mil &gt; 100mil) Pad U1-1(302.724mil,3542.307mil) on Multi-Layer Actual Slot Hole Width = 118.11mil</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Shadow\Desktop\Repos\ltk-hall-electronics\boards\probe\probe.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4643.863mil|Location2.X=4763.223mil|Location1.Y=5450.131mil|Location2.Y=5569.491mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Shadow\Desktop\Repos\ltk-hall-electronics\boards\probe\probe.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4643.863mil|Location2.X=4763.223mil|Location1.Y=5450.131mil|Location2.Y=5569.491mil|Absolute=True">Hole Size Constraint: (118.11mil &gt; 100mil) Pad U1-2(254.724mil,3541.307mil) on Multi-Layer Actual Slot Hole Width = 118.11mil</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Shadow\Desktop\Repos\ltk-hall-electronics\boards\probe\probe.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4593.863mil|Location2.X=4713.223mil|Location1.Y=5452.131mil|Location2.Y=5571.491mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Shadow\Desktop\Repos\ltk-hall-electronics\boards\probe\probe.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4593.863mil|Location2.X=4713.223mil|Location1.Y=5452.131mil|Location2.Y=5571.491mil|Absolute=True">Hole Size Constraint: (118.11mil &gt; 100mil) Pad U1-3(204.724mil,3543.307mil) on Multi-Layer Actual Slot Hole Width = 118.11mil</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Shadow\Desktop\Repos\ltk-hall-electronics\boards\probe\probe.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4544.863mil|Location2.X=4664.223mil|Location1.Y=5451.131mil|Location2.Y=5570.491mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Shadow\Desktop\Repos\ltk-hall-electronics\boards\probe\probe.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4544.863mil|Location2.X=4664.223mil|Location1.Y=5451.131mil|Location2.Y=5570.491mil|Absolute=True">Hole Size Constraint: (118.11mil &gt; 100mil) Pad U1-4(155.724mil,3542.307mil) on Multi-Layer Actual Slot Hole Width = 118.11mil</acronym></a><br></td>
+</tr>
+</table></a><hr color="#EEEEEE"><a href="#top" style="font-size: 0.9em">Back to top</a><br><br><a name="IDJ3LTHBKFYWIWCELX5RT1XMRBCBJJSV4ZFJ3HWLO02KR1KVENNXPG"><table>
+<tr>
+<th style="text-align : left" colspan="1" class="rule">Minimum Solder Mask Sliver (Gap=10mil) (All),(All)</th>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Shadow\Desktop\Repos\ltk-hall-electronics\boards\probe\probe.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4721.918mil|Location2.X=4733.168mil|Location1.Y=5523.871mil|Location2.Y=5535.121mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Shadow\Desktop\Repos\ltk-hall-electronics\boards\probe\probe.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4721.918mil|Location2.X=4733.168mil|Location1.Y=5523.871mil|Location2.Y=5535.121mil|Absolute=True">Minimum Solder Mask Sliver Constraint: (0.63mil &lt; 10mil) Between Pad U1-1(302.724mil,3542.307mil) on Multi-Layer And Pad U1-2(254.724mil,3541.307mil) on Multi-Layer [Top Solder] Mask Sliver [0.63mil] / [Bottom Solder] Mask Sliver [0.63mil]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Shadow\Desktop\Repos\ltk-hall-electronics\boards\probe\probe.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4672.918mil|Location2.X=4684.168mil|Location1.Y=5447.131mil|Location2.Y=5458.381mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Shadow\Desktop\Repos\ltk-hall-electronics\boards\probe\probe.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4672.918mil|Location2.X=4684.168mil|Location1.Y=5447.131mil|Location2.Y=5458.381mil|Absolute=True">Minimum Solder Mask Sliver Constraint: (2.63mil &lt; 10mil) Between Pad U1-2(254.724mil,3541.307mil) on Multi-Layer And Pad U1-3(204.724mil,3543.307mil) on Multi-Layer [Top Solder] Mask Sliver [2.63mil] / [Bottom Solder] Mask Sliver [2.63mil]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Shadow\Desktop\Repos\ltk-hall-electronics\boards\probe\probe.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4623.418mil|Location2.X=4634.668mil|Location1.Y=5447.131mil|Location2.Y=5458.381mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Shadow\Desktop\Repos\ltk-hall-electronics\boards\probe\probe.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4623.418mil|Location2.X=4634.668mil|Location1.Y=5447.131mil|Location2.Y=5458.381mil|Absolute=True">Minimum Solder Mask Sliver Constraint: (1.63mil &lt; 10mil) Between Pad U1-3(204.724mil,3543.307mil) on Multi-Layer And Pad U1-4(155.724mil,3542.307mil) on Multi-Layer [Top Solder] Mask Sliver [1.63mil] / [Bottom Solder] Mask Sliver [1.63mil]</acronym></a><br></td>
+</tr>
+</table></a><hr color="#EEEEEE"><a href="#top" style="font-size: 0.9em">Back to top</a><br><br><a name="IDBGNNUUYSQCXJETUIMXX3DJZUILGMFG34DVZ1DRGTTA0HAFF5FQCB"><table>
+<tr>
+<th style="text-align : left" colspan="1" class="rule">Silk To Solder Mask (Clearance=10mil) (IsPad),(All)</th>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Shadow\Desktop\Repos\ltk-hall-electronics\boards\probe\probe.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4655.934mil|Location2.X=4667.184mil|Location1.Y=2673.376mil|Location2.Y=2684.626mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Shadow\Desktop\Repos\ltk-hall-electronics\boards\probe\probe.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4655.934mil|Location2.X=4667.184mil|Location1.Y=2673.376mil|Location2.Y=2684.626mil|Absolute=True">Silk To Solder Mask Clearance Constraint: (8.296mil &lt; 10mil) Between Pad P1-1(232.425mil,686.646mil) on Multi-Layer And Track (85.425mil,719.646mil)(385.425mil,719.646mil) on Top Overlay [Top Overlay] to [Top Solder] clearance [8.296mil]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Shadow\Desktop\Repos\ltk-hall-electronics\boards\probe\probe.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4538.267mil|Location2.X=4549.517mil|Location1.Y=2598.84mil|Location2.Y=2610.09mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Shadow\Desktop\Repos\ltk-hall-electronics\boards\probe\probe.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4538.267mil|Location2.X=4549.517mil|Location1.Y=2598.84mil|Location2.Y=2610.09mil|Absolute=True">Silk To Solder Mask Clearance Constraint: (9.296mil &lt; 10mil) Between Pad P1-2(119.425mil,655.646mil) on Multi-Layer And Track (85.425mil,389.646mil)(85.425mil,719.646mil) on Top Overlay [Top Overlay] to [Top Solder] clearance [9.296mil]</acronym></a><br></td>
+</tr>
+</table></a><hr color="#EEEEEE"><a href="#top" style="font-size: 0.9em">Back to top</a><br><br></body>
+</html>

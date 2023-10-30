@@ -1,0 +1,16 @@
+Altium Designer Pick and Place Locations
+C:\Users\Shadow\Desktop\Repos\ltk-hall-electronics\exports\probe\assembly_files\Pick Place\Pick Place for probe.txt
+
+========================================================================================================================
+File Design Information:
+
+Date:       30/10/23
+Time:       16:41
+Revision:   772a53d12416350840740e1ff19f4831ab6be998
+Variant:    No variations
+Units used: mil
+
+Designator Comment          Layer    Footprint     Center-X(mil) Center-Y(mil) Rotation Description 
+logo       fermiumlabs-logo TopLayer frm-med       -4448.819     -1968.504     90       ""          
+U1         ""               TopLayer HE144P-BURIED 229.224       3542.307      0        ""          
+P1         ""               TopLayer FC68125       232.425       483.146       90       ""          
